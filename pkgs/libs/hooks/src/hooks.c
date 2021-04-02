@@ -44,6 +44,7 @@
 
 #include <stdio.h>
 #include <assert.h>
+#include <gem5/m5ops.h>
 
 #if ENABLE_TIMING
 #include <sys/time.h>
@@ -93,135 +94,146 @@ static enum __parsec_benchmark bench;
 
 /* NOTE: Please look at hooks.h to see how these functions are used */
 
-void __parsec_bench_begin(enum __parsec_benchmark __bench) {
-  #if DEBUG
+void __parsec_bench_begin(enum __parsec_benchmark __bench)
+{
+#if DEBUG
   num_bench_begins++;
-  assert(num_bench_begins==1);
-  assert(num_roi_begins==0);
-  assert(num_roi_ends==0);
-  assert(num_bench_ends==0);
-  #endif //DEBUG
+  assert(num_bench_begins == 1);
+  assert(num_roi_begins == 0);
+  assert(num_roi_ends == 0);
+  assert(num_bench_ends == 0);
+#endif //DEBUG
 
-  printf(HOOKS_PREFIX" PARSEC Hooks Version "HOOKS_VERSION"\n");
+  printf(HOOKS_PREFIX " PARSEC Hooks Version " HOOKS_VERSION "\n");
   fflush(NULL);
 
   //Store global benchmark ID for other hook functions
   bench = __bench;
 
-  #if ENABLE_SETAFFINITY
+#if ENABLE_SETAFFINITY
   //default values
-  int cpu_num= CPU_SETSIZE;
+  int cpu_num = CPU_SETSIZE;
   int cpu_base = 0;
 
   //check environment for desired affinity
   bool set_range = false;
   char *str_num = getenv(__PARSEC_CPU_NUM);
   char *str_base = getenv(__PARSEC_CPU_BASE);
-  if(str_num != NULL) {
+  if (str_num != NULL)
+  {
     cpu_num = atoi(str_num);
     set_range = true;
-    if(str_base != NULL) {
+    if (str_base != NULL)
+    {
       cpu_base = atoi(str_base);
       set_range = true;
     }
   }
 
   //check for legal values
-  if(cpu_num < 1) {
-    fprintf(stderr, HOOKS_PREFIX" Error: Too few CPUs selected.\n");
+  if (cpu_num < 1)
+  {
+    fprintf(stderr, HOOKS_PREFIX " Error: Too few CPUs selected.\n");
     exit(1);
   }
-  if(cpu_base < 0) {
-    fprintf(stderr, HOOKS_PREFIX" Error: CPU range base too small.\n");
+  if (cpu_base < 0)
+  {
+    fprintf(stderr, HOOKS_PREFIX " Error: CPU range base too small.\n");
     exit(1);
   }
-  if(cpu_base + cpu_num > CPU_SETSIZE) {
-    fprintf(stderr, HOOKS_PREFIX" Error: CPU range exceeds maximum value (%i).\n", CPU_SETSIZE-1);
+  if (cpu_base + cpu_num > CPU_SETSIZE)
+  {
+    fprintf(stderr, HOOKS_PREFIX " Error: CPU range exceeds maximum value (%i).\n", CPU_SETSIZE - 1);
     exit(1);
   }
 
   //set affinity
-  if(set_range) {
+  if (set_range)
+  {
     cpu_set_t mask;
     CPU_ZERO(&mask);
     int i;
-    for(i = cpu_base; i < cpu_base + cpu_num; i++) {
+    for (i = cpu_base; i < cpu_base + cpu_num; i++)
+    {
       CPU_SET(i, &mask);
     }
-    printf(HOOKS_PREFIX" Using %i CPUs (%i-%i)\n", cpu_num, cpu_base, cpu_base+cpu_num-1);
+    printf(HOOKS_PREFIX " Using %i CPUs (%i-%i)\n", cpu_num, cpu_base, cpu_base + cpu_num - 1);
     sched_setaffinity(0, sizeof(mask), &mask);
   }
-  #endif //ENABLE_SETAFFINITY
+#endif //ENABLE_SETAFFINITY
 }
 
-void __parsec_bench_end() {
-  #if DEBUG
+void __parsec_bench_end()
+{
+#if DEBUG
   num_bench_ends++;
-  assert(num_bench_begins==1);
-  assert(num_roi_begins==1);
-  assert(num_roi_ends==1);
-  assert(num_bench_ends==1);
-  #endif //DEBUG
+  assert(num_bench_begins == 1);
+  assert(num_roi_begins == 1);
+  assert(num_roi_ends == 1);
+  assert(num_bench_ends == 1);
+#endif //DEBUG
 
   fflush(NULL);
-  #if ENABLE_TIMING
-  printf(HOOKS_PREFIX" Total time spent in ROI: %.3fs\n", time_end-time_begin);
-  #endif //ENABLE_TIMING
-  printf(HOOKS_PREFIX" Terminating\n");
+#if ENABLE_TIMING
+  printf(HOOKS_PREFIX " Total time spent in ROI: %.3fs\n", time_end - time_begin);
+#endif //ENABLE_TIMING
+  printf(HOOKS_PREFIX " Terminating\n");
 }
 
-void __parsec_roi_begin() {
-  #if DEBUG
+void __parsec_roi_begin()
+{
+#if DEBUG
   num_roi_begins++;
-  assert(num_bench_begins==1);
-  assert(num_roi_begins==1);
-  assert(num_roi_ends==0);
-  assert(num_bench_ends==0);
-  #endif //DEBUG
+  assert(num_bench_begins == 1);
+  assert(num_roi_begins == 1);
+  assert(num_roi_ends == 0);
+  assert(num_bench_ends == 0);
+#endif //DEBUG
 
-  printf(HOOKS_PREFIX" Entering ROI\n");
+  printf(HOOKS_PREFIX " Entering ROI\n");
   fflush(NULL);
 
-  #if ENABLE_TIMING
+#if ENABLE_TIMING
   struct timeval t;
-  gettimeofday(&t,NULL);
-  time_begin = (double)t.tv_sec+(double)t.tv_usec*1e-6;
-  #endif //ENABLE_TIMING
+  gettimeofday(&t, NULL);
+  time_begin = (double)t.tv_sec + (double)t.tv_usec * 1e-6;
+#endif //ENABLE_TIMING
 
-  #if ENABLE_SIMICS_MAGIC
+#if ENABLE_SIMICS_MAGIC
   MAGIC_BREAKPOINT;
-  #endif //ENABLE_SIMICS_MAGIC
+#endif //ENABLE_SIMICS_MAGIC
 
-  #if ENABLE_PTLSIM_TRIGGER
+#if ENABLE_PTLSIM_TRIGGER
   ptlcall_switch_to_sim();
-  #endif //ENABLE_PTLSIM_TRIGGER
+#endif //ENABLE_PTLSIM_TRIGGER
+  m5_reset_stats(0, 0);
 }
 
-
-void __parsec_roi_end() {
-  #if DEBUG
+void __parsec_roi_end()
+{
+  m5_dump_stats(0, 0);
+#if DEBUG
   num_roi_ends++;
-  assert(num_bench_begins==1);
-  assert(num_roi_begins==1);
-  assert(num_roi_ends==1);
-  assert(num_bench_ends==0);
-  #endif //DEBUG
+  assert(num_bench_begins == 1);
+  assert(num_roi_begins == 1);
+  assert(num_roi_ends == 1);
+  assert(num_bench_ends == 0);
+#endif //DEBUG
 
-  #if ENABLE_SIMICS_MAGIC
+#if ENABLE_SIMICS_MAGIC
   MAGIC_BREAKPOINT;
-  #endif //ENABLE_SIMICS_MAGIC
+#endif //ENABLE_SIMICS_MAGIC
 
-  #if ENABLE_PTLSIM_TRIGGER
+#if ENABLE_PTLSIM_TRIGGER
   ptlcall_switch_to_native();
-  #endif //ENABLE_PTLSIM_TRIGGER
+#endif //ENABLE_PTLSIM_TRIGGER
 
-  #if ENABLE_TIMING
+#if ENABLE_TIMING
   struct timeval t;
-  gettimeofday(&t,NULL);
-  time_end = (double)t.tv_sec+(double)t.tv_usec*1e-6;
-  #endif //ENABLE_TIMING
+  gettimeofday(&t, NULL);
+  time_end = (double)t.tv_sec + (double)t.tv_usec * 1e-6;
+#endif //ENABLE_TIMING
 
-  printf(HOOKS_PREFIX" Leaving ROI\n");
+  printf(HOOKS_PREFIX " Leaving ROI\n");
   fflush(NULL);
 }
-

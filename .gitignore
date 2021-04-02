@@ -9,6 +9,7 @@ autom4te.cache
 inst
 obj
 run
+images
 
 # info
 /pkgs/libs/gsl/src/doc/gsl-ref.info*
