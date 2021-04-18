@@ -7,6 +7,7 @@
 ```bash
 # Change BENCHMARKS, SIMSIZES, BENCHMARKS_OUT in env.sh accordingly
 source env.sh
+./get-inputs
 build
 ```
 
