@@ -17,7 +17,7 @@ Inside the disk image, navigate to the benchmark's directory and run `./run.sh <
 
 **Note**: If you are using WSL, you might need to modify `env.sh` to manually set `xxPARSECDIRxx` to your parsec directory.
 
-**Note**: Currently, `./bin/benchmarks.py` sets the output directory to `/tmp`. If desired, change it to a permanent location but remember to configure bootargs to be read-write, such as `--command-line="console=ttyS0 root=/dev/vda rw"`, when running gem5 RISC-V FS.
+**Note**: Currently, `./bin/benchmarks.py` sets the output directory to `/tmp`. If desired, change it to a permanent location but remember to configure bootargs to be read-write, such as `--command-line="console=ttyS0 root=/dev/vda rw"`, when running gem5 RISC-V FS. There are also some benchmarks that directly writes to the input file (e.g. freqmine). In that case, either boot with a read-write filesystem as mentioned or move the input file to `/tmp` and modify `run.sh` accordingly.
 
 # 3 Benchmark Status
 | benchmark     | compilation | run | error                         |
