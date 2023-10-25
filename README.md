@@ -22,19 +22,19 @@ Inside the disk image, navigate to the benchmark's directory and run `./run.sh <
 # 3 Benchmark Status
 | benchmark     | compilation | run | error                         |
 | ------------- | ----------- | --- | ----------------------------- |
-| blackscholes  | ✅           | ✅   |                               |
-| bodytrack     | ✅           | ❌   | known to fail (see base repo) |
-| canneal       | ✅           | ✅   |                               |
-| dedup         | ✅           | ✅   |                               |
-| facesim       | ✅           | ❌   | segmentation fault            |
-| ferret        | ✅           | ❌   | error in findBasicVariables   |
-| fluidanimate  | ✅           | ✅   |                               |
-| freqmine      | ✅           | ✅   |                               |
-| raytrace      | ❌           | ❌   | known to fail (see base repo) |
-| streamcluster | ✅           | ✅   |                               |
-| swaptions     | ✅           | ✅   |                               |
-| vips          | ❌           | ❌   | known to fail (see base repo) |
-| x264          | ❌           | ❌   | cannot link m5 library        |
+| blackscholes  | ✅           | ✅   |                                            |
+| bodytrack     | ✅           | ✅   |                                            |
+| canneal       | ✅           | ✅   |                                            |
+| dedup         | ✅           | ✅   |                                            |
+| facesim       | ✅           | ❌   | segmentation fault                         |
+| ferret        | ✅           | ❌   | error in findBasicVariables                |
+| fluidanimate  | ✅           | ✅   |                                            |
+| freqmine      | ✅           | ✅   |                                            |
+| raytrace      | ❌           | ❌   | known to fail (relies on Mesa)             |
+| streamcluster | ✅           | ✅   |                                            |
+| swaptions     | ✅           | ✅   |                                            |
+| vips          | ❌           | ❌   | known to fail (cross-compile glib missing) |
+| x264          | ✅           | ❌   | segmentation fault                         |
 
 # 4 Changes Made
 ## 4.1 Build Configurations

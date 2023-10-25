@@ -58,6 +58,10 @@ for bench in os.environ['BENCHMARKS'].split():
             if bench == 'freqmine':
                 fp.write('export OMP_NUM_THREADS=$1\n')
                 run_args = param['run_args'][size]
+            # for vips thread num is in IM_CONCURRENCY
+            elif bench == 'vips':
+                fp.write('export IM_CONCURRENCY=$1\n')
+                run_args = param['run_args'][size]
             else:
                 run_args = param['run_args'][size] % '$1'
             fp.write('time ./{} {}\n'.format(bench, run_args))

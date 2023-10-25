@@ -110,7 +110,7 @@ export HOSTTYPE="riscv64"
 export TARGET_CROSS="riscv64-linux-gnu-"
 
 # Benchmarks to compile
-export BENCHMARKS="blackscholes bodytrack canneal dedup facesim ferret fluidanimate freqmine streamcluster swaptions"
+export BENCHMARKS="blackscholes bodytrack canneal dedup facesim ferret fluidanimate freqmine streamcluster swaptions x264"
 # Benchmarks input sizes
 export SIMSIZES="simsmall simmedium simlarge"
 # Benchmarks output directory

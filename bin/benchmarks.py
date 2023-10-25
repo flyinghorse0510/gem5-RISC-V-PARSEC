@@ -183,3 +183,58 @@ parsec_param['bodytrack'] = {
         'simlarge' : '',
     },
 }
+
+parsec_param['raytrace'] = {
+    'dir': 'pkgs/apps',
+    'run_args': {
+        'simdev': 'bunny.obj -automove -nthreads %s -frames 1 -res 16 16',
+        'simsmall': 'happy_buddha.obj -automove -nthreads %s -frames 3 -res 480 270',
+        'simmedium': 'happy_buddha.obj -automove -nthreads %s -frames 3 -res 960 540',
+        'simlarge': 'happy_buddha.obj -automove -nthreads %s -frames 3 -res 1920 1080',
+        'native': 'thai_statue.obj -automove -nthreads %s -frames 200 -res 1920 1080',
+    },
+    'show_res': {
+        'simdev'   : '',
+        'simsmall' : '',
+        'simmedium': '',
+        'simlarge' : '',
+        'native'   : '',
+    }
+}
+
+parsec_param['vips'] = {
+    'dir': 'pkgs/apps',
+    'run_args': {
+        'simdev'   : 'im_benchmark barbados_256x288.v /tmp/output.v',
+        'simsmall' : 'im_benchmark pomegranate_1600x1200.v /tmp/output.v',
+        'simmedium': 'im_benchmark vulture_2336x2336.v /tmp/output.v',
+        'simlarge' : 'im_benchmark bigben_2662x5500.v /tmp/output.v',
+        'native'   : 'im_benchmark orion_18000x18000.v /tmp/output.v',
+    },
+    'show_res': {
+        'simdev'   : 'ls /tmp/output.v',
+        'simsmall' : 'ls /tmp/output.v',
+        'simmedium': 'ls /tmp/output.v',
+        'simlarge' : 'ls /tmp/output.v',
+        'native'   : 'ls /tmp/output.v',
+    }
+}
+
+parsec_param['x264'] = {
+    'dir': 'pkgs/apps',
+    'run_args': {
+        'simdev'   : '--quiet --qp 20 --partitions b8x8,i4x4 --ref 5 --direct auto --b-pyramid --weightb --mixed-refs --no-fast-pskip --me umh --subme 7 --analyse b8x8,i4x4 --threads %s -o /tmp/eledream.264 eledream_64x36_3.y4m',
+        'simsmall' : '--quiet --qp 20 --partitions b8x8,i4x4 --ref 5 --direct auto --b-pyramid --weightb --mixed-refs --no-fast-pskip --me umh --subme 7 --analyse b8x8,i4x4 --threads %s -o /tmp/eledream.264 eledream_640x360_8.y4m',
+        'simmedium': '--quiet --qp 20 --partitions b8x8,i4x4 --ref 5 --direct auto --b-pyramid --weightb --mixed-refs --no-fast-pskip --me umh --subme 7 --analyse b8x8,i4x4 --threads %s -o /tmp/eledream.264 eledream_640x360_32.y4m',
+        'simlarge' : '--quiet --qp 20 --partitions b8x8,i4x4 --ref 5 --direct auto --b-pyramid --weightb --mixed-refs --no-fast-pskip --me umh --subme 7 --analyse b8x8,i4x4 --threads %s -o /tmp/eledream.264 eledream_640x360_128.y4m',
+        'native'   : '--quiet --qp 20 --partitions b8x8,i4x4 --ref 5 --direct auto --b-pyramid --weightb --mixed-refs --no-fast-pskip --me umh --subme 7 --analyse b8x8,i4x4 --threads %s -o /tmp/eledream.264 eledream_1920x1080_512.y4m',
+    },
+    'show_res': {
+        'simdev'   : 'ls /tmp/eledream.264',
+        'simsmall' : 'ls /tmp/eledream.264',
+        'simmedium': 'ls /tmp/eledream.264',
+        'simlarge' : 'ls /tmp/eledream.264',
+        'native'   : 'ls /tmp/eledream.264',
+    }
+
+}
