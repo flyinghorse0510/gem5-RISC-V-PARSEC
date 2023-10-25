@@ -103,11 +103,11 @@ else
 fi
 
 export GNU_HOST_NAME="x86_64-pc-linux-gnu"
-export GNU_TARGET_NAME="riscv64-unknown-linux"
+export GNU_TARGET_NAME="riscv64-linux"
 export OSTYPE="linux" # used to select sysconf (i.e. cli syntax)
 # 
 export HOSTTYPE="riscv64"
-export TARGET_CROSS="riscv64-unknown-linux-gnu-"
+export TARGET_CROSS="riscv64-linux-gnu-"
 
 # Benchmarks to compile
 export BENCHMARKS="blackscholes bodytrack canneal dedup facesim ferret fluidanimate freqmine streamcluster swaptions"

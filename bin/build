@@ -6,7 +6,7 @@ for bm in $BENCHMARKS
 do
 	echo "BUILDING BENCHMARK $bm WITH HOOKS"
  	parsecmgmt -a fulluninstall -p $bm
-	parsecmgmt -a build -p $bm -c gcc-hooks
+	parsecmgmt -a build -p $bm
 done
 
 python $SCRIPTDIR/gen.py
