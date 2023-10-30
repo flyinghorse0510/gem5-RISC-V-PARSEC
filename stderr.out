@@ -1,0 +1,2386 @@
+BUILDING BENCHMARK x264 WITH HOOKS
+[PARSEC] Removing all installed files:
+[PARSEC] parsec.x264 - [Removing installation directory]
+[PARSEC] Packages to build:  parsec.x264
+
+[PARSEC] [========== Building package parsec.x264 [1] ==========]
+[PARSEC] [---------- Analyzing package parsec.x264 ----------]
+[PARSEC] parsec.x264 depends on: yasm
+[PARSEC] [---------- Analyzing package parsec.yasm ----------]
+[PARSEC] Package parsec.yasm already exists, proceeding.
+[PARSEC] [---------- Building package parsec.x264 ----------]
+[PARSEC] Removing old build directory.
+[PARSEC] Copying source code of package parsec.x264.
+[PARSEC] Running 'env PATH=/home/lowell/Code/gem5-RISC-V-PARSEC/pkgs/tools/yasm/inst/riscv64-linux.gcc/bin:/home/lowell/Code/gem5-RISC-V-PARSEC/bin:/home/lowell/Code/qemu/build:/opt/platform-tools/:/home/lowell/.vscode-server/bin/f1b07bd25dfad64b0167beb15359ae573aecd2cc/bin/remote-cli:/home/lowell/Code/qemu/build:/opt/platform-tools/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/go/bin:/usr/local/go/bin:/home/lowell/Code/gem5-RISC-V-PARSEC/bin ./configure --enable-pthread --extra-asflags= --extra-cflags= -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -fno-pie -no-pie --extra-ldflags=-static-libgcc -static-libstdc++ -L/lib -static -fno-pie -no-pie  --build=x86_64-pc-linux-gnu --host=riscv64-linux --prefix=/home/lowell/Code/gem5-RISC-V-PARSEC/pkgs/apps/x264/inst/riscv64-linux.gcc':
+Unknown option --build=x86_64-pc-linux-gnu, ignored
+Platform:   RISCV64
+System:     LINUX
+asm:        yes
+avis input: no
+mp4 output: no
+pthread:    yes
+debug:      no
+gprof:      no
+PIC:        no
+shared:     no
+visualize:  no
+
+You can run 'make' or 'make fprofiled' now.
+[PARSEC] Running 'env PATH=/home/lowell/Code/gem5-RISC-V-PARSEC/pkgs/tools/yasm/inst/riscv64-linux.gcc/bin:/home/lowell/Code/gem5-RISC-V-PARSEC/bin:/home/lowell/Code/qemu/build:/opt/platform-tools/:/home/lowell/.vscode-server/bin/f1b07bd25dfad64b0167beb15359ae573aecd2cc/bin/remote-cli:/home/lowell/Code/qemu/build:/opt/platform-tools/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/go/bin:/usr/local/go/bin:/home/lowell/Code/gem5-RISC-V-PARSEC/bin make':
+rm -f .depend
+( echo -n "`dirname common/mc.c`/" && riscv64-linux-gnu-gcc -O4 -ffast-math  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -Wall -I.  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -fno-pie -no-pie -DHAVE_MALLOC_H -DARCH_RISCV64 -DSYS_LINUX -DHAVE_PTHREAD -s -fomit-frame-pointer  common/mc.c -MM -g0 ) 1>> .depend;  ( echo -n "`dirname common/predict.c`/" && riscv64-linux-gnu-gcc -O4 -ffast-math  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -Wall -I.  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -fno-pie -no-pie -DHAVE_MALLOC_H -DARCH_RISCV64 -DSYS_LINUX -DHAVE_PTHREAD -s -fomit-frame-pointer  common/predict.c -MM -g0 ) 1>> .depend;  ( echo -n "`dirname common/pixel.c`/" && riscv64-linux-gnu-gcc -O4 -ffast-math  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -Wall -I.  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -fno-pie -no-pie -DHAVE_MALLOC_H -DARCH_RISCV64 -DSYS_LINUX -DHAVE_PTHREAD -s -fomit-frame-pointer  common/pixel.c -MM -g0 ) 1>> .depend;  ( echo -n "`dirname common/macroblock.c`/" && riscv64-linux-gnu-gcc -O4 -ffast-math  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -Wall -I.  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -fno-pie -no-pie -DHAVE_MALLOC_H -DARCH_RISCV64 -DSYS_LINUX -DHAVE_PTHREAD -s -fomit-frame-pointer  common/macroblock.c -MM -g0 ) 1>> .depend;  ( echo -n "`dirname common/frame.c`/" && riscv64-linux-gnu-gcc -O4 -ffast-math  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -Wall -I.  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -fno-pie -no-pie -DHAVE_MALLOC_H -DARCH_RISCV64 -DSYS_LINUX -DHAVE_PTHREAD -s -fomit-frame-pointer  common/frame.c -MM -g0 ) 1>> .depend;  ( echo -n "`dirname common/dct.c`/" && riscv64-linux-gnu-gcc -O4 -ffast-math  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -Wall -I.  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -fno-pie -no-pie -DHAVE_MALLOC_H -DARCH_RISCV64 -DSYS_LINUX -DHAVE_PTHREAD -s -fomit-frame-pointer  common/dct.c -MM -g0 ) 1>> .depend;  ( echo -n "`dirname common/cpu.c`/" && riscv64-linux-gnu-gcc -O4 -ffast-math  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -Wall -I.  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -fno-pie -no-pie -DHAVE_MALLOC_H -DARCH_RISCV64 -DSYS_LINUX -DHAVE_PTHREAD -s -fomit-frame-pointer  common/cpu.c -MM -g0 ) 1>> .depend;  ( echo -n "`dirname common/cabac.c`/" && riscv64-linux-gnu-gcc -O4 -ffast-math  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -Wall -I.  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -fno-pie -no-pie -DHAVE_MALLOC_H -DARCH_RISCV64 -DSYS_LINUX -DHAVE_PTHREAD -s -fomit-frame-pointer  common/cabac.c -MM -g0 ) 1>> .depend;  ( echo -n "`dirname common/common.c`/" && riscv64-linux-gnu-gcc -O4 -ffast-math  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -Wall -I.  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -fno-pie -no-pie -DHAVE_MALLOC_H -DARCH_RISCV64 -DSYS_LINUX -DHAVE_PTHREAD -s -fomit-frame-pointer  common/common.c -MM -g0 ) 1>> .depend;  ( echo -n "`dirname common/mdate.c`/" && riscv64-linux-gnu-gcc -O4 -ffast-math  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -Wall -I.  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -fno-pie -no-pie -DHAVE_MALLOC_H -DARCH_RISCV64 -DSYS_LINUX -DHAVE_PTHREAD -s -fomit-frame-pointer  common/mdate.c -MM -g0 ) 1>> .depend;  ( echo -n "`dirname common/set.c`/" && riscv64-linux-gnu-gcc -O4 -ffast-math  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -Wall -I.  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -fno-pie -no-pie -DHAVE_MALLOC_H -DARCH_RISCV64 -DSYS_LINUX -DHAVE_PTHREAD -s -fomit-frame-pointer  common/set.c -MM -g0 ) 1>> .depend;  ( echo -n "`dirname common/quant.c`/" && riscv64-linux-gnu-gcc -O4 -ffast-math  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -Wall -I.  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -fno-pie -no-pie -DHAVE_MALLOC_H -DARCH_RISCV64 -DSYS_LINUX -DHAVE_PTHREAD -s -fomit-frame-pointer  common/quant.c -MM -g0 ) 1>> .depend;  ( echo -n "`dirname common/vlc.c`/" && riscv64-linux-gnu-gcc -O4 -ffast-math  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -Wall -I.  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -fno-pie -no-pie -DHAVE_MALLOC_H -DARCH_RISCV64 -DSYS_LINUX -DHAVE_PTHREAD -s -fomit-frame-pointer  common/vlc.c -MM -g0 ) 1>> .depend;  ( echo -n "`dirname encoder/analyse.c`/" && riscv64-linux-gnu-gcc -O4 -ffast-math  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -Wall -I.  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -fno-pie -no-pie -DHAVE_MALLOC_H -DARCH_RISCV64 -DSYS_LINUX -DHAVE_PTHREAD -s -fomit-frame-pointer  encoder/analyse.c -MM -g0 ) 1>> .depend;  ( echo -n "`dirname encoder/me.c`/" && riscv64-linux-gnu-gcc -O4 -ffast-math  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -Wall -I.  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -fno-pie -no-pie -DHAVE_MALLOC_H -DARCH_RISCV64 -DSYS_LINUX -DHAVE_PTHREAD -s -fomit-frame-pointer  encoder/me.c -MM -g0 ) 1>> .depend;  ( echo -n "`dirname encoder/ratecontrol.c`/" && riscv64-linux-gnu-gcc -O4 -ffast-math  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -Wall -I.  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -fno-pie -no-pie -DHAVE_MALLOC_H -DARCH_RISCV64 -DSYS_LINUX -DHAVE_PTHREAD -s -fomit-frame-pointer  encoder/ratecontrol.c -MM -g0 ) 1>> .depend;  ( echo -n "`dirname encoder/set.c`/" && riscv64-linux-gnu-gcc -O4 -ffast-math  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -Wall -I.  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -fno-pie -no-pie -DHAVE_MALLOC_H -DARCH_RISCV64 -DSYS_LINUX -DHAVE_PTHREAD -s -fomit-frame-pointer  encoder/set.c -MM -g0 ) 1>> .depend;  ( echo -n "`dirname encoder/macroblock.c`/" && riscv64-linux-gnu-gcc -O4 -ffast-math  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -Wall -I.  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -fno-pie -no-pie -DHAVE_MALLOC_H -DARCH_RISCV64 -DSYS_LINUX -DHAVE_PTHREAD -s -fomit-frame-pointer  encoder/macroblock.c -MM -g0 ) 1>> .depend;  ( echo -n "`dirname encoder/cabac.c`/" && riscv64-linux-gnu-gcc -O4 -ffast-math  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -Wall -I.  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -fno-pie -no-pie -DHAVE_MALLOC_H -DARCH_RISCV64 -DSYS_LINUX -DHAVE_PTHREAD -s -fomit-frame-pointer  encoder/cabac.c -MM -g0 ) 1>> .depend;  ( echo -n "`dirname encoder/cavlc.c`/" && riscv64-linux-gnu-gcc -O4 -ffast-math  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -Wall -I.  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -fno-pie -no-pie -DHAVE_MALLOC_H -DARCH_RISCV64 -DSYS_LINUX -DHAVE_PTHREAD -s -fomit-frame-pointer  encoder/cavlc.c -MM -g0 ) 1>> .depend;  ( echo -n "`dirname encoder/encoder.c`/" && riscv64-linux-gnu-gcc -O4 -ffast-math  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -Wall -I.  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -fno-pie -no-pie -DHAVE_MALLOC_H -DARCH_RISCV64 -DSYS_LINUX -DHAVE_PTHREAD -s -fomit-frame-pointer  encoder/encoder.c -MM -g0 ) 1>> .depend;  ( echo -n "`dirname x264.c`/" && riscv64-linux-gnu-gcc -O4 -ffast-math  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -Wall -I.  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -fno-pie -no-pie -DHAVE_MALLOC_H -DARCH_RISCV64 -DSYS_LINUX -DHAVE_PTHREAD -s -fomit-frame-pointer  x264.c -MM -g0 ) 1>> .depend;  ( echo -n "`dirname matroska.c`/" && riscv64-linux-gnu-gcc -O4 -ffast-math  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -Wall -I.  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -fno-pie -no-pie -DHAVE_MALLOC_H -DARCH_RISCV64 -DSYS_LINUX -DHAVE_PTHREAD -s -fomit-frame-pointer  matroska.c -MM -g0 ) 1>> .depend;  ( echo -n "`dirname muxers.c`/" && riscv64-linux-gnu-gcc -O4 -ffast-math  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -Wall -I.  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -fno-pie -no-pie -DHAVE_MALLOC_H -DARCH_RISCV64 -DSYS_LINUX -DHAVE_PTHREAD -s -fomit-frame-pointer  muxers.c -MM -g0 ) 1>> .depend;
+riscv64-linux-gnu-gcc -O4 -ffast-math  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -Wall -I.  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -fno-pie -no-pie -DHAVE_MALLOC_H -DARCH_RISCV64 -DSYS_LINUX -DHAVE_PTHREAD -s -fomit-frame-pointer   -c -o x264.o x264.c
+x264.c: In function ‘Encode’:
+x264.c:860:39: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘int64_t’ {aka ‘long int’} [-Wformat=]
+  860 |         printf("i_frame: %d, i_file: %d\n", i_frame, i_file);
+      |                                      ~^              ~~~~~~
+      |                                       |              |
+      |                                       int            int64_t {aka long int}
+      |                                      %ld
+riscv64-linux-gnu-gcc -O4 -ffast-math  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -Wall -I.  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -fno-pie -no-pie -DHAVE_MALLOC_H -DARCH_RISCV64 -DSYS_LINUX -DHAVE_PTHREAD -s -fomit-frame-pointer   -c -o matroska.o matroska.c
+riscv64-linux-gnu-gcc -O4 -ffast-math  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -Wall -I.  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -fno-pie -no-pie -DHAVE_MALLOC_H -DARCH_RISCV64 -DSYS_LINUX -DHAVE_PTHREAD -s -fomit-frame-pointer   -c -o muxers.o muxers.c
+muxers.c: In function ‘open_file_y4m’:
+muxers.c:141:10: warning: variable ‘interlaced’ set but not used [-Wunused-but-set-variable]
+  141 |     int  interlaced;
+      |          ^~~~~~~~~~
+riscv64-linux-gnu-gcc -O4 -ffast-math  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -Wall -I.  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -fno-pie -no-pie -DHAVE_MALLOC_H -DARCH_RISCV64 -DSYS_LINUX -DHAVE_PTHREAD -s -fomit-frame-pointer   -c -o common/mc.o common/mc.c
+riscv64-linux-gnu-gcc -O4 -ffast-math  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -Wall -I.  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -fno-pie -no-pie -DHAVE_MALLOC_H -DARCH_RISCV64 -DSYS_LINUX -DHAVE_PTHREAD -s -fomit-frame-pointer   -c -o common/predict.o common/predict.c
+riscv64-linux-gnu-gcc -O4 -ffast-math  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -Wall -I.  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -fno-pie -no-pie -DHAVE_MALLOC_H -DARCH_RISCV64 -DSYS_LINUX -DHAVE_PTHREAD -s -fomit-frame-pointer   -c -o common/pixel.o common/pixel.c
+riscv64-linux-gnu-gcc -O4 -ffast-math  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -Wall -I.  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -fno-pie -no-pie -DHAVE_MALLOC_H -DARCH_RISCV64 -DSYS_LINUX -DHAVE_PTHREAD -s -fomit-frame-pointer   -c -o common/macroblock.o common/macroblock.c
+common/macroblock.c: In function ‘x264_mb_predict_mv_direct16x16_spatial’:
+common/macroblock.c:278:10: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  278 |         *(uint64_t*)mv[0] = 0;
+      |          ^~~~~~~~~~~~~~~~
+common/macroblock.c:287:18: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  287 |                 *(uint32_t*)mv[i_list] = 0;
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+In file included from common/common.h:625,
+                 from common/macroblock.c:25:
+common/macroblock.h:385:92: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  385 | #define x264_macroblock_cache_mv_ptr(a,x,y,w,h,l,mv) x264_macroblock_cache_mv(a,x,y,w,h,l,*(uint32_t*)mv)
+common/macroblock.c:293:5: note: in expansion of macro ‘x264_macroblock_cache_mv_ptr’
+  293 |     x264_macroblock_cache_mv_ptr( h, 0, 0, 4, 4, 0, mv[0] );
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+common/macroblock.h:385:92: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  385 | #define x264_macroblock_cache_mv_ptr(a,x,y,w,h,l,mv) x264_macroblock_cache_mv(a,x,y,w,h,l,*(uint32_t*)mv)
+common/macroblock.c:294:5: note: in expansion of macro ‘x264_macroblock_cache_mv_ptr’
+  294 |     x264_macroblock_cache_mv_ptr( h, 0, 0, 4, 4, 1, mv[1] );
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+common/macroblock.c: In function ‘x264_mb_predict_mv_direct16x16’:
+common/macroblock.c:373:27: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  373 |                       || *(uint32_t*)h->mb.cache.direct_mv[0][X264_SCAN8_0] != *(uint32_t*)h->mb.cache.mv[0][X264_SCAN8_0]
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+common/macroblock.c:373:81: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  373 |                       || *(uint32_t*)h->mb.cache.direct_mv[0][X264_SCAN8_0] != *(uint32_t*)h->mb.cache.mv[0][X264_SCAN8_0]
+      |                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+common/macroblock.c:374:27: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  374 |                       || *(uint32_t*)h->mb.cache.direct_mv[1][X264_SCAN8_0] != *(uint32_t*)h->mb.cache.mv[1][X264_SCAN8_0];
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+common/macroblock.c:374:81: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  374 |                       || *(uint32_t*)h->mb.cache.direct_mv[1][X264_SCAN8_0] != *(uint32_t*)h->mb.cache.mv[1][X264_SCAN8_0];
+      |                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+common/macroblock.c: In function ‘x264_mb_load_mv_direct8x8’:
+common/macroblock.c:408:6: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  408 |     *(uint64_t*)h->mb.cache.mv[0][x264_scan8[idx*4]] =
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+common/macroblock.c:409:6: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  409 |     *(uint64_t*)h->mb.cache.direct_mv[0][x264_scan8[idx*4]];
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+common/macroblock.c:410:6: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  410 |     *(uint64_t*)h->mb.cache.mv[0][x264_scan8[idx*4]+8] =
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+common/macroblock.c:411:6: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  411 |     *(uint64_t*)h->mb.cache.direct_mv[0][x264_scan8[idx*4]+8];
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+common/macroblock.c:412:6: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  412 |     *(uint64_t*)h->mb.cache.mv[1][x264_scan8[idx*4]] =
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+common/macroblock.c:413:6: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  413 |     *(uint64_t*)h->mb.cache.direct_mv[1][x264_scan8[idx*4]];
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+common/macroblock.c:414:6: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  414 |     *(uint64_t*)h->mb.cache.mv[1][x264_scan8[idx*4]+8] =
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+common/macroblock.c:415:6: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  415 |     *(uint64_t*)h->mb.cache.direct_mv[1][x264_scan8[idx*4]+8];
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+common/macroblock.c: At top level:
+common/macroblock.c:419:77: warning: argument 4 of type ‘int16_t[9][2]’ {aka ‘short int[9][2]’} with mismatched bound [-Warray-parameter=]
+  419 | void x264_mb_predict_mv_ref16x16( x264_t *h, int i_list, int i_ref, int16_t mvc[9][2], int *i_mvc )
+      |                                                                     ~~~~~~~~^~~~~~~~~
+In file included from common/common.h:625,
+                 from common/macroblock.c:25:
+common/macroblock.h:315:77: note: previously declared as ‘int16_t[8][2]’ {aka ‘short int[8][2]’}
+  315 | void x264_mb_predict_mv_ref16x16( x264_t *h, int i_list, int i_ref, int16_t mvc[8][2], int *i_mvc );
+      |                                                                     ~~~~~~~~^~~~~~~~~
+common/macroblock.c: In function ‘x264_mb_predict_mv_ref16x16’:
+common/macroblock.c:425:31: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  425 |         *(uint32_t*)mvc[i] = *(uint32_t*)mvp; \
+      |                               ^
+common/macroblock.c:433:9: note: in expansion of macro ‘SET_MVP’
+  433 |         SET_MVP( h->mb.cache.mv[i_list][x264_scan8[12]] );
+      |         ^~~~~~~
+common/macroblock.c: In function ‘x264_macroblock_cache_load’:
+common/macroblock.c:1160:18: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1160 |                 *(uint32_t*)h->mb.cache.mv[i_list][i8] = *(uint32_t*)h->mb.mv[i_list][iv];
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+common/macroblock.c:1166:18: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1166 |                 *(uint32_t*)h->mb.cache.mv[i_list][i8] = 0;
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+common/macroblock.c:1178:18: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1178 |                 *(uint64_t*)h->mb.cache.mv[i_list][i8+0] = *(uint64_t*)h->mb.mv[i_list][iv+0];
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+common/macroblock.c:1179:18: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1179 |                 *(uint64_t*)h->mb.cache.mv[i_list][i8+2] = *(uint64_t*)h->mb.mv[i_list][iv+2];
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+common/macroblock.c:1184:18: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1184 |                 *(uint64_t*)h->mb.cache.mv[i_list][i8+0] = 0;
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+common/macroblock.c:1185:18: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1185 |                 *(uint64_t*)h->mb.cache.mv[i_list][i8+2] = 0;
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+common/macroblock.c:1195:18: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1195 |                 *(uint32_t*)h->mb.cache.mv[i_list][i8] = *(uint32_t*)h->mb.mv[i_list][iv];
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+common/macroblock.c:1201:18: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1201 |                 *(uint32_t*)h->mb.cache.mv[i_list][i8] = 0;
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+common/macroblock.c:1214:18: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1214 |                 *(uint32_t*)h->mb.cache.mv[i_list][i8+0*8] = *(uint32_t*)h->mb.mv[i_list][iv + 0*s4x4];
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+common/macroblock.c:1215:18: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1215 |                 *(uint32_t*)h->mb.cache.mv[i_list][i8+1*8] = *(uint32_t*)h->mb.mv[i_list][iv + 1*s4x4];
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+common/macroblock.c:1216:18: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1216 |                 *(uint32_t*)h->mb.cache.mv[i_list][i8+2*8] = *(uint32_t*)h->mb.mv[i_list][iv + 2*s4x4];
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+common/macroblock.c:1217:18: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1217 |                 *(uint32_t*)h->mb.cache.mv[i_list][i8+3*8] = *(uint32_t*)h->mb.mv[i_list][iv + 3*s4x4];
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+common/macroblock.c:1225:22: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1225 |                     *(uint32_t*)h->mb.cache.mv[i_list][i8+i*8] = 0;
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+common/macroblock.c:1235:22: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1235 |                     *(uint64_t*)h->mb.cache.mvd[i_list][i8+0] = *(uint64_t*)h->mb.mvd[i_list][iv+0];
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+common/macroblock.c:1236:22: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1236 |                     *(uint64_t*)h->mb.cache.mvd[i_list][i8+2] = *(uint64_t*)h->mb.mvd[i_list][iv+2];
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+common/macroblock.c:1241:22: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1241 |                     *(uint64_t*)h->mb.cache.mvd[i_list][i8+0] =
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+common/macroblock.c:1242:22: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1242 |                     *(uint64_t*)h->mb.cache.mvd[i_list][i8+2] = 0;
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+common/macroblock.c:1249:22: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1249 |                     *(uint32_t*)h->mb.cache.mvd[i_list][i8+0*8] = *(uint32_t*)h->mb.mvd[i_list][iv + 0*s4x4];
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+common/macroblock.c:1250:22: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1250 |                     *(uint32_t*)h->mb.cache.mvd[i_list][i8+1*8] = *(uint32_t*)h->mb.mvd[i_list][iv + 1*s4x4];
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+common/macroblock.c:1251:22: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1251 |                     *(uint32_t*)h->mb.cache.mvd[i_list][i8+2*8] = *(uint32_t*)h->mb.mvd[i_list][iv + 2*s4x4];
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+common/macroblock.c:1252:22: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1252 |                     *(uint32_t*)h->mb.cache.mvd[i_list][i8+3*8] = *(uint32_t*)h->mb.mvd[i_list][iv + 3*s4x4];
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+common/macroblock.c:1258:26: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1258 |                         *(uint32_t*)h->mb.cache.mvd[i_list][i8+i*8] = 0;
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+common/macroblock.c: In function ‘x264_macroblock_cache_save’:
+common/macroblock.c:1392:63: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1392 |                 *(uint64_t*)h->mb.mv[0][i_mb_4x4+y*s4x4+0] = *(uint64_t*)h->mb.cache.mv[0][x264_scan8[0]+8*y+0];
+      |                                                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+common/macroblock.c:1393:63: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1393 |                 *(uint64_t*)h->mb.mv[0][i_mb_4x4+y*s4x4+2] = *(uint64_t*)h->mb.cache.mv[0][x264_scan8[0]+8*y+2];
+      |                                                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+common/macroblock.c:1403:67: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1403 |                     *(uint64_t*)h->mb.mv[1][i_mb_4x4+y*s4x4+0] = *(uint64_t*)h->mb.cache.mv[1][x264_scan8[0]+8*y+0];
+      |                                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+common/macroblock.c:1404:67: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1404 |                     *(uint64_t*)h->mb.mv[1][i_mb_4x4+y*s4x4+2] = *(uint64_t*)h->mb.cache.mv[1][x264_scan8[0]+8*y+2];
+      |                                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+common/macroblock.c:1435:64: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1435 |                 *(uint64_t*)h->mb.mvd[0][i_mb_4x4+y*s4x4+0] = *(uint64_t*)h->mb.cache.mvd[0][x264_scan8[0]+8*y+0];
+      |                                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+common/macroblock.c:1436:64: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1436 |                 *(uint64_t*)h->mb.mvd[0][i_mb_4x4+y*s4x4+2] = *(uint64_t*)h->mb.cache.mvd[0][x264_scan8[0]+8*y+2];
+      |                                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+common/macroblock.c:1441:68: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1441 |                     *(uint64_t*)h->mb.mvd[1][i_mb_4x4+y*s4x4+0] = *(uint64_t*)h->mb.cache.mvd[1][x264_scan8[0]+8*y+0];
+      |                                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+common/macroblock.c:1442:68: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1442 |                     *(uint64_t*)h->mb.mvd[1][i_mb_4x4+y*s4x4+2] = *(uint64_t*)h->mb.cache.mvd[1][x264_scan8[0]+8*y+2];
+      |                                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+common/macroblock.c: In function ‘x264_macroblock_slice_init’:
+common/macroblock.c:893:31: warning: array subscript -1 is below array bounds of ‘int8_t[16]’ {aka ‘signed char[16]’} [-Warray-bounds]
+  893 |         h->mb.map_col_to_list0[-1] = -1;
+      |         ~~~~~~~~~~~~~~~~~~~~~~^~~~
+In file included from common/macroblock.c:25:
+common/common.h:543:17: note: while referencing ‘map_col_to_list0’
+  543 |         int8_t  map_col_to_list0[16];
+      |                 ^~~~~~~~~~~~~~~~
+common/macroblock.c:894:31: warning: array subscript -2 is below array bounds of ‘int8_t[16]’ {aka ‘signed char[16]’} [-Warray-bounds]
+  894 |         h->mb.map_col_to_list0[-2] = -2;
+      |         ~~~~~~~~~~~~~~~~~~~~~~^~~~
+In file included from common/macroblock.c:25:
+common/common.h:543:17: note: while referencing ‘map_col_to_list0’
+  543 |         int8_t  map_col_to_list0[16];
+      |                 ^~~~~~~~~~~~~~~~
+riscv64-linux-gnu-gcc -O4 -ffast-math  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -Wall -I.  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -fno-pie -no-pie -DHAVE_MALLOC_H -DARCH_RISCV64 -DSYS_LINUX -DHAVE_PTHREAD -s -fomit-frame-pointer   -c -o common/frame.o common/frame.c
+riscv64-linux-gnu-gcc -O4 -ffast-math  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -Wall -I.  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -fno-pie -no-pie -DHAVE_MALLOC_H -DARCH_RISCV64 -DSYS_LINUX -DHAVE_PTHREAD -s -fomit-frame-pointer   -c -o common/dct.o common/dct.c
+common/dct.c: In function ‘zigzag_scan_8x8_frame’:
+common/dct.c:444:37: warning: array subscript 8 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:446:17: note: in expansion of macro ‘ZIG’
+  446 |     ZIG( 0,0,0) ZIG( 1,0,1) ZIG( 2,1,0) ZIG( 3,2,0)\
+      |                 ^~~
+common/dct.c:495:5: note: in expansion of macro ‘ZIGZAG8_FRAME’
+  495 |     ZIGZAG8_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:493:63: note: while referencing ‘dct’
+  493 | static void zigzag_scan_8x8_frame( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 9 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:447:5: note: in expansion of macro ‘ZIG’
+  447 |     ZIG( 4,1,1) ZIG( 5,0,2) ZIG( 6,0,3) ZIG( 7,1,2)\
+      |     ^~~
+common/dct.c:495:5: note: in expansion of macro ‘ZIGZAG8_FRAME’
+  495 |     ZIGZAG8_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:493:63: note: while referencing ‘dct’
+  493 | static void zigzag_scan_8x8_frame( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 16 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:447:17: note: in expansion of macro ‘ZIG’
+  447 |     ZIG( 4,1,1) ZIG( 5,0,2) ZIG( 6,0,3) ZIG( 7,1,2)\
+      |                 ^~~
+common/dct.c:495:5: note: in expansion of macro ‘ZIGZAG8_FRAME’
+  495 |     ZIGZAG8_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:493:63: note: while referencing ‘dct’
+  493 | static void zigzag_scan_8x8_frame( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 24 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:447:29: note: in expansion of macro ‘ZIG’
+  447 |     ZIG( 4,1,1) ZIG( 5,0,2) ZIG( 6,0,3) ZIG( 7,1,2)\
+      |                             ^~~
+common/dct.c:495:5: note: in expansion of macro ‘ZIGZAG8_FRAME’
+  495 |     ZIGZAG8_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:493:63: note: while referencing ‘dct’
+  493 | static void zigzag_scan_8x8_frame( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 17 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:447:41: note: in expansion of macro ‘ZIG’
+  447 |     ZIG( 4,1,1) ZIG( 5,0,2) ZIG( 6,0,3) ZIG( 7,1,2)\
+      |                                         ^~~
+common/dct.c:495:5: note: in expansion of macro ‘ZIGZAG8_FRAME’
+  495 |     ZIGZAG8_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:493:63: note: while referencing ‘dct’
+  493 | static void zigzag_scan_8x8_frame( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 10 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:448:5: note: in expansion of macro ‘ZIG’
+  448 |     ZIG( 8,2,1) ZIG( 9,3,0) ZIG(10,4,0) ZIG(11,3,1)\
+      |     ^~~
+common/dct.c:495:5: note: in expansion of macro ‘ZIGZAG8_FRAME’
+  495 |     ZIGZAG8_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:493:63: note: while referencing ‘dct’
+  493 | static void zigzag_scan_8x8_frame( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 11 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:448:41: note: in expansion of macro ‘ZIG’
+  448 |     ZIG( 8,2,1) ZIG( 9,3,0) ZIG(10,4,0) ZIG(11,3,1)\
+      |                                         ^~~
+common/dct.c:495:5: note: in expansion of macro ‘ZIGZAG8_FRAME’
+  495 |     ZIGZAG8_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:493:63: note: while referencing ‘dct’
+  493 | static void zigzag_scan_8x8_frame( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 18 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:449:5: note: in expansion of macro ‘ZIG’
+  449 |     ZIG(12,2,2) ZIG(13,1,3) ZIG(14,0,4) ZIG(15,0,5)\
+      |     ^~~
+common/dct.c:495:5: note: in expansion of macro ‘ZIGZAG8_FRAME’
+  495 |     ZIGZAG8_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:493:63: note: while referencing ‘dct’
+  493 | static void zigzag_scan_8x8_frame( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 25 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:449:17: note: in expansion of macro ‘ZIG’
+  449 |     ZIG(12,2,2) ZIG(13,1,3) ZIG(14,0,4) ZIG(15,0,5)\
+      |                 ^~~
+common/dct.c:495:5: note: in expansion of macro ‘ZIGZAG8_FRAME’
+  495 |     ZIGZAG8_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:493:63: note: while referencing ‘dct’
+  493 | static void zigzag_scan_8x8_frame( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 32 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:449:29: note: in expansion of macro ‘ZIG’
+  449 |     ZIG(12,2,2) ZIG(13,1,3) ZIG(14,0,4) ZIG(15,0,5)\
+      |                             ^~~
+common/dct.c:495:5: note: in expansion of macro ‘ZIGZAG8_FRAME’
+  495 |     ZIGZAG8_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:493:63: note: while referencing ‘dct’
+  493 | static void zigzag_scan_8x8_frame( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 40 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:449:41: note: in expansion of macro ‘ZIG’
+  449 |     ZIG(12,2,2) ZIG(13,1,3) ZIG(14,0,4) ZIG(15,0,5)\
+      |                                         ^~~
+common/dct.c:495:5: note: in expansion of macro ‘ZIGZAG8_FRAME’
+  495 |     ZIGZAG8_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:493:63: note: while referencing ‘dct’
+  493 | static void zigzag_scan_8x8_frame( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 33 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:450:5: note: in expansion of macro ‘ZIG’
+  450 |     ZIG(16,1,4) ZIG(17,2,3) ZIG(18,3,2) ZIG(19,4,1)\
+      |     ^~~
+common/dct.c:495:5: note: in expansion of macro ‘ZIGZAG8_FRAME’
+  495 |     ZIGZAG8_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:493:63: note: while referencing ‘dct’
+  493 | static void zigzag_scan_8x8_frame( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 26 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:450:17: note: in expansion of macro ‘ZIG’
+  450 |     ZIG(16,1,4) ZIG(17,2,3) ZIG(18,3,2) ZIG(19,4,1)\
+      |                 ^~~
+common/dct.c:495:5: note: in expansion of macro ‘ZIGZAG8_FRAME’
+  495 |     ZIGZAG8_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:493:63: note: while referencing ‘dct’
+  493 | static void zigzag_scan_8x8_frame( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 19 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:450:29: note: in expansion of macro ‘ZIG’
+  450 |     ZIG(16,1,4) ZIG(17,2,3) ZIG(18,3,2) ZIG(19,4,1)\
+      |                             ^~~
+common/dct.c:495:5: note: in expansion of macro ‘ZIGZAG8_FRAME’
+  495 |     ZIGZAG8_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:493:63: note: while referencing ‘dct’
+  493 | static void zigzag_scan_8x8_frame( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 12 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:450:41: note: in expansion of macro ‘ZIG’
+  450 |     ZIG(16,1,4) ZIG(17,2,3) ZIG(18,3,2) ZIG(19,4,1)\
+      |                                         ^~~
+common/dct.c:495:5: note: in expansion of macro ‘ZIGZAG8_FRAME’
+  495 |     ZIGZAG8_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:493:63: note: while referencing ‘dct’
+  493 | static void zigzag_scan_8x8_frame( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 13 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:451:29: note: in expansion of macro ‘ZIG’
+  451 |     ZIG(20,5,0) ZIG(21,6,0) ZIG(22,5,1) ZIG(23,4,2)\
+      |                             ^~~
+common/dct.c:495:5: note: in expansion of macro ‘ZIGZAG8_FRAME’
+  495 |     ZIGZAG8_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:493:63: note: while referencing ‘dct’
+  493 | static void zigzag_scan_8x8_frame( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 20 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:451:41: note: in expansion of macro ‘ZIG’
+  451 |     ZIG(20,5,0) ZIG(21,6,0) ZIG(22,5,1) ZIG(23,4,2)\
+      |                                         ^~~
+common/dct.c:495:5: note: in expansion of macro ‘ZIGZAG8_FRAME’
+  495 |     ZIGZAG8_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:493:63: note: while referencing ‘dct’
+  493 | static void zigzag_scan_8x8_frame( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 27 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:452:5: note: in expansion of macro ‘ZIG’
+  452 |     ZIG(24,3,3) ZIG(25,2,4) ZIG(26,1,5) ZIG(27,0,6)\
+      |     ^~~
+common/dct.c:495:5: note: in expansion of macro ‘ZIGZAG8_FRAME’
+  495 |     ZIGZAG8_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:493:63: note: while referencing ‘dct’
+  493 | static void zigzag_scan_8x8_frame( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 34 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:452:17: note: in expansion of macro ‘ZIG’
+  452 |     ZIG(24,3,3) ZIG(25,2,4) ZIG(26,1,5) ZIG(27,0,6)\
+      |                 ^~~
+common/dct.c:495:5: note: in expansion of macro ‘ZIGZAG8_FRAME’
+  495 |     ZIGZAG8_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:493:63: note: while referencing ‘dct’
+  493 | static void zigzag_scan_8x8_frame( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 41 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:452:29: note: in expansion of macro ‘ZIG’
+  452 |     ZIG(24,3,3) ZIG(25,2,4) ZIG(26,1,5) ZIG(27,0,6)\
+      |                             ^~~
+common/dct.c:495:5: note: in expansion of macro ‘ZIGZAG8_FRAME’
+  495 |     ZIGZAG8_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:493:63: note: while referencing ‘dct’
+  493 | static void zigzag_scan_8x8_frame( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 48 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:452:41: note: in expansion of macro ‘ZIG’
+  452 |     ZIG(24,3,3) ZIG(25,2,4) ZIG(26,1,5) ZIG(27,0,6)\
+      |                                         ^~~
+common/dct.c:495:5: note: in expansion of macro ‘ZIGZAG8_FRAME’
+  495 |     ZIGZAG8_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:493:63: note: while referencing ‘dct’
+  493 | static void zigzag_scan_8x8_frame( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 56 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:453:5: note: in expansion of macro ‘ZIG’
+  453 |     ZIG(28,0,7) ZIG(29,1,6) ZIG(30,2,5) ZIG(31,3,4)\
+      |     ^~~
+common/dct.c:495:5: note: in expansion of macro ‘ZIGZAG8_FRAME’
+  495 |     ZIGZAG8_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:493:63: note: while referencing ‘dct’
+  493 | static void zigzag_scan_8x8_frame( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 49 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:453:17: note: in expansion of macro ‘ZIG’
+  453 |     ZIG(28,0,7) ZIG(29,1,6) ZIG(30,2,5) ZIG(31,3,4)\
+      |                 ^~~
+common/dct.c:495:5: note: in expansion of macro ‘ZIGZAG8_FRAME’
+  495 |     ZIGZAG8_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:493:63: note: while referencing ‘dct’
+  493 | static void zigzag_scan_8x8_frame( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 42 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:453:29: note: in expansion of macro ‘ZIG’
+  453 |     ZIG(28,0,7) ZIG(29,1,6) ZIG(30,2,5) ZIG(31,3,4)\
+      |                             ^~~
+common/dct.c:495:5: note: in expansion of macro ‘ZIGZAG8_FRAME’
+  495 |     ZIGZAG8_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:493:63: note: while referencing ‘dct’
+  493 | static void zigzag_scan_8x8_frame( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 35 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:453:41: note: in expansion of macro ‘ZIG’
+  453 |     ZIG(28,0,7) ZIG(29,1,6) ZIG(30,2,5) ZIG(31,3,4)\
+      |                                         ^~~
+common/dct.c:495:5: note: in expansion of macro ‘ZIGZAG8_FRAME’
+  495 |     ZIGZAG8_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:493:63: note: while referencing ‘dct’
+  493 | static void zigzag_scan_8x8_frame( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 28 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:454:5: note: in expansion of macro ‘ZIG’
+  454 |     ZIG(32,4,3) ZIG(33,5,2) ZIG(34,6,1) ZIG(35,7,0)\
+      |     ^~~
+common/dct.c:495:5: note: in expansion of macro ‘ZIGZAG8_FRAME’
+  495 |     ZIGZAG8_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:493:63: note: while referencing ‘dct’
+  493 | static void zigzag_scan_8x8_frame( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 21 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:454:17: note: in expansion of macro ‘ZIG’
+  454 |     ZIG(32,4,3) ZIG(33,5,2) ZIG(34,6,1) ZIG(35,7,0)\
+      |                 ^~~
+common/dct.c:495:5: note: in expansion of macro ‘ZIGZAG8_FRAME’
+  495 |     ZIGZAG8_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:493:63: note: while referencing ‘dct’
+  493 | static void zigzag_scan_8x8_frame( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 14 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:454:29: note: in expansion of macro ‘ZIG’
+  454 |     ZIG(32,4,3) ZIG(33,5,2) ZIG(34,6,1) ZIG(35,7,0)\
+      |                             ^~~
+common/dct.c:495:5: note: in expansion of macro ‘ZIGZAG8_FRAME’
+  495 |     ZIGZAG8_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:493:63: note: while referencing ‘dct’
+  493 | static void zigzag_scan_8x8_frame( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 15 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:455:5: note: in expansion of macro ‘ZIG’
+  455 |     ZIG(36,7,1) ZIG(37,6,2) ZIG(38,5,3) ZIG(39,4,4)\
+      |     ^~~
+common/dct.c:495:5: note: in expansion of macro ‘ZIGZAG8_FRAME’
+  495 |     ZIGZAG8_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:493:63: note: while referencing ‘dct’
+  493 | static void zigzag_scan_8x8_frame( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 22 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:455:17: note: in expansion of macro ‘ZIG’
+  455 |     ZIG(36,7,1) ZIG(37,6,2) ZIG(38,5,3) ZIG(39,4,4)\
+      |                 ^~~
+common/dct.c:495:5: note: in expansion of macro ‘ZIGZAG8_FRAME’
+  495 |     ZIGZAG8_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:493:63: note: while referencing ‘dct’
+  493 | static void zigzag_scan_8x8_frame( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 29 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:455:29: note: in expansion of macro ‘ZIG’
+  455 |     ZIG(36,7,1) ZIG(37,6,2) ZIG(38,5,3) ZIG(39,4,4)\
+      |                             ^~~
+common/dct.c:495:5: note: in expansion of macro ‘ZIGZAG8_FRAME’
+  495 |     ZIGZAG8_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:493:63: note: while referencing ‘dct’
+  493 | static void zigzag_scan_8x8_frame( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 36 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:455:41: note: in expansion of macro ‘ZIG’
+  455 |     ZIG(36,7,1) ZIG(37,6,2) ZIG(38,5,3) ZIG(39,4,4)\
+      |                                         ^~~
+common/dct.c:495:5: note: in expansion of macro ‘ZIGZAG8_FRAME’
+  495 |     ZIGZAG8_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:493:63: note: while referencing ‘dct’
+  493 | static void zigzag_scan_8x8_frame( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 43 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:456:5: note: in expansion of macro ‘ZIG’
+  456 |     ZIG(40,3,5) ZIG(41,2,6) ZIG(42,1,7) ZIG(43,2,7)\
+      |     ^~~
+common/dct.c:495:5: note: in expansion of macro ‘ZIGZAG8_FRAME’
+  495 |     ZIGZAG8_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:493:63: note: while referencing ‘dct’
+  493 | static void zigzag_scan_8x8_frame( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 50 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:456:17: note: in expansion of macro ‘ZIG’
+  456 |     ZIG(40,3,5) ZIG(41,2,6) ZIG(42,1,7) ZIG(43,2,7)\
+      |                 ^~~
+common/dct.c:495:5: note: in expansion of macro ‘ZIGZAG8_FRAME’
+  495 |     ZIGZAG8_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:493:63: note: while referencing ‘dct’
+  493 | static void zigzag_scan_8x8_frame( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 57 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:456:29: note: in expansion of macro ‘ZIG’
+  456 |     ZIG(40,3,5) ZIG(41,2,6) ZIG(42,1,7) ZIG(43,2,7)\
+      |                             ^~~
+common/dct.c:495:5: note: in expansion of macro ‘ZIGZAG8_FRAME’
+  495 |     ZIGZAG8_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:493:63: note: while referencing ‘dct’
+  493 | static void zigzag_scan_8x8_frame( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 58 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:456:41: note: in expansion of macro ‘ZIG’
+  456 |     ZIG(40,3,5) ZIG(41,2,6) ZIG(42,1,7) ZIG(43,2,7)\
+      |                                         ^~~
+common/dct.c:495:5: note: in expansion of macro ‘ZIGZAG8_FRAME’
+  495 |     ZIGZAG8_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:493:63: note: while referencing ‘dct’
+  493 | static void zigzag_scan_8x8_frame( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 51 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:457:5: note: in expansion of macro ‘ZIG’
+  457 |     ZIG(44,3,6) ZIG(45,4,5) ZIG(46,5,4) ZIG(47,6,3)\
+      |     ^~~
+common/dct.c:495:5: note: in expansion of macro ‘ZIGZAG8_FRAME’
+  495 |     ZIGZAG8_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:493:63: note: while referencing ‘dct’
+  493 | static void zigzag_scan_8x8_frame( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 44 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:457:17: note: in expansion of macro ‘ZIG’
+  457 |     ZIG(44,3,6) ZIG(45,4,5) ZIG(46,5,4) ZIG(47,6,3)\
+      |                 ^~~
+common/dct.c:495:5: note: in expansion of macro ‘ZIGZAG8_FRAME’
+  495 |     ZIGZAG8_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:493:63: note: while referencing ‘dct’
+  493 | static void zigzag_scan_8x8_frame( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 37 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:457:29: note: in expansion of macro ‘ZIG’
+  457 |     ZIG(44,3,6) ZIG(45,4,5) ZIG(46,5,4) ZIG(47,6,3)\
+      |                             ^~~
+common/dct.c:495:5: note: in expansion of macro ‘ZIGZAG8_FRAME’
+  495 |     ZIGZAG8_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:493:63: note: while referencing ‘dct’
+  493 | static void zigzag_scan_8x8_frame( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 30 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:457:41: note: in expansion of macro ‘ZIG’
+  457 |     ZIG(44,3,6) ZIG(45,4,5) ZIG(46,5,4) ZIG(47,6,3)\
+      |                                         ^~~
+common/dct.c:495:5: note: in expansion of macro ‘ZIGZAG8_FRAME’
+  495 |     ZIGZAG8_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:493:63: note: while referencing ‘dct’
+  493 | static void zigzag_scan_8x8_frame( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 23 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:458:5: note: in expansion of macro ‘ZIG’
+  458 |     ZIG(48,7,2) ZIG(49,7,3) ZIG(50,6,4) ZIG(51,5,5)\
+      |     ^~~
+common/dct.c:495:5: note: in expansion of macro ‘ZIGZAG8_FRAME’
+  495 |     ZIGZAG8_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:493:63: note: while referencing ‘dct’
+  493 | static void zigzag_scan_8x8_frame( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 31 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:458:17: note: in expansion of macro ‘ZIG’
+  458 |     ZIG(48,7,2) ZIG(49,7,3) ZIG(50,6,4) ZIG(51,5,5)\
+      |                 ^~~
+common/dct.c:495:5: note: in expansion of macro ‘ZIGZAG8_FRAME’
+  495 |     ZIGZAG8_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:493:63: note: while referencing ‘dct’
+  493 | static void zigzag_scan_8x8_frame( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 38 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:458:29: note: in expansion of macro ‘ZIG’
+  458 |     ZIG(48,7,2) ZIG(49,7,3) ZIG(50,6,4) ZIG(51,5,5)\
+      |                             ^~~
+common/dct.c:495:5: note: in expansion of macro ‘ZIGZAG8_FRAME’
+  495 |     ZIGZAG8_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:493:63: note: while referencing ‘dct’
+  493 | static void zigzag_scan_8x8_frame( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 45 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:458:41: note: in expansion of macro ‘ZIG’
+  458 |     ZIG(48,7,2) ZIG(49,7,3) ZIG(50,6,4) ZIG(51,5,5)\
+      |                                         ^~~
+common/dct.c:495:5: note: in expansion of macro ‘ZIGZAG8_FRAME’
+  495 |     ZIGZAG8_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:493:63: note: while referencing ‘dct’
+  493 | static void zigzag_scan_8x8_frame( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 52 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:459:5: note: in expansion of macro ‘ZIG’
+  459 |     ZIG(52,4,6) ZIG(53,3,7) ZIG(54,4,7) ZIG(55,5,6)\
+      |     ^~~
+common/dct.c:495:5: note: in expansion of macro ‘ZIGZAG8_FRAME’
+  495 |     ZIGZAG8_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:493:63: note: while referencing ‘dct’
+  493 | static void zigzag_scan_8x8_frame( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 59 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:459:17: note: in expansion of macro ‘ZIG’
+  459 |     ZIG(52,4,6) ZIG(53,3,7) ZIG(54,4,7) ZIG(55,5,6)\
+      |                 ^~~
+common/dct.c:495:5: note: in expansion of macro ‘ZIGZAG8_FRAME’
+  495 |     ZIGZAG8_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:493:63: note: while referencing ‘dct’
+  493 | static void zigzag_scan_8x8_frame( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 60 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:459:29: note: in expansion of macro ‘ZIG’
+  459 |     ZIG(52,4,6) ZIG(53,3,7) ZIG(54,4,7) ZIG(55,5,6)\
+      |                             ^~~
+common/dct.c:495:5: note: in expansion of macro ‘ZIGZAG8_FRAME’
+  495 |     ZIGZAG8_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:493:63: note: while referencing ‘dct’
+  493 | static void zigzag_scan_8x8_frame( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 53 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:459:41: note: in expansion of macro ‘ZIG’
+  459 |     ZIG(52,4,6) ZIG(53,3,7) ZIG(54,4,7) ZIG(55,5,6)\
+      |                                         ^~~
+common/dct.c:495:5: note: in expansion of macro ‘ZIGZAG8_FRAME’
+  495 |     ZIGZAG8_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:493:63: note: while referencing ‘dct’
+  493 | static void zigzag_scan_8x8_frame( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 46 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:460:5: note: in expansion of macro ‘ZIG’
+  460 |     ZIG(56,6,5) ZIG(57,7,4) ZIG(58,7,5) ZIG(59,6,6)\
+      |     ^~~
+common/dct.c:495:5: note: in expansion of macro ‘ZIGZAG8_FRAME’
+  495 |     ZIGZAG8_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:493:63: note: while referencing ‘dct’
+  493 | static void zigzag_scan_8x8_frame( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 39 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:460:17: note: in expansion of macro ‘ZIG’
+  460 |     ZIG(56,6,5) ZIG(57,7,4) ZIG(58,7,5) ZIG(59,6,6)\
+      |                 ^~~
+common/dct.c:495:5: note: in expansion of macro ‘ZIGZAG8_FRAME’
+  495 |     ZIGZAG8_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:493:63: note: while referencing ‘dct’
+  493 | static void zigzag_scan_8x8_frame( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 47 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:460:29: note: in expansion of macro ‘ZIG’
+  460 |     ZIG(56,6,5) ZIG(57,7,4) ZIG(58,7,5) ZIG(59,6,6)\
+      |                             ^~~
+common/dct.c:495:5: note: in expansion of macro ‘ZIGZAG8_FRAME’
+  495 |     ZIGZAG8_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:493:63: note: while referencing ‘dct’
+  493 | static void zigzag_scan_8x8_frame( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 54 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:460:41: note: in expansion of macro ‘ZIG’
+  460 |     ZIG(56,6,5) ZIG(57,7,4) ZIG(58,7,5) ZIG(59,6,6)\
+      |                                         ^~~
+common/dct.c:495:5: note: in expansion of macro ‘ZIGZAG8_FRAME’
+  495 |     ZIGZAG8_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:493:63: note: while referencing ‘dct’
+  493 | static void zigzag_scan_8x8_frame( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 61 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:461:5: note: in expansion of macro ‘ZIG’
+  461 |     ZIG(60,5,7) ZIG(61,6,7) ZIG(62,7,6) ZIG(63,7,7)\
+      |     ^~~
+common/dct.c:495:5: note: in expansion of macro ‘ZIGZAG8_FRAME’
+  495 |     ZIGZAG8_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:493:63: note: while referencing ‘dct’
+  493 | static void zigzag_scan_8x8_frame( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 62 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:461:17: note: in expansion of macro ‘ZIG’
+  461 |     ZIG(60,5,7) ZIG(61,6,7) ZIG(62,7,6) ZIG(63,7,7)\
+      |                 ^~~
+common/dct.c:495:5: note: in expansion of macro ‘ZIGZAG8_FRAME’
+  495 |     ZIGZAG8_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:493:63: note: while referencing ‘dct’
+  493 | static void zigzag_scan_8x8_frame( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 55 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:461:29: note: in expansion of macro ‘ZIG’
+  461 |     ZIG(60,5,7) ZIG(61,6,7) ZIG(62,7,6) ZIG(63,7,7)\
+      |                             ^~~
+common/dct.c:495:5: note: in expansion of macro ‘ZIGZAG8_FRAME’
+  495 |     ZIGZAG8_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:493:63: note: while referencing ‘dct’
+  493 | static void zigzag_scan_8x8_frame( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 63 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:461:41: note: in expansion of macro ‘ZIG’
+  461 |     ZIG(60,5,7) ZIG(61,6,7) ZIG(62,7,6) ZIG(63,7,7)\
+      |                                         ^~~
+common/dct.c:495:5: note: in expansion of macro ‘ZIGZAG8_FRAME’
+  495 |     ZIGZAG8_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:493:63: note: while referencing ‘dct’
+  493 | static void zigzag_scan_8x8_frame( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c: In function ‘zigzag_scan_8x8_field’:
+common/dct.c:444:37: warning: array subscript 8 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:464:41: note: in expansion of macro ‘ZIG’
+  464 |     ZIG( 0,0,0) ZIG( 1,1,0) ZIG( 2,2,0) ZIG( 3,0,1)\
+      |                                         ^~~
+common/dct.c:500:5: note: in expansion of macro ‘ZIGZAG8_FIELD’
+  500 |     ZIGZAG8_FIELD
+      |     ^~~~~~~~~~~~~
+common/dct.c:498:63: note: while referencing ‘dct’
+  498 | static void zigzag_scan_8x8_field( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 9 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:465:5: note: in expansion of macro ‘ZIG’
+  465 |     ZIG( 4,1,1) ZIG( 5,3,0) ZIG( 6,4,0) ZIG( 7,2,1)\
+      |     ^~~
+common/dct.c:500:5: note: in expansion of macro ‘ZIGZAG8_FIELD’
+  500 |     ZIGZAG8_FIELD
+      |     ^~~~~~~~~~~~~
+common/dct.c:498:63: note: while referencing ‘dct’
+  498 | static void zigzag_scan_8x8_field( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 10 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:465:41: note: in expansion of macro ‘ZIG’
+  465 |     ZIG( 4,1,1) ZIG( 5,3,0) ZIG( 6,4,0) ZIG( 7,2,1)\
+      |                                         ^~~
+common/dct.c:500:5: note: in expansion of macro ‘ZIGZAG8_FIELD’
+  500 |     ZIGZAG8_FIELD
+      |     ^~~~~~~~~~~~~
+common/dct.c:498:63: note: while referencing ‘dct’
+  498 | static void zigzag_scan_8x8_field( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 16 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:466:5: note: in expansion of macro ‘ZIG’
+  466 |     ZIG( 8,0,2) ZIG( 9,3,1) ZIG(10,5,0) ZIG(11,6,0)\
+      |     ^~~
+common/dct.c:500:5: note: in expansion of macro ‘ZIGZAG8_FIELD’
+  500 |     ZIGZAG8_FIELD
+      |     ^~~~~~~~~~~~~
+common/dct.c:498:63: note: while referencing ‘dct’
+  498 | static void zigzag_scan_8x8_field( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 11 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:466:17: note: in expansion of macro ‘ZIG’
+  466 |     ZIG( 8,0,2) ZIG( 9,3,1) ZIG(10,5,0) ZIG(11,6,0)\
+      |                 ^~~
+common/dct.c:500:5: note: in expansion of macro ‘ZIGZAG8_FIELD’
+  500 |     ZIGZAG8_FIELD
+      |     ^~~~~~~~~~~~~
+common/dct.c:498:63: note: while referencing ‘dct’
+  498 | static void zigzag_scan_8x8_field( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 12 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:467:17: note: in expansion of macro ‘ZIG’
+  467 |     ZIG(12,7,0) ZIG(13,4,1) ZIG(14,1,2) ZIG(15,0,3)\
+      |                 ^~~
+common/dct.c:500:5: note: in expansion of macro ‘ZIGZAG8_FIELD’
+  500 |     ZIGZAG8_FIELD
+      |     ^~~~~~~~~~~~~
+common/dct.c:498:63: note: while referencing ‘dct’
+  498 | static void zigzag_scan_8x8_field( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 17 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:467:29: note: in expansion of macro ‘ZIG’
+  467 |     ZIG(12,7,0) ZIG(13,4,1) ZIG(14,1,2) ZIG(15,0,3)\
+      |                             ^~~
+common/dct.c:500:5: note: in expansion of macro ‘ZIGZAG8_FIELD’
+  500 |     ZIGZAG8_FIELD
+      |     ^~~~~~~~~~~~~
+common/dct.c:498:63: note: while referencing ‘dct’
+  498 | static void zigzag_scan_8x8_field( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 24 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:467:41: note: in expansion of macro ‘ZIG’
+  467 |     ZIG(12,7,0) ZIG(13,4,1) ZIG(14,1,2) ZIG(15,0,3)\
+      |                                         ^~~
+common/dct.c:500:5: note: in expansion of macro ‘ZIGZAG8_FIELD’
+  500 |     ZIGZAG8_FIELD
+      |     ^~~~~~~~~~~~~
+common/dct.c:498:63: note: while referencing ‘dct’
+  498 | static void zigzag_scan_8x8_field( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 18 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:468:5: note: in expansion of macro ‘ZIG’
+  468 |     ZIG(16,2,2) ZIG(17,5,1) ZIG(18,6,1) ZIG(19,7,1)\
+      |     ^~~
+common/dct.c:500:5: note: in expansion of macro ‘ZIGZAG8_FIELD’
+  500 |     ZIGZAG8_FIELD
+      |     ^~~~~~~~~~~~~
+common/dct.c:498:63: note: while referencing ‘dct’
+  498 | static void zigzag_scan_8x8_field( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 13 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:468:17: note: in expansion of macro ‘ZIG’
+  468 |     ZIG(16,2,2) ZIG(17,5,1) ZIG(18,6,1) ZIG(19,7,1)\
+      |                 ^~~
+common/dct.c:500:5: note: in expansion of macro ‘ZIGZAG8_FIELD’
+  500 |     ZIGZAG8_FIELD
+      |     ^~~~~~~~~~~~~
+common/dct.c:498:63: note: while referencing ‘dct’
+  498 | static void zigzag_scan_8x8_field( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 14 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:468:29: note: in expansion of macro ‘ZIG’
+  468 |     ZIG(16,2,2) ZIG(17,5,1) ZIG(18,6,1) ZIG(19,7,1)\
+      |                             ^~~
+common/dct.c:500:5: note: in expansion of macro ‘ZIGZAG8_FIELD’
+  500 |     ZIGZAG8_FIELD
+      |     ^~~~~~~~~~~~~
+common/dct.c:498:63: note: while referencing ‘dct’
+  498 | static void zigzag_scan_8x8_field( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 15 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:468:41: note: in expansion of macro ‘ZIG’
+  468 |     ZIG(16,2,2) ZIG(17,5,1) ZIG(18,6,1) ZIG(19,7,1)\
+      |                                         ^~~
+common/dct.c:500:5: note: in expansion of macro ‘ZIGZAG8_FIELD’
+  500 |     ZIGZAG8_FIELD
+      |     ^~~~~~~~~~~~~
+common/dct.c:498:63: note: while referencing ‘dct’
+  498 | static void zigzag_scan_8x8_field( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 19 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:469:5: note: in expansion of macro ‘ZIG’
+  469 |     ZIG(20,3,2) ZIG(21,1,3) ZIG(22,0,4) ZIG(23,2,3)\
+      |     ^~~
+common/dct.c:500:5: note: in expansion of macro ‘ZIGZAG8_FIELD’
+  500 |     ZIGZAG8_FIELD
+      |     ^~~~~~~~~~~~~
+common/dct.c:498:63: note: while referencing ‘dct’
+  498 | static void zigzag_scan_8x8_field( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 25 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:469:17: note: in expansion of macro ‘ZIG’
+  469 |     ZIG(20,3,2) ZIG(21,1,3) ZIG(22,0,4) ZIG(23,2,3)\
+      |                 ^~~
+common/dct.c:500:5: note: in expansion of macro ‘ZIGZAG8_FIELD’
+  500 |     ZIGZAG8_FIELD
+      |     ^~~~~~~~~~~~~
+common/dct.c:498:63: note: while referencing ‘dct’
+  498 | static void zigzag_scan_8x8_field( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 32 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:469:29: note: in expansion of macro ‘ZIG’
+  469 |     ZIG(20,3,2) ZIG(21,1,3) ZIG(22,0,4) ZIG(23,2,3)\
+      |                             ^~~
+common/dct.c:500:5: note: in expansion of macro ‘ZIGZAG8_FIELD’
+  500 |     ZIGZAG8_FIELD
+      |     ^~~~~~~~~~~~~
+common/dct.c:498:63: note: while referencing ‘dct’
+  498 | static void zigzag_scan_8x8_field( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 26 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:469:41: note: in expansion of macro ‘ZIG’
+  469 |     ZIG(20,3,2) ZIG(21,1,3) ZIG(22,0,4) ZIG(23,2,3)\
+      |                                         ^~~
+common/dct.c:500:5: note: in expansion of macro ‘ZIGZAG8_FIELD’
+  500 |     ZIGZAG8_FIELD
+      |     ^~~~~~~~~~~~~
+common/dct.c:498:63: note: while referencing ‘dct’
+  498 | static void zigzag_scan_8x8_field( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 20 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:470:5: note: in expansion of macro ‘ZIG’
+  470 |     ZIG(24,4,2) ZIG(25,5,2) ZIG(26,6,2) ZIG(27,7,2)\
+      |     ^~~
+common/dct.c:500:5: note: in expansion of macro ‘ZIGZAG8_FIELD’
+  500 |     ZIGZAG8_FIELD
+      |     ^~~~~~~~~~~~~
+common/dct.c:498:63: note: while referencing ‘dct’
+  498 | static void zigzag_scan_8x8_field( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 21 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:470:17: note: in expansion of macro ‘ZIG’
+  470 |     ZIG(24,4,2) ZIG(25,5,2) ZIG(26,6,2) ZIG(27,7,2)\
+      |                 ^~~
+common/dct.c:500:5: note: in expansion of macro ‘ZIGZAG8_FIELD’
+  500 |     ZIGZAG8_FIELD
+      |     ^~~~~~~~~~~~~
+common/dct.c:498:63: note: while referencing ‘dct’
+  498 | static void zigzag_scan_8x8_field( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 22 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:470:29: note: in expansion of macro ‘ZIG’
+  470 |     ZIG(24,4,2) ZIG(25,5,2) ZIG(26,6,2) ZIG(27,7,2)\
+      |                             ^~~
+common/dct.c:500:5: note: in expansion of macro ‘ZIGZAG8_FIELD’
+  500 |     ZIGZAG8_FIELD
+      |     ^~~~~~~~~~~~~
+common/dct.c:498:63: note: while referencing ‘dct’
+  498 | static void zigzag_scan_8x8_field( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 23 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:470:41: note: in expansion of macro ‘ZIG’
+  470 |     ZIG(24,4,2) ZIG(25,5,2) ZIG(26,6,2) ZIG(27,7,2)\
+      |                                         ^~~
+common/dct.c:500:5: note: in expansion of macro ‘ZIGZAG8_FIELD’
+  500 |     ZIGZAG8_FIELD
+      |     ^~~~~~~~~~~~~
+common/dct.c:498:63: note: while referencing ‘dct’
+  498 | static void zigzag_scan_8x8_field( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 27 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:471:5: note: in expansion of macro ‘ZIG’
+  471 |     ZIG(28,3,3) ZIG(29,1,4) ZIG(30,0,5) ZIG(31,2,4)\
+      |     ^~~
+common/dct.c:500:5: note: in expansion of macro ‘ZIGZAG8_FIELD’
+  500 |     ZIGZAG8_FIELD
+      |     ^~~~~~~~~~~~~
+common/dct.c:498:63: note: while referencing ‘dct’
+  498 | static void zigzag_scan_8x8_field( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 33 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:471:17: note: in expansion of macro ‘ZIG’
+  471 |     ZIG(28,3,3) ZIG(29,1,4) ZIG(30,0,5) ZIG(31,2,4)\
+      |                 ^~~
+common/dct.c:500:5: note: in expansion of macro ‘ZIGZAG8_FIELD’
+  500 |     ZIGZAG8_FIELD
+      |     ^~~~~~~~~~~~~
+common/dct.c:498:63: note: while referencing ‘dct’
+  498 | static void zigzag_scan_8x8_field( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 40 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:471:29: note: in expansion of macro ‘ZIG’
+  471 |     ZIG(28,3,3) ZIG(29,1,4) ZIG(30,0,5) ZIG(31,2,4)\
+      |                             ^~~
+common/dct.c:500:5: note: in expansion of macro ‘ZIGZAG8_FIELD’
+  500 |     ZIGZAG8_FIELD
+      |     ^~~~~~~~~~~~~
+common/dct.c:498:63: note: while referencing ‘dct’
+  498 | static void zigzag_scan_8x8_field( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 34 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:471:41: note: in expansion of macro ‘ZIG’
+  471 |     ZIG(28,3,3) ZIG(29,1,4) ZIG(30,0,5) ZIG(31,2,4)\
+      |                                         ^~~
+common/dct.c:500:5: note: in expansion of macro ‘ZIGZAG8_FIELD’
+  500 |     ZIGZAG8_FIELD
+      |     ^~~~~~~~~~~~~
+common/dct.c:498:63: note: while referencing ‘dct’
+  498 | static void zigzag_scan_8x8_field( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 28 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:472:5: note: in expansion of macro ‘ZIG’
+  472 |     ZIG(32,4,3) ZIG(33,5,3) ZIG(34,6,3) ZIG(35,7,3)\
+      |     ^~~
+common/dct.c:500:5: note: in expansion of macro ‘ZIGZAG8_FIELD’
+  500 |     ZIGZAG8_FIELD
+      |     ^~~~~~~~~~~~~
+common/dct.c:498:63: note: while referencing ‘dct’
+  498 | static void zigzag_scan_8x8_field( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 29 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:472:17: note: in expansion of macro ‘ZIG’
+  472 |     ZIG(32,4,3) ZIG(33,5,3) ZIG(34,6,3) ZIG(35,7,3)\
+      |                 ^~~
+common/dct.c:500:5: note: in expansion of macro ‘ZIGZAG8_FIELD’
+  500 |     ZIGZAG8_FIELD
+      |     ^~~~~~~~~~~~~
+common/dct.c:498:63: note: while referencing ‘dct’
+  498 | static void zigzag_scan_8x8_field( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 30 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:472:29: note: in expansion of macro ‘ZIG’
+  472 |     ZIG(32,4,3) ZIG(33,5,3) ZIG(34,6,3) ZIG(35,7,3)\
+      |                             ^~~
+common/dct.c:500:5: note: in expansion of macro ‘ZIGZAG8_FIELD’
+  500 |     ZIGZAG8_FIELD
+      |     ^~~~~~~~~~~~~
+common/dct.c:498:63: note: while referencing ‘dct’
+  498 | static void zigzag_scan_8x8_field( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 31 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:472:41: note: in expansion of macro ‘ZIG’
+  472 |     ZIG(32,4,3) ZIG(33,5,3) ZIG(34,6,3) ZIG(35,7,3)\
+      |                                         ^~~
+common/dct.c:500:5: note: in expansion of macro ‘ZIGZAG8_FIELD’
+  500 |     ZIGZAG8_FIELD
+      |     ^~~~~~~~~~~~~
+common/dct.c:498:63: note: while referencing ‘dct’
+  498 | static void zigzag_scan_8x8_field( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 35 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:473:5: note: in expansion of macro ‘ZIG’
+  473 |     ZIG(36,3,4) ZIG(37,1,5) ZIG(38,0,6) ZIG(39,2,5)\
+      |     ^~~
+common/dct.c:500:5: note: in expansion of macro ‘ZIGZAG8_FIELD’
+  500 |     ZIGZAG8_FIELD
+      |     ^~~~~~~~~~~~~
+common/dct.c:498:63: note: while referencing ‘dct’
+  498 | static void zigzag_scan_8x8_field( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 41 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:473:17: note: in expansion of macro ‘ZIG’
+  473 |     ZIG(36,3,4) ZIG(37,1,5) ZIG(38,0,6) ZIG(39,2,5)\
+      |                 ^~~
+common/dct.c:500:5: note: in expansion of macro ‘ZIGZAG8_FIELD’
+  500 |     ZIGZAG8_FIELD
+      |     ^~~~~~~~~~~~~
+common/dct.c:498:63: note: while referencing ‘dct’
+  498 | static void zigzag_scan_8x8_field( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 48 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:473:29: note: in expansion of macro ‘ZIG’
+  473 |     ZIG(36,3,4) ZIG(37,1,5) ZIG(38,0,6) ZIG(39,2,5)\
+      |                             ^~~
+common/dct.c:500:5: note: in expansion of macro ‘ZIGZAG8_FIELD’
+  500 |     ZIGZAG8_FIELD
+      |     ^~~~~~~~~~~~~
+common/dct.c:498:63: note: while referencing ‘dct’
+  498 | static void zigzag_scan_8x8_field( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 42 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:473:41: note: in expansion of macro ‘ZIG’
+  473 |     ZIG(36,3,4) ZIG(37,1,5) ZIG(38,0,6) ZIG(39,2,5)\
+      |                                         ^~~
+common/dct.c:500:5: note: in expansion of macro ‘ZIGZAG8_FIELD’
+  500 |     ZIGZAG8_FIELD
+      |     ^~~~~~~~~~~~~
+common/dct.c:498:63: note: while referencing ‘dct’
+  498 | static void zigzag_scan_8x8_field( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 36 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:474:5: note: in expansion of macro ‘ZIG’
+  474 |     ZIG(40,4,4) ZIG(41,5,4) ZIG(42,6,4) ZIG(43,7,4)\
+      |     ^~~
+common/dct.c:500:5: note: in expansion of macro ‘ZIGZAG8_FIELD’
+  500 |     ZIGZAG8_FIELD
+      |     ^~~~~~~~~~~~~
+common/dct.c:498:63: note: while referencing ‘dct’
+  498 | static void zigzag_scan_8x8_field( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 37 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:474:17: note: in expansion of macro ‘ZIG’
+  474 |     ZIG(40,4,4) ZIG(41,5,4) ZIG(42,6,4) ZIG(43,7,4)\
+      |                 ^~~
+common/dct.c:500:5: note: in expansion of macro ‘ZIGZAG8_FIELD’
+  500 |     ZIGZAG8_FIELD
+      |     ^~~~~~~~~~~~~
+common/dct.c:498:63: note: while referencing ‘dct’
+  498 | static void zigzag_scan_8x8_field( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 38 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:474:29: note: in expansion of macro ‘ZIG’
+  474 |     ZIG(40,4,4) ZIG(41,5,4) ZIG(42,6,4) ZIG(43,7,4)\
+      |                             ^~~
+common/dct.c:500:5: note: in expansion of macro ‘ZIGZAG8_FIELD’
+  500 |     ZIGZAG8_FIELD
+      |     ^~~~~~~~~~~~~
+common/dct.c:498:63: note: while referencing ‘dct’
+  498 | static void zigzag_scan_8x8_field( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 39 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:474:41: note: in expansion of macro ‘ZIG’
+  474 |     ZIG(40,4,4) ZIG(41,5,4) ZIG(42,6,4) ZIG(43,7,4)\
+      |                                         ^~~
+common/dct.c:500:5: note: in expansion of macro ‘ZIGZAG8_FIELD’
+  500 |     ZIGZAG8_FIELD
+      |     ^~~~~~~~~~~~~
+common/dct.c:498:63: note: while referencing ‘dct’
+  498 | static void zigzag_scan_8x8_field( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 43 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:475:5: note: in expansion of macro ‘ZIG’
+  475 |     ZIG(44,3,5) ZIG(45,1,6) ZIG(46,2,6) ZIG(47,4,5)\
+      |     ^~~
+common/dct.c:500:5: note: in expansion of macro ‘ZIGZAG8_FIELD’
+  500 |     ZIGZAG8_FIELD
+      |     ^~~~~~~~~~~~~
+common/dct.c:498:63: note: while referencing ‘dct’
+  498 | static void zigzag_scan_8x8_field( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 49 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:475:17: note: in expansion of macro ‘ZIG’
+  475 |     ZIG(44,3,5) ZIG(45,1,6) ZIG(46,2,6) ZIG(47,4,5)\
+      |                 ^~~
+common/dct.c:500:5: note: in expansion of macro ‘ZIGZAG8_FIELD’
+  500 |     ZIGZAG8_FIELD
+      |     ^~~~~~~~~~~~~
+common/dct.c:498:63: note: while referencing ‘dct’
+  498 | static void zigzag_scan_8x8_field( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 50 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:475:29: note: in expansion of macro ‘ZIG’
+  475 |     ZIG(44,3,5) ZIG(45,1,6) ZIG(46,2,6) ZIG(47,4,5)\
+      |                             ^~~
+common/dct.c:500:5: note: in expansion of macro ‘ZIGZAG8_FIELD’
+  500 |     ZIGZAG8_FIELD
+      |     ^~~~~~~~~~~~~
+common/dct.c:498:63: note: while referencing ‘dct’
+  498 | static void zigzag_scan_8x8_field( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 44 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:475:41: note: in expansion of macro ‘ZIG’
+  475 |     ZIG(44,3,5) ZIG(45,1,6) ZIG(46,2,6) ZIG(47,4,5)\
+      |                                         ^~~
+common/dct.c:500:5: note: in expansion of macro ‘ZIGZAG8_FIELD’
+  500 |     ZIGZAG8_FIELD
+      |     ^~~~~~~~~~~~~
+common/dct.c:498:63: note: while referencing ‘dct’
+  498 | static void zigzag_scan_8x8_field( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 45 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:476:5: note: in expansion of macro ‘ZIG’
+  476 |     ZIG(48,5,5) ZIG(49,6,5) ZIG(50,7,5) ZIG(51,3,6)\
+      |     ^~~
+common/dct.c:500:5: note: in expansion of macro ‘ZIGZAG8_FIELD’
+  500 |     ZIGZAG8_FIELD
+      |     ^~~~~~~~~~~~~
+common/dct.c:498:63: note: while referencing ‘dct’
+  498 | static void zigzag_scan_8x8_field( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 46 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:476:17: note: in expansion of macro ‘ZIG’
+  476 |     ZIG(48,5,5) ZIG(49,6,5) ZIG(50,7,5) ZIG(51,3,6)\
+      |                 ^~~
+common/dct.c:500:5: note: in expansion of macro ‘ZIGZAG8_FIELD’
+  500 |     ZIGZAG8_FIELD
+      |     ^~~~~~~~~~~~~
+common/dct.c:498:63: note: while referencing ‘dct’
+  498 | static void zigzag_scan_8x8_field( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 47 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:476:29: note: in expansion of macro ‘ZIG’
+  476 |     ZIG(48,5,5) ZIG(49,6,5) ZIG(50,7,5) ZIG(51,3,6)\
+      |                             ^~~
+common/dct.c:500:5: note: in expansion of macro ‘ZIGZAG8_FIELD’
+  500 |     ZIGZAG8_FIELD
+      |     ^~~~~~~~~~~~~
+common/dct.c:498:63: note: while referencing ‘dct’
+  498 | static void zigzag_scan_8x8_field( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 51 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:476:41: note: in expansion of macro ‘ZIG’
+  476 |     ZIG(48,5,5) ZIG(49,6,5) ZIG(50,7,5) ZIG(51,3,6)\
+      |                                         ^~~
+common/dct.c:500:5: note: in expansion of macro ‘ZIGZAG8_FIELD’
+  500 |     ZIGZAG8_FIELD
+      |     ^~~~~~~~~~~~~
+common/dct.c:498:63: note: while referencing ‘dct’
+  498 | static void zigzag_scan_8x8_field( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 56 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:477:5: note: in expansion of macro ‘ZIG’
+  477 |     ZIG(52,0,7) ZIG(53,1,7) ZIG(54,4,6) ZIG(55,5,6)\
+      |     ^~~
+common/dct.c:500:5: note: in expansion of macro ‘ZIGZAG8_FIELD’
+  500 |     ZIGZAG8_FIELD
+      |     ^~~~~~~~~~~~~
+common/dct.c:498:63: note: while referencing ‘dct’
+  498 | static void zigzag_scan_8x8_field( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 57 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:477:17: note: in expansion of macro ‘ZIG’
+  477 |     ZIG(52,0,7) ZIG(53,1,7) ZIG(54,4,6) ZIG(55,5,6)\
+      |                 ^~~
+common/dct.c:500:5: note: in expansion of macro ‘ZIGZAG8_FIELD’
+  500 |     ZIGZAG8_FIELD
+      |     ^~~~~~~~~~~~~
+common/dct.c:498:63: note: while referencing ‘dct’
+  498 | static void zigzag_scan_8x8_field( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 52 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:477:29: note: in expansion of macro ‘ZIG’
+  477 |     ZIG(52,0,7) ZIG(53,1,7) ZIG(54,4,6) ZIG(55,5,6)\
+      |                             ^~~
+common/dct.c:500:5: note: in expansion of macro ‘ZIGZAG8_FIELD’
+  500 |     ZIGZAG8_FIELD
+      |     ^~~~~~~~~~~~~
+common/dct.c:498:63: note: while referencing ‘dct’
+  498 | static void zigzag_scan_8x8_field( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 53 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:477:41: note: in expansion of macro ‘ZIG’
+  477 |     ZIG(52,0,7) ZIG(53,1,7) ZIG(54,4,6) ZIG(55,5,6)\
+      |                                         ^~~
+common/dct.c:500:5: note: in expansion of macro ‘ZIGZAG8_FIELD’
+  500 |     ZIGZAG8_FIELD
+      |     ^~~~~~~~~~~~~
+common/dct.c:498:63: note: while referencing ‘dct’
+  498 | static void zigzag_scan_8x8_field( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 54 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:478:5: note: in expansion of macro ‘ZIG’
+  478 |     ZIG(56,6,6) ZIG(57,7,6) ZIG(58,2,7) ZIG(59,3,7)\
+      |     ^~~
+common/dct.c:500:5: note: in expansion of macro ‘ZIGZAG8_FIELD’
+  500 |     ZIGZAG8_FIELD
+      |     ^~~~~~~~~~~~~
+common/dct.c:498:63: note: while referencing ‘dct’
+  498 | static void zigzag_scan_8x8_field( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 55 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:478:17: note: in expansion of macro ‘ZIG’
+  478 |     ZIG(56,6,6) ZIG(57,7,6) ZIG(58,2,7) ZIG(59,3,7)\
+      |                 ^~~
+common/dct.c:500:5: note: in expansion of macro ‘ZIGZAG8_FIELD’
+  500 |     ZIGZAG8_FIELD
+      |     ^~~~~~~~~~~~~
+common/dct.c:498:63: note: while referencing ‘dct’
+  498 | static void zigzag_scan_8x8_field( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 58 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:478:29: note: in expansion of macro ‘ZIG’
+  478 |     ZIG(56,6,6) ZIG(57,7,6) ZIG(58,2,7) ZIG(59,3,7)\
+      |                             ^~~
+common/dct.c:500:5: note: in expansion of macro ‘ZIGZAG8_FIELD’
+  500 |     ZIGZAG8_FIELD
+      |     ^~~~~~~~~~~~~
+common/dct.c:498:63: note: while referencing ‘dct’
+  498 | static void zigzag_scan_8x8_field( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 59 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:478:41: note: in expansion of macro ‘ZIG’
+  478 |     ZIG(56,6,6) ZIG(57,7,6) ZIG(58,2,7) ZIG(59,3,7)\
+      |                                         ^~~
+common/dct.c:500:5: note: in expansion of macro ‘ZIGZAG8_FIELD’
+  500 |     ZIGZAG8_FIELD
+      |     ^~~~~~~~~~~~~
+common/dct.c:498:63: note: while referencing ‘dct’
+  498 | static void zigzag_scan_8x8_field( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 60 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:479:5: note: in expansion of macro ‘ZIG’
+  479 |     ZIG(60,4,7) ZIG(61,5,7) ZIG(62,6,7) ZIG(63,7,7)
+      |     ^~~
+common/dct.c:500:5: note: in expansion of macro ‘ZIGZAG8_FIELD’
+  500 |     ZIGZAG8_FIELD
+      |     ^~~~~~~~~~~~~
+common/dct.c:498:63: note: while referencing ‘dct’
+  498 | static void zigzag_scan_8x8_field( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 61 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:479:17: note: in expansion of macro ‘ZIG’
+  479 |     ZIG(60,4,7) ZIG(61,5,7) ZIG(62,6,7) ZIG(63,7,7)
+      |                 ^~~
+common/dct.c:500:5: note: in expansion of macro ‘ZIGZAG8_FIELD’
+  500 |     ZIGZAG8_FIELD
+      |     ^~~~~~~~~~~~~
+common/dct.c:498:63: note: while referencing ‘dct’
+  498 | static void zigzag_scan_8x8_field( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 62 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:479:29: note: in expansion of macro ‘ZIG’
+  479 |     ZIG(60,4,7) ZIG(61,5,7) ZIG(62,6,7) ZIG(63,7,7)
+      |                             ^~~
+common/dct.c:500:5: note: in expansion of macro ‘ZIGZAG8_FIELD’
+  500 |     ZIGZAG8_FIELD
+      |     ^~~~~~~~~~~~~
+common/dct.c:498:63: note: while referencing ‘dct’
+  498 | static void zigzag_scan_8x8_field( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:444:37: warning: array subscript 63 is above array bounds of ‘int16_t[8]’ {aka ‘short int[8]’} [-Warray-bounds]
+  444 | #define ZIG(i,y,x) level[i] = dct[0][x*8+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:479:41: note: in expansion of macro ‘ZIG’
+  479 |     ZIG(60,4,7) ZIG(61,5,7) ZIG(62,6,7) ZIG(63,7,7)
+      |                                         ^~~
+common/dct.c:500:5: note: in expansion of macro ‘ZIGZAG8_FIELD’
+  500 |     ZIGZAG8_FIELD
+      |     ^~~~~~~~~~~~~
+common/dct.c:498:63: note: while referencing ‘dct’
+  498 | static void zigzag_scan_8x8_field( int16_t level[64], int16_t dct[8][8] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c: In function ‘zigzag_scan_4x4_frame’:
+common/dct.c:504:37: warning: array subscript 4 is above array bounds of ‘int16_t[4]’ {aka ‘short int[4]’} [-Warray-bounds]
+  504 | #define ZIG(i,y,x) level[i] = dct[0][x*4+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:482:17: note: in expansion of macro ‘ZIG’
+  482 |     ZIG( 0,0,0) ZIG( 1,0,1) ZIG( 2,1,0) ZIG( 3,2,0)\
+      |                 ^~~
+common/dct.c:508:5: note: in expansion of macro ‘ZIGZAG4_FRAME’
+  508 |     ZIGZAG4_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:506:63: note: while referencing ‘dct’
+  506 | static void zigzag_scan_4x4_frame( int16_t level[16], int16_t dct[4][4] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:504:37: warning: array subscript 5 is above array bounds of ‘int16_t[4]’ {aka ‘short int[4]’} [-Warray-bounds]
+  504 | #define ZIG(i,y,x) level[i] = dct[0][x*4+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:483:5: note: in expansion of macro ‘ZIG’
+  483 |     ZIG( 4,1,1) ZIG( 5,0,2) ZIG( 6,0,3) ZIG( 7,1,2)\
+      |     ^~~
+common/dct.c:508:5: note: in expansion of macro ‘ZIGZAG4_FRAME’
+  508 |     ZIGZAG4_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:506:63: note: while referencing ‘dct’
+  506 | static void zigzag_scan_4x4_frame( int16_t level[16], int16_t dct[4][4] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:504:37: warning: array subscript 8 is above array bounds of ‘int16_t[4]’ {aka ‘short int[4]’} [-Warray-bounds]
+  504 | #define ZIG(i,y,x) level[i] = dct[0][x*4+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:483:17: note: in expansion of macro ‘ZIG’
+  483 |     ZIG( 4,1,1) ZIG( 5,0,2) ZIG( 6,0,3) ZIG( 7,1,2)\
+      |                 ^~~
+common/dct.c:508:5: note: in expansion of macro ‘ZIGZAG4_FRAME’
+  508 |     ZIGZAG4_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:506:63: note: while referencing ‘dct’
+  506 | static void zigzag_scan_4x4_frame( int16_t level[16], int16_t dct[4][4] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:504:37: warning: array subscript 12 is above array bounds of ‘int16_t[4]’ {aka ‘short int[4]’} [-Warray-bounds]
+  504 | #define ZIG(i,y,x) level[i] = dct[0][x*4+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:483:29: note: in expansion of macro ‘ZIG’
+  483 |     ZIG( 4,1,1) ZIG( 5,0,2) ZIG( 6,0,3) ZIG( 7,1,2)\
+      |                             ^~~
+common/dct.c:508:5: note: in expansion of macro ‘ZIGZAG4_FRAME’
+  508 |     ZIGZAG4_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:506:63: note: while referencing ‘dct’
+  506 | static void zigzag_scan_4x4_frame( int16_t level[16], int16_t dct[4][4] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:504:37: warning: array subscript 9 is above array bounds of ‘int16_t[4]’ {aka ‘short int[4]’} [-Warray-bounds]
+  504 | #define ZIG(i,y,x) level[i] = dct[0][x*4+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:483:41: note: in expansion of macro ‘ZIG’
+  483 |     ZIG( 4,1,1) ZIG( 5,0,2) ZIG( 6,0,3) ZIG( 7,1,2)\
+      |                                         ^~~
+common/dct.c:508:5: note: in expansion of macro ‘ZIGZAG4_FRAME’
+  508 |     ZIGZAG4_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:506:63: note: while referencing ‘dct’
+  506 | static void zigzag_scan_4x4_frame( int16_t level[16], int16_t dct[4][4] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:504:37: warning: array subscript 6 is above array bounds of ‘int16_t[4]’ {aka ‘short int[4]’} [-Warray-bounds]
+  504 | #define ZIG(i,y,x) level[i] = dct[0][x*4+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:484:5: note: in expansion of macro ‘ZIG’
+  484 |     ZIG( 8,2,1) ZIG( 9,3,0) ZIG(10,3,1) ZIG(11,2,2)\
+      |     ^~~
+common/dct.c:508:5: note: in expansion of macro ‘ZIGZAG4_FRAME’
+  508 |     ZIGZAG4_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:506:63: note: while referencing ‘dct’
+  506 | static void zigzag_scan_4x4_frame( int16_t level[16], int16_t dct[4][4] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:504:37: warning: array subscript 7 is above array bounds of ‘int16_t[4]’ {aka ‘short int[4]’} [-Warray-bounds]
+  504 | #define ZIG(i,y,x) level[i] = dct[0][x*4+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:484:29: note: in expansion of macro ‘ZIG’
+  484 |     ZIG( 8,2,1) ZIG( 9,3,0) ZIG(10,3,1) ZIG(11,2,2)\
+      |                             ^~~
+common/dct.c:508:5: note: in expansion of macro ‘ZIGZAG4_FRAME’
+  508 |     ZIGZAG4_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:506:63: note: while referencing ‘dct’
+  506 | static void zigzag_scan_4x4_frame( int16_t level[16], int16_t dct[4][4] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:504:37: warning: array subscript 10 is above array bounds of ‘int16_t[4]’ {aka ‘short int[4]’} [-Warray-bounds]
+  504 | #define ZIG(i,y,x) level[i] = dct[0][x*4+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:484:41: note: in expansion of macro ‘ZIG’
+  484 |     ZIG( 8,2,1) ZIG( 9,3,0) ZIG(10,3,1) ZIG(11,2,2)\
+      |                                         ^~~
+common/dct.c:508:5: note: in expansion of macro ‘ZIGZAG4_FRAME’
+  508 |     ZIGZAG4_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:506:63: note: while referencing ‘dct’
+  506 | static void zigzag_scan_4x4_frame( int16_t level[16], int16_t dct[4][4] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:504:37: warning: array subscript 13 is above array bounds of ‘int16_t[4]’ {aka ‘short int[4]’} [-Warray-bounds]
+  504 | #define ZIG(i,y,x) level[i] = dct[0][x*4+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:485:5: note: in expansion of macro ‘ZIG’
+  485 |     ZIG(12,1,3) ZIG(13,2,3) ZIG(14,3,2) ZIG(15,3,3)
+      |     ^~~
+common/dct.c:508:5: note: in expansion of macro ‘ZIGZAG4_FRAME’
+  508 |     ZIGZAG4_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:506:63: note: while referencing ‘dct’
+  506 | static void zigzag_scan_4x4_frame( int16_t level[16], int16_t dct[4][4] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:504:37: warning: array subscript 14 is above array bounds of ‘int16_t[4]’ {aka ‘short int[4]’} [-Warray-bounds]
+  504 | #define ZIG(i,y,x) level[i] = dct[0][x*4+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:485:17: note: in expansion of macro ‘ZIG’
+  485 |     ZIG(12,1,3) ZIG(13,2,3) ZIG(14,3,2) ZIG(15,3,3)
+      |                 ^~~
+common/dct.c:508:5: note: in expansion of macro ‘ZIGZAG4_FRAME’
+  508 |     ZIGZAG4_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:506:63: note: while referencing ‘dct’
+  506 | static void zigzag_scan_4x4_frame( int16_t level[16], int16_t dct[4][4] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:504:37: warning: array subscript 11 is above array bounds of ‘int16_t[4]’ {aka ‘short int[4]’} [-Warray-bounds]
+  504 | #define ZIG(i,y,x) level[i] = dct[0][x*4+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:485:29: note: in expansion of macro ‘ZIG’
+  485 |     ZIG(12,1,3) ZIG(13,2,3) ZIG(14,3,2) ZIG(15,3,3)
+      |                             ^~~
+common/dct.c:508:5: note: in expansion of macro ‘ZIGZAG4_FRAME’
+  508 |     ZIGZAG4_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:506:63: note: while referencing ‘dct’
+  506 | static void zigzag_scan_4x4_frame( int16_t level[16], int16_t dct[4][4] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:504:37: warning: array subscript 15 is above array bounds of ‘int16_t[4]’ {aka ‘short int[4]’} [-Warray-bounds]
+  504 | #define ZIG(i,y,x) level[i] = dct[0][x*4+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:485:41: note: in expansion of macro ‘ZIG’
+  485 |     ZIG(12,1,3) ZIG(13,2,3) ZIG(14,3,2) ZIG(15,3,3)
+      |                                         ^~~
+common/dct.c:508:5: note: in expansion of macro ‘ZIGZAG4_FRAME’
+  508 |     ZIGZAG4_FRAME
+      |     ^~~~~~~~~~~~~
+common/dct.c:506:63: note: while referencing ‘dct’
+  506 | static void zigzag_scan_4x4_frame( int16_t level[16], int16_t dct[4][4] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c: In function ‘zigzag_scan_4x4_field’:
+common/dct.c:504:37: warning: array subscript 4 is above array bounds of ‘int16_t[4]’ {aka ‘short int[4]’} [-Warray-bounds]
+  504 | #define ZIG(i,y,x) level[i] = dct[0][x*4+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:514:5: note: in expansion of macro ‘ZIG’
+  514 |     ZIG(2,0,1) ZIG(3,2,0) ZIG(4,3,0) ZIG(5,1,1)
+      |     ^~~
+common/dct.c:511:63: note: while referencing ‘dct’
+  511 | static void zigzag_scan_4x4_field( int16_t level[16], int16_t dct[4][4] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+common/dct.c:504:37: warning: array subscript 5 is above array bounds of ‘int16_t[4]’ {aka ‘short int[4]’} [-Warray-bounds]
+  504 | #define ZIG(i,y,x) level[i] = dct[0][x*4+y];
+      |                               ~~~~~~^~~~~~~
+common/dct.c:514:38: note: in expansion of macro ‘ZIG’
+  514 |     ZIG(2,0,1) ZIG(3,2,0) ZIG(4,3,0) ZIG(5,1,1)
+      |                                      ^~~
+common/dct.c:511:63: note: while referencing ‘dct’
+  511 | static void zigzag_scan_4x4_field( int16_t level[16], int16_t dct[4][4] )
+      |                                                       ~~~~~~~~^~~~~~~~~
+riscv64-linux-gnu-gcc -O4 -ffast-math  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -Wall -I.  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -fno-pie -no-pie -DHAVE_MALLOC_H -DARCH_RISCV64 -DSYS_LINUX -DHAVE_PTHREAD -s -fomit-frame-pointer   -c -o common/cpu.o common/cpu.c
+riscv64-linux-gnu-gcc -O4 -ffast-math  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -Wall -I.  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -fno-pie -no-pie -DHAVE_MALLOC_H -DARCH_RISCV64 -DSYS_LINUX -DHAVE_PTHREAD -s -fomit-frame-pointer   -c -o common/cabac.o common/cabac.c
+common/cabac.c:745:22: warning: ‘x264_cabac_probability’ defined but not used [-Wunused-const-variable=]
+  745 | static const uint8_t x264_cabac_probability[128] =
+      |                      ^~~~~~~~~~~~~~~~~~~~~~
+riscv64-linux-gnu-gcc -O4 -ffast-math  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -Wall -I.  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -fno-pie -no-pie -DHAVE_MALLOC_H -DARCH_RISCV64 -DSYS_LINUX -DHAVE_PTHREAD -s -fomit-frame-pointer   -c -o common/common.o common/common.c
+riscv64-linux-gnu-gcc -O4 -ffast-math  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -Wall -I.  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -fno-pie -no-pie -DHAVE_MALLOC_H -DARCH_RISCV64 -DSYS_LINUX -DHAVE_PTHREAD -s -fomit-frame-pointer   -c -o common/mdate.o common/mdate.c
+riscv64-linux-gnu-gcc -O4 -ffast-math  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -Wall -I.  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -fno-pie -no-pie -DHAVE_MALLOC_H -DARCH_RISCV64 -DSYS_LINUX -DHAVE_PTHREAD -s -fomit-frame-pointer   -c -o common/set.o common/set.c
+common/set.c: In function ‘x264_cqm_init’:
+common/set.c:158:100: warning: iteration 8 invokes undefined behavior [-Waggressive-loop-optimizations]
+  158 |                 h->unquant8_mf[i_list][q][i] = (1ULL << (q/6 + 16 + 8)) / quant8_mf[i_list][q%6][0][i];
+      |                                                                           ~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+common/set.c:156:27: note: within this loop
+  156 |             for( i = 0; i < 64; i++ )
+      |                         ~~^~~~
+common/set.c:147:100: warning: iteration 4 invokes undefined behavior [-Waggressive-loop-optimizations]
+  147 |                 h->unquant4_mf[i_list][q][i] = (1ULL << (q/6 + 15 + 8)) / quant4_mf[i_list][q%6][0][i];
+      |                                                                           ~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+common/set.c:145:27: note: within this loop
+  145 |             for( i = 0; i < 16; i++ )
+      |                         ~~^~~~
+common/set.c:138:49: warning: iteration 8 invokes undefined behavior [-Waggressive-loop-optimizations]
+  138 |                 h->dequant8_mf[i_list][q][0][i] = def_dequant8[q][i] * h->pps->scaling_list[4+i_list][i];
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+common/set.c:136:27: note: within this loop
+  136 |             for( i = 0; i < 64; i++ )
+      |                         ~~^~~~
+common/set.c:132:49: warning: iteration 4 invokes undefined behavior [-Waggressive-loop-optimizations]
+  132 |                 h->dequant4_mf[i_list][q][0][i] = def_dequant4[q][i] * h->pps->scaling_list[i_list][i];
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+common/set.c:130:27: note: within this loop
+  130 |             for( i = 0; i < 16; i++ )
+      |                         ~~^~~~
+common/set.c:132:45: warning: array subscript 4 is above array bounds of ‘int[4]’ [-Warray-bounds]
+  132 |                 h->dequant4_mf[i_list][q][0][i] = def_dequant4[q][i] * h->pps->scaling_list[i_list][i];
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+common/set.c:133:45: warning: array subscript 4 is above array bounds of ‘int[4]’ [-Warray-bounds]
+  133 |                      quant4_mf[i_list][q][0][i] = DIV(def_quant4[q][i] * 16, h->pps->scaling_list[i_list][i]);
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~^~~
+common/set.c:74:9: note: while referencing ‘quant4_mf’
+   74 |     int quant4_mf[4][6][4][4];
+      |         ^~~~~~~~~
+common/set.c:132:45: warning: array subscript 5 is above array bounds of ‘int[4]’ [-Warray-bounds]
+  132 |                 h->dequant4_mf[i_list][q][0][i] = def_dequant4[q][i] * h->pps->scaling_list[i_list][i];
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+common/set.c:133:45: warning: array subscript 5 is above array bounds of ‘int[4]’ [-Warray-bounds]
+  133 |                      quant4_mf[i_list][q][0][i] = DIV(def_quant4[q][i] * 16, h->pps->scaling_list[i_list][i]);
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~^~~
+common/set.c:74:9: note: while referencing ‘quant4_mf’
+   74 |     int quant4_mf[4][6][4][4];
+      |         ^~~~~~~~~
+common/set.c:132:45: warning: array subscript 6 is above array bounds of ‘int[4]’ [-Warray-bounds]
+  132 |                 h->dequant4_mf[i_list][q][0][i] = def_dequant4[q][i] * h->pps->scaling_list[i_list][i];
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+common/set.c:133:45: warning: array subscript 6 is above array bounds of ‘int[4]’ [-Warray-bounds]
+  133 |                      quant4_mf[i_list][q][0][i] = DIV(def_quant4[q][i] * 16, h->pps->scaling_list[i_list][i]);
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~^~~
+common/set.c:74:9: note: while referencing ‘quant4_mf’
+   74 |     int quant4_mf[4][6][4][4];
+      |         ^~~~~~~~~
+common/set.c:132:45: warning: array subscript 7 is above array bounds of ‘int[4]’ [-Warray-bounds]
+  132 |                 h->dequant4_mf[i_list][q][0][i] = def_dequant4[q][i] * h->pps->scaling_list[i_list][i];
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+common/set.c:133:45: warning: array subscript 7 is above array bounds of ‘int[4]’ [-Warray-bounds]
+  133 |                      quant4_mf[i_list][q][0][i] = DIV(def_quant4[q][i] * 16, h->pps->scaling_list[i_list][i]);
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~^~~
+common/set.c:74:9: note: while referencing ‘quant4_mf’
+   74 |     int quant4_mf[4][6][4][4];
+      |         ^~~~~~~~~
+common/set.c:132:45: warning: array subscript 8 is above array bounds of ‘int[4]’ [-Warray-bounds]
+  132 |                 h->dequant4_mf[i_list][q][0][i] = def_dequant4[q][i] * h->pps->scaling_list[i_list][i];
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+common/set.c:133:45: warning: array subscript 8 is above array bounds of ‘int[4]’ [-Warray-bounds]
+  133 |                      quant4_mf[i_list][q][0][i] = DIV(def_quant4[q][i] * 16, h->pps->scaling_list[i_list][i]);
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~^~~
+common/set.c:74:9: note: while referencing ‘quant4_mf’
+   74 |     int quant4_mf[4][6][4][4];
+      |         ^~~~~~~~~
+common/set.c:132:45: warning: array subscript 9 is above array bounds of ‘int[4]’ [-Warray-bounds]
+  132 |                 h->dequant4_mf[i_list][q][0][i] = def_dequant4[q][i] * h->pps->scaling_list[i_list][i];
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+common/set.c:133:45: warning: array subscript 9 is above array bounds of ‘int[4]’ [-Warray-bounds]
+  133 |                      quant4_mf[i_list][q][0][i] = DIV(def_quant4[q][i] * 16, h->pps->scaling_list[i_list][i]);
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~^~~
+common/set.c:74:9: note: while referencing ‘quant4_mf’
+   74 |     int quant4_mf[4][6][4][4];
+      |         ^~~~~~~~~
+common/set.c:132:45: warning: array subscript 10 is above array bounds of ‘int[4]’ [-Warray-bounds]
+  132 |                 h->dequant4_mf[i_list][q][0][i] = def_dequant4[q][i] * h->pps->scaling_list[i_list][i];
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+common/set.c:133:45: warning: array subscript 10 is above array bounds of ‘int[4]’ [-Warray-bounds]
+  133 |                      quant4_mf[i_list][q][0][i] = DIV(def_quant4[q][i] * 16, h->pps->scaling_list[i_list][i]);
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~^~~
+common/set.c:74:9: note: while referencing ‘quant4_mf’
+   74 |     int quant4_mf[4][6][4][4];
+      |         ^~~~~~~~~
+common/set.c:132:45: warning: array subscript 11 is above array bounds of ‘int[4]’ [-Warray-bounds]
+  132 |                 h->dequant4_mf[i_list][q][0][i] = def_dequant4[q][i] * h->pps->scaling_list[i_list][i];
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+common/set.c:133:45: warning: array subscript 11 is above array bounds of ‘int[4]’ [-Warray-bounds]
+  133 |                      quant4_mf[i_list][q][0][i] = DIV(def_quant4[q][i] * 16, h->pps->scaling_list[i_list][i]);
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~^~~
+common/set.c:74:9: note: while referencing ‘quant4_mf’
+   74 |     int quant4_mf[4][6][4][4];
+      |         ^~~~~~~~~
+common/set.c:132:45: warning: array subscript 12 is above array bounds of ‘int[4]’ [-Warray-bounds]
+  132 |                 h->dequant4_mf[i_list][q][0][i] = def_dequant4[q][i] * h->pps->scaling_list[i_list][i];
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+common/set.c:133:45: warning: array subscript 12 is above array bounds of ‘int[4]’ [-Warray-bounds]
+  133 |                      quant4_mf[i_list][q][0][i] = DIV(def_quant4[q][i] * 16, h->pps->scaling_list[i_list][i]);
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~^~~
+common/set.c:74:9: note: while referencing ‘quant4_mf’
+   74 |     int quant4_mf[4][6][4][4];
+      |         ^~~~~~~~~
+common/set.c:132:45: warning: array subscript 13 is above array bounds of ‘int[4]’ [-Warray-bounds]
+  132 |                 h->dequant4_mf[i_list][q][0][i] = def_dequant4[q][i] * h->pps->scaling_list[i_list][i];
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+common/set.c:133:45: warning: array subscript 13 is above array bounds of ‘int[4]’ [-Warray-bounds]
+  133 |                      quant4_mf[i_list][q][0][i] = DIV(def_quant4[q][i] * 16, h->pps->scaling_list[i_list][i]);
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~^~~
+common/set.c:74:9: note: while referencing ‘quant4_mf’
+   74 |     int quant4_mf[4][6][4][4];
+      |         ^~~~~~~~~
+common/set.c:132:45: warning: array subscript 14 is above array bounds of ‘int[4]’ [-Warray-bounds]
+  132 |                 h->dequant4_mf[i_list][q][0][i] = def_dequant4[q][i] * h->pps->scaling_list[i_list][i];
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+common/set.c:133:45: warning: array subscript 14 is above array bounds of ‘int[4]’ [-Warray-bounds]
+  133 |                      quant4_mf[i_list][q][0][i] = DIV(def_quant4[q][i] * 16, h->pps->scaling_list[i_list][i]);
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~^~~
+common/set.c:74:9: note: while referencing ‘quant4_mf’
+   74 |     int quant4_mf[4][6][4][4];
+      |         ^~~~~~~~~
+common/set.c:132:45: warning: array subscript 15 is above array bounds of ‘int[4]’ [-Warray-bounds]
+  132 |                 h->dequant4_mf[i_list][q][0][i] = def_dequant4[q][i] * h->pps->scaling_list[i_list][i];
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+common/set.c:133:45: warning: array subscript 15 is above array bounds of ‘int[4]’ [-Warray-bounds]
+  133 |                      quant4_mf[i_list][q][0][i] = DIV(def_quant4[q][i] * 16, h->pps->scaling_list[i_list][i]);
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~^~~
+common/set.c:74:9: note: while referencing ‘quant4_mf’
+   74 |     int quant4_mf[4][6][4][4];
+      |         ^~~~~~~~~
+common/set.c:106:31: warning: iteration 4 invokes undefined behavior [-Waggressive-loop-optimizations]
+  106 |             h->quant4_bias[i] = h->quant4_bias[j];
+      |             ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+common/set.c:82:19: note: within this loop
+   82 |     for( i = 0; i < 6; i++ )
+      |                 ~~^~~
+riscv64-linux-gnu-gcc -O4 -ffast-math  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -Wall -I.  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -fno-pie -no-pie -DHAVE_MALLOC_H -DARCH_RISCV64 -DSYS_LINUX -DHAVE_PTHREAD -s -fomit-frame-pointer   -c -o common/quant.o common/quant.c
+common/quant.c: In function ‘quant_2x2_dc’:
+common/quant.c:66:22: warning: array subscript 2 is above array bounds of ‘int16_t[2]’ {aka ‘short int[2]’} [-Warray-bounds]
+   66 |     QUANT_ONE( dct[0][2], mf, bias );
+      |                      ^
+common/quant.c:35:10: note: in definition of macro ‘QUANT_ONE’
+   35 |     if( (coef) > 0 ) \
+      |          ^~~~
+common/quant.c:62:35: note: while referencing ‘dct’
+   62 | static void quant_2x2_dc( int16_t dct[2][2], int mf, int bias )
+      |                           ~~~~~~~~^~~~~~~~~
+common/quant.c:66:22: warning: array subscript 2 is above array bounds of ‘int16_t[2]’ {aka ‘short int[2]’} [-Warray-bounds]
+   66 |     QUANT_ONE( dct[0][2], mf, bias );
+      |                      ^
+common/quant.c:38:10: note: in definition of macro ‘QUANT_ONE’
+   38 |         (coef) = - ((f - (coef)) * (mf) >> 16); \
+      |          ^~~~
+common/quant.c:62:35: note: while referencing ‘dct’
+   62 | static void quant_2x2_dc( int16_t dct[2][2], int mf, int bias )
+      |                           ~~~~~~~~^~~~~~~~~
+common/quant.c:66:22: warning: array subscript 2 is above array bounds of ‘int16_t[2]’ {aka ‘short int[2]’} [-Warray-bounds]
+   66 |     QUANT_ONE( dct[0][2], mf, bias );
+      |                      ^
+common/quant.c:36:10: note: in definition of macro ‘QUANT_ONE’
+   36 |         (coef) = (f + (coef)) * (mf) >> 16; \
+      |          ^~~~
+common/quant.c:62:35: note: while referencing ‘dct’
+   62 | static void quant_2x2_dc( int16_t dct[2][2], int mf, int bias )
+      |                           ~~~~~~~~^~~~~~~~~
+common/quant.c:67:22: warning: array subscript 3 is above array bounds of ‘int16_t[2]’ {aka ‘short int[2]’} [-Warray-bounds]
+   67 |     QUANT_ONE( dct[0][3], mf, bias );
+      |                      ^
+common/quant.c:35:10: note: in definition of macro ‘QUANT_ONE’
+   35 |     if( (coef) > 0 ) \
+      |          ^~~~
+common/quant.c:62:35: note: while referencing ‘dct’
+   62 | static void quant_2x2_dc( int16_t dct[2][2], int mf, int bias )
+      |                           ~~~~~~~~^~~~~~~~~
+common/quant.c:67:22: warning: array subscript 3 is above array bounds of ‘int16_t[2]’ {aka ‘short int[2]’} [-Warray-bounds]
+   67 |     QUANT_ONE( dct[0][3], mf, bias );
+      |                      ^
+common/quant.c:38:10: note: in definition of macro ‘QUANT_ONE’
+   38 |         (coef) = - ((f - (coef)) * (mf) >> 16); \
+      |          ^~~~
+common/quant.c:62:35: note: while referencing ‘dct’
+   62 | static void quant_2x2_dc( int16_t dct[2][2], int mf, int bias )
+      |                           ~~~~~~~~^~~~~~~~~
+common/quant.c:67:22: warning: array subscript 3 is above array bounds of ‘int16_t[2]’ {aka ‘short int[2]’} [-Warray-bounds]
+   67 |     QUANT_ONE( dct[0][3], mf, bias );
+      |                      ^
+common/quant.c:36:10: note: in definition of macro ‘QUANT_ONE’
+   36 |         (coef) = (f + (coef)) * (mf) >> 16; \
+      |          ^~~~
+common/quant.c:62:35: note: while referencing ‘dct’
+   62 | static void quant_2x2_dc( int16_t dct[2][2], int mf, int bias )
+      |                           ~~~~~~~~^~~~~~~~~
+riscv64-linux-gnu-gcc -O4 -ffast-math  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -Wall -I.  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -fno-pie -no-pie -DHAVE_MALLOC_H -DARCH_RISCV64 -DSYS_LINUX -DHAVE_PTHREAD -s -fomit-frame-pointer   -c -o common/vlc.o common/vlc.c
+riscv64-linux-gnu-gcc -O4 -ffast-math  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -Wall -I.  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -fno-pie -no-pie -DHAVE_MALLOC_H -DARCH_RISCV64 -DSYS_LINUX -DHAVE_PTHREAD -s -fomit-frame-pointer   -c -o encoder/analyse.o encoder/analyse.c
+In file included from encoder/rdo.c:60,
+                 from encoder/analyse.c:36:
+encoder/cabac.c: In function ‘block_residual_write_cabac’:
+encoder/cabac.c:689:9: warning: variable ‘i_coeff_sign’ set but not used [-Wunused-but-set-variable]
+  689 |     int i_coeff_sign[64];
+      |         ^~~~~~~~~~~~
+encoder/analyse.c: In function ‘x264_intra_rd_refine’:
+encoder/analyse.c:930:22: warning: variable ‘p_src_by’ set but not used [-Wunused-but-set-variable]
+  930 |             uint8_t *p_src_by;
+      |                      ^~~~~~~~
+encoder/analyse.c:855:9: warning: variable ‘i_pred_mode’ set but not used [-Wunused-but-set-variable]
+  855 |     int i_pred_mode;
+      |         ^~~~~~~~~~~
+encoder/analyse.c: In function ‘x264_mb_analyse_inter_p16x16’:
+encoder/analyse.c:1091:10: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1091 |         *(uint32_t*)a->l0.mvc[i_ref][0] =
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+encoder/analyse.c:1092:59: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1092 |         *(uint32_t*)h->mb.mvr[0][i_ref][h->mb.i_mb_xy] = *(uint32_t*)m.mv;
+      |                                                           ^~~~~~~~~~~~~~~
+encoder/analyse.c:1102:42: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1102 |         if( a->l0.me16x16.i_ref == 0 && *(uint32_t*)a->l0.me16x16.mv == *(uint32_t*)h->mb.cache.pskip_mv )
+      |                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+encoder/analyse.c:1102:74: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1102 |         if( a->l0.me16x16.i_ref == 0 && *(uint32_t*)a->l0.me16x16.mv == *(uint32_t*)h->mb.cache.pskip_mv )
+      |                                                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ./common/common.h:625,
+                 from encoder/analyse.c:31:
+./common/macroblock.h:385:92: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  385 | #define x264_macroblock_cache_mv_ptr(a,x,y,w,h,l,mv) x264_macroblock_cache_mv(a,x,y,w,h,l,*(uint32_t*)mv)
+encoder/analyse.c:1105:13: note: in expansion of macro ‘x264_macroblock_cache_mv_ptr’
+ 1105 |             x264_macroblock_cache_mv_ptr( h, 0, 0, 4, 4, 0, a->l0.me16x16.mv );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+encoder/analyse.c: In function ‘x264_mb_analyse_inter_p8x8_mixed_ref’:
+encoder/analyse.c:1138:11: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1138 |          *(uint32_t*)a->l0.mvc[i_ref][0] = *(uint32_t*)h->mb.mvr[0][i_ref][h->mb.i_mb_xy];
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+encoder/analyse.c:1165:14: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1165 |             *(uint32_t*)a->l0.mvc[i_ref][i+1] = *(uint32_t*)m.mv;
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+encoder/analyse.c:1165:50: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1165 |             *(uint32_t*)a->l0.mvc[i_ref][i+1] = *(uint32_t*)m.mv;
+      |                                                  ^~~~~~~~~~~~~~~
+In file included from ./common/common.h:625,
+                 from encoder/analyse.c:31:
+./common/macroblock.h:385:92: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  385 | #define x264_macroblock_cache_mv_ptr(a,x,y,w,h,l,mv) x264_macroblock_cache_mv(a,x,y,w,h,l,*(uint32_t*)mv)
+encoder/analyse.c:1170:9: note: in expansion of macro ‘x264_macroblock_cache_mv_ptr’
+ 1170 |         x264_macroblock_cache_mv_ptr( h, 2*x8, 2*y8, 2, 2, 0, l0m->mv );
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+encoder/analyse.c: In function ‘x264_mb_analyse_inter_p8x8’:
+encoder/analyse.c:1197:27: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1197 |     *(uint32_t*)mvc[0] = *(uint32_t*)a->l0.me16x16.mv;
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ./common/common.h:625,
+                 from encoder/analyse.c:31:
+./common/macroblock.h:385:92: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  385 | #define x264_macroblock_cache_mv_ptr(a,x,y,w,h,l,mv) x264_macroblock_cache_mv(a,x,y,w,h,l,*(uint32_t*)mv)
+encoder/analyse.c:1215:9: note: in expansion of macro ‘x264_macroblock_cache_mv_ptr’
+ 1215 |         x264_macroblock_cache_mv_ptr( h, 2*x8, 2*y8, 2, 2, 0, m->mv );
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+encoder/analyse.c:1217:35: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1217 |         *(uint32_t*)mvc[i_mvc] = *(uint32_t*)m->mv;
+      |                                   ^~~~~~~~~~~~~~~~
+encoder/analyse.c: In function ‘x264_mb_analyse_inter_p16x8’:
+encoder/analyse.c:1263:14: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1263 |             *(uint32_t*)mvc[0] = *(uint32_t*)a->l0.mvc[i_ref][0];
+      |              ^~~~~~~~~~~~~~~~~
+encoder/analyse.c:1263:35: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1263 |             *(uint32_t*)mvc[0] = *(uint32_t*)a->l0.mvc[i_ref][0];
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+encoder/analyse.c:1264:14: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1264 |             *(uint32_t*)mvc[1] = *(uint32_t*)a->l0.mvc[i_ref][2*i+1];
+      |              ^~~~~~~~~~~~~~~~~
+encoder/analyse.c:1264:35: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1264 |             *(uint32_t*)mvc[1] = *(uint32_t*)a->l0.mvc[i_ref][2*i+1];
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+encoder/analyse.c:1265:14: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1265 |             *(uint32_t*)mvc[2] = *(uint32_t*)a->l0.mvc[i_ref][2*i+2];
+      |              ^~~~~~~~~~~~~~~~~
+encoder/analyse.c:1265:35: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1265 |             *(uint32_t*)mvc[2] = *(uint32_t*)a->l0.mvc[i_ref][2*i+2];
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ./common/common.h:625,
+                 from encoder/analyse.c:31:
+./common/macroblock.h:385:92: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  385 | #define x264_macroblock_cache_mv_ptr(a,x,y,w,h,l,mv) x264_macroblock_cache_mv(a,x,y,w,h,l,*(uint32_t*)mv)
+encoder/analyse.c:1277:9: note: in expansion of macro ‘x264_macroblock_cache_mv_ptr’
+ 1277 |         x264_macroblock_cache_mv_ptr( h, 0, 2*i, 4, 2, 0, l0m->mv );
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+encoder/analyse.c: In function ‘x264_mb_analyse_inter_p8x16’:
+encoder/analyse.c:1312:14: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1312 |             *(uint32_t*)mvc[0] = *(uint32_t*)a->l0.mvc[i_ref][0];
+      |              ^~~~~~~~~~~~~~~~~
+encoder/analyse.c:1312:35: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1312 |             *(uint32_t*)mvc[0] = *(uint32_t*)a->l0.mvc[i_ref][0];
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+encoder/analyse.c:1313:14: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1313 |             *(uint32_t*)mvc[1] = *(uint32_t*)a->l0.mvc[i_ref][i+1];
+      |              ^~~~~~~~~~~~~~~~~
+encoder/analyse.c:1313:35: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1313 |             *(uint32_t*)mvc[1] = *(uint32_t*)a->l0.mvc[i_ref][i+1];
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+encoder/analyse.c:1314:14: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1314 |             *(uint32_t*)mvc[2] = *(uint32_t*)a->l0.mvc[i_ref][i+3];
+      |              ^~~~~~~~~~~~~~~~~
+encoder/analyse.c:1314:35: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1314 |             *(uint32_t*)mvc[2] = *(uint32_t*)a->l0.mvc[i_ref][i+3];
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ./common/common.h:625,
+                 from encoder/analyse.c:31:
+./common/macroblock.h:385:92: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  385 | #define x264_macroblock_cache_mv_ptr(a,x,y,w,h,l,mv) x264_macroblock_cache_mv(a,x,y,w,h,l,*(uint32_t*)mv)
+encoder/analyse.c:1326:9: note: in expansion of macro ‘x264_macroblock_cache_mv_ptr’
+ 1326 |         x264_macroblock_cache_mv_ptr( h, 2*i, 0, 2, 4, 0, l0m->mv );
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+encoder/analyse.c: In function ‘x264_mb_analyse_inter_p4x4’:
+./common/macroblock.h:385:92: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  385 | #define x264_macroblock_cache_mv_ptr(a,x,y,w,h,l,mv) x264_macroblock_cache_mv(a,x,y,w,h,l,*(uint32_t*)mv)
+encoder/analyse.c:1395:9: note: in expansion of macro ‘x264_macroblock_cache_mv_ptr’
+ 1395 |         x264_macroblock_cache_mv_ptr( h, x4, y4, 1, 1, 0, m->mv );
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+encoder/analyse.c: In function ‘x264_mb_analyse_inter_p8x4’:
+./common/macroblock.h:385:92: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  385 | #define x264_macroblock_cache_mv_ptr(a,x,y,w,h,l,mv) x264_macroblock_cache_mv(a,x,y,w,h,l,*(uint32_t*)mv)
+encoder/analyse.c:1435:9: note: in expansion of macro ‘x264_macroblock_cache_mv_ptr’
+ 1435 |         x264_macroblock_cache_mv_ptr( h, x4, y4, 2, 1, 0, m->mv );
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+encoder/analyse.c: In function ‘x264_mb_analyse_inter_p4x8’:
+./common/macroblock.h:385:92: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  385 | #define x264_macroblock_cache_mv_ptr(a,x,y,w,h,l,mv) x264_macroblock_cache_mv(a,x,y,w,h,l,*(uint32_t*)mv)
+encoder/analyse.c:1472:9: note: in expansion of macro ‘x264_macroblock_cache_mv_ptr’
+ 1472 |         x264_macroblock_cache_mv_ptr( h, x4, y4, 1, 2, 0, m->mv );
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+encoder/analyse.c: In function ‘x264_mb_analyse_inter_b16x16’:
+encoder/analyse.c:1547:59: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1547 |         *(uint32_t*)h->mb.mvr[0][i_ref][h->mb.i_mb_xy] = *(uint32_t*)m.mv;
+      |                                                           ^~~~~~~~~~~~~~~
+encoder/analyse.c:1574:59: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1574 |         *(uint32_t*)h->mb.mvr[1][i_ref][h->mb.i_mb_xy] = *(uint32_t*)m.mv;
+      |                                                           ^~~~~~~~~~~~~~~
+In file included from ./common/common.h:625,
+                 from encoder/analyse.c:31:
+encoder/analyse.c: In function ‘x264_mb_cache_mv_p8x8’:
+./common/macroblock.h:385:92: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  385 | #define x264_macroblock_cache_mv_ptr(a,x,y,w,h,l,mv) x264_macroblock_cache_mv(a,x,y,w,h,l,*(uint32_t*)mv)
+encoder/analyse.c:1613:13: note: in expansion of macro ‘x264_macroblock_cache_mv_ptr’
+ 1613 |             x264_macroblock_cache_mv_ptr( h, x, y, 2, 2, 0, a->l0.me8x8[i].mv );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./common/macroblock.h:385:92: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  385 | #define x264_macroblock_cache_mv_ptr(a,x,y,w,h,l,mv) x264_macroblock_cache_mv(a,x,y,w,h,l,*(uint32_t*)mv)
+encoder/analyse.c:1616:13: note: in expansion of macro ‘x264_macroblock_cache_mv_ptr’
+ 1616 |             x264_macroblock_cache_mv_ptr( h, x, y+0, 2, 1, 0, a->l0.me8x4[i][0].mv );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./common/macroblock.h:385:92: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  385 | #define x264_macroblock_cache_mv_ptr(a,x,y,w,h,l,mv) x264_macroblock_cache_mv(a,x,y,w,h,l,*(uint32_t*)mv)
+encoder/analyse.c:1617:13: note: in expansion of macro ‘x264_macroblock_cache_mv_ptr’
+ 1617 |             x264_macroblock_cache_mv_ptr( h, x, y+1, 2, 1, 0, a->l0.me8x4[i][1].mv );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./common/macroblock.h:385:92: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  385 | #define x264_macroblock_cache_mv_ptr(a,x,y,w,h,l,mv) x264_macroblock_cache_mv(a,x,y,w,h,l,*(uint32_t*)mv)
+encoder/analyse.c:1620:13: note: in expansion of macro ‘x264_macroblock_cache_mv_ptr’
+ 1620 |             x264_macroblock_cache_mv_ptr( h, x+0, y, 1, 2, 0, a->l0.me4x8[i][0].mv );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./common/macroblock.h:385:92: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  385 | #define x264_macroblock_cache_mv_ptr(a,x,y,w,h,l,mv) x264_macroblock_cache_mv(a,x,y,w,h,l,*(uint32_t*)mv)
+encoder/analyse.c:1621:13: note: in expansion of macro ‘x264_macroblock_cache_mv_ptr’
+ 1621 |             x264_macroblock_cache_mv_ptr( h, x+1, y, 1, 2, 0, a->l0.me4x8[i][1].mv );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./common/macroblock.h:385:92: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  385 | #define x264_macroblock_cache_mv_ptr(a,x,y,w,h,l,mv) x264_macroblock_cache_mv(a,x,y,w,h,l,*(uint32_t*)mv)
+encoder/analyse.c:1624:13: note: in expansion of macro ‘x264_macroblock_cache_mv_ptr’
+ 1624 |             x264_macroblock_cache_mv_ptr( h, x+0, y+0, 1, 1, 0, a->l0.me4x4[i][0].mv );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./common/macroblock.h:385:92: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  385 | #define x264_macroblock_cache_mv_ptr(a,x,y,w,h,l,mv) x264_macroblock_cache_mv(a,x,y,w,h,l,*(uint32_t*)mv)
+encoder/analyse.c:1625:13: note: in expansion of macro ‘x264_macroblock_cache_mv_ptr’
+ 1625 |             x264_macroblock_cache_mv_ptr( h, x+1, y+0, 1, 1, 0, a->l0.me4x4[i][1].mv );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./common/macroblock.h:385:92: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  385 | #define x264_macroblock_cache_mv_ptr(a,x,y,w,h,l,mv) x264_macroblock_cache_mv(a,x,y,w,h,l,*(uint32_t*)mv)
+encoder/analyse.c:1626:13: note: in expansion of macro ‘x264_macroblock_cache_mv_ptr’
+ 1626 |             x264_macroblock_cache_mv_ptr( h, x+0, y+1, 1, 1, 0, a->l0.me4x4[i][2].mv );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./common/macroblock.h:385:92: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  385 | #define x264_macroblock_cache_mv_ptr(a,x,y,w,h,l,mv) x264_macroblock_cache_mv(a,x,y,w,h,l,*(uint32_t*)mv)
+encoder/analyse.c:1627:13: note: in expansion of macro ‘x264_macroblock_cache_mv_ptr’
+ 1627 |             x264_macroblock_cache_mv_ptr( h, x+1, y+1, 1, 1, 0, a->l0.me4x4[i][3].mv );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+encoder/analyse.c: In function ‘x264_mb_cache_mv_b8x8’:
+./common/macroblock.h:385:92: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  385 | #define x264_macroblock_cache_mv_ptr(a,x,y,w,h,l,mv) x264_macroblock_cache_mv(a,x,y,w,h,l,*(uint32_t*)mv)
+encoder/analyse.c:1639:9: note: in expansion of macro ‘x264_macroblock_cache_mv_ptr’
+ 1639 |         x264_macroblock_cache_mv_ptr( h, x,y,dx,dy, 0, me0.mv ); \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+encoder/analyse.c:1677:9: note: in expansion of macro ‘CACHE_MV_BI’
+ 1677 |         CACHE_MV_BI( x, y, 2, 2, a->l0.me8x8[i], a->l1.me8x8[i], h->mb.i_sub_partition[i] );
+      |         ^~~~~~~~~~~
+./common/macroblock.h:385:92: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  385 | #define x264_macroblock_cache_mv_ptr(a,x,y,w,h,l,mv) x264_macroblock_cache_mv(a,x,y,w,h,l,*(uint32_t*)mv)
+encoder/analyse.c:1651:9: note: in expansion of macro ‘x264_macroblock_cache_mv_ptr’
+ 1651 |         x264_macroblock_cache_mv_ptr( h, x,y,dx,dy, 1, me1.mv ); \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+encoder/analyse.c:1677:9: note: in expansion of macro ‘CACHE_MV_BI’
+ 1677 |         CACHE_MV_BI( x, y, 2, 2, a->l0.me8x8[i], a->l1.me8x8[i], h->mb.i_sub_partition[i] );
+      |         ^~~~~~~~~~~
+encoder/analyse.c: In function ‘x264_mb_cache_mv_b16x8’:
+./common/macroblock.h:385:92: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  385 | #define x264_macroblock_cache_mv_ptr(a,x,y,w,h,l,mv) x264_macroblock_cache_mv(a,x,y,w,h,l,*(uint32_t*)mv)
+encoder/analyse.c:1639:9: note: in expansion of macro ‘x264_macroblock_cache_mv_ptr’
+ 1639 |         x264_macroblock_cache_mv_ptr( h, x,y,dx,dy, 0, me0.mv ); \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+encoder/analyse.c:1682:5: note: in expansion of macro ‘CACHE_MV_BI’
+ 1682 |     CACHE_MV_BI( 0, 2*i, 4, 2, a->l0.me16x8[i], a->l1.me16x8[i], a->i_mb_partition16x8[i] );
+      |     ^~~~~~~~~~~
+./common/macroblock.h:385:92: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  385 | #define x264_macroblock_cache_mv_ptr(a,x,y,w,h,l,mv) x264_macroblock_cache_mv(a,x,y,w,h,l,*(uint32_t*)mv)
+encoder/analyse.c:1651:9: note: in expansion of macro ‘x264_macroblock_cache_mv_ptr’
+ 1651 |         x264_macroblock_cache_mv_ptr( h, x,y,dx,dy, 1, me1.mv ); \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+encoder/analyse.c:1682:5: note: in expansion of macro ‘CACHE_MV_BI’
+ 1682 |     CACHE_MV_BI( 0, 2*i, 4, 2, a->l0.me16x8[i], a->l1.me16x8[i], a->i_mb_partition16x8[i] );
+      |     ^~~~~~~~~~~
+encoder/analyse.c: In function ‘x264_mb_cache_mv_b8x16’:
+./common/macroblock.h:385:92: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  385 | #define x264_macroblock_cache_mv_ptr(a,x,y,w,h,l,mv) x264_macroblock_cache_mv(a,x,y,w,h,l,*(uint32_t*)mv)
+encoder/analyse.c:1639:9: note: in expansion of macro ‘x264_macroblock_cache_mv_ptr’
+ 1639 |         x264_macroblock_cache_mv_ptr( h, x,y,dx,dy, 0, me0.mv ); \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+encoder/analyse.c:1686:5: note: in expansion of macro ‘CACHE_MV_BI’
+ 1686 |     CACHE_MV_BI( 2*i, 0, 2, 4, a->l0.me8x16[i], a->l1.me8x16[i], a->i_mb_partition8x16[i] );
+      |     ^~~~~~~~~~~
+./common/macroblock.h:385:92: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  385 | #define x264_macroblock_cache_mv_ptr(a,x,y,w,h,l,mv) x264_macroblock_cache_mv(a,x,y,w,h,l,*(uint32_t*)mv)
+encoder/analyse.c:1651:9: note: in expansion of macro ‘x264_macroblock_cache_mv_ptr’
+ 1651 |         x264_macroblock_cache_mv_ptr( h, x,y,dx,dy, 1, me1.mv ); \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+encoder/analyse.c:1686:5: note: in expansion of macro ‘CACHE_MV_BI’
+ 1686 |     CACHE_MV_BI( 2*i, 0, 2, 4, a->l0.me8x16[i], a->l1.me8x16[i], a->i_mb_partition8x16[i] );
+      |     ^~~~~~~~~~~
+encoder/analyse.c: In function ‘x264_mb_analyse_inter_b8x8’:
+./common/macroblock.h:385:92: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  385 | #define x264_macroblock_cache_mv_ptr(a,x,y,w,h,l,mv) x264_macroblock_cache_mv(a,x,y,w,h,l,*(uint32_t*)mv)
+encoder/analyse.c:1726:13: note: in expansion of macro ‘x264_macroblock_cache_mv_ptr’
+ 1726 |             x264_macroblock_cache_mv_ptr( h, 2*x8, 2*y8, 2, 2, l, m->mv );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+encoder/analyse.c: In function ‘x264_mb_analyse_inter_b16x8’:
+encoder/analyse.c:1786:14: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1786 |             *(uint32_t*)mvc[0] = *(uint32_t*)lX->me8x8[2*i].mv;
+      |              ^~~~~~~~~~~~~~~~~
+encoder/analyse.c:1786:35: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1786 |             *(uint32_t*)mvc[0] = *(uint32_t*)lX->me8x8[2*i].mv;
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+encoder/analyse.c:1787:14: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1787 |             *(uint32_t*)mvc[1] = *(uint32_t*)lX->me8x8[2*i+1].mv;
+      |              ^~~~~~~~~~~~~~~~~
+encoder/analyse.c:1787:35: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1787 |             *(uint32_t*)mvc[1] = *(uint32_t*)lX->me8x8[2*i+1].mv;
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+encoder/analyse.c: In function ‘x264_mb_analyse_inter_b8x16’:
+encoder/analyse.c:1855:14: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1855 |             *(uint32_t*)mvc[0] = *(uint32_t*)lX->me8x8[i].mv;
+      |              ^~~~~~~~~~~~~~~~~
+encoder/analyse.c:1855:35: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1855 |             *(uint32_t*)mvc[0] = *(uint32_t*)lX->me8x8[i].mv;
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+encoder/analyse.c:1856:14: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1856 |             *(uint32_t*)mvc[1] = *(uint32_t*)lX->me8x8[i+2].mv;
+      |              ^~~~~~~~~~~~~~~~~
+encoder/analyse.c:1856:35: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+ 1856 |             *(uint32_t*)mvc[1] = *(uint32_t*)lX->me8x8[i+2].mv;
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ./common/common.h:625,
+                 from encoder/analyse.c:31:
+encoder/analyse.c: In function ‘x264_analyse_update_cache’:
+./common/macroblock.h:385:92: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  385 | #define x264_macroblock_cache_mv_ptr(a,x,y,w,h,l,mv) x264_macroblock_cache_mv(a,x,y,w,h,l,*(uint32_t*)mv)
+encoder/analyse.c:2770:21: note: in expansion of macro ‘x264_macroblock_cache_mv_ptr’
+ 2770 |                     x264_macroblock_cache_mv_ptr( h, 0, 0, 4, 4, 0, a->l0.me16x16.mv );
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./common/macroblock.h:385:92: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  385 | #define x264_macroblock_cache_mv_ptr(a,x,y,w,h,l,mv) x264_macroblock_cache_mv(a,x,y,w,h,l,*(uint32_t*)mv)
+encoder/analyse.c:2776:21: note: in expansion of macro ‘x264_macroblock_cache_mv_ptr’
+ 2776 |                     x264_macroblock_cache_mv_ptr( h, 0, 0, 4, 2, 0, a->l0.me16x8[0].mv );
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./common/macroblock.h:385:92: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  385 | #define x264_macroblock_cache_mv_ptr(a,x,y,w,h,l,mv) x264_macroblock_cache_mv(a,x,y,w,h,l,*(uint32_t*)mv)
+encoder/analyse.c:2777:21: note: in expansion of macro ‘x264_macroblock_cache_mv_ptr’
+ 2777 |                     x264_macroblock_cache_mv_ptr( h, 0, 2, 4, 2, 0, a->l0.me16x8[1].mv );
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./common/macroblock.h:385:92: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  385 | #define x264_macroblock_cache_mv_ptr(a,x,y,w,h,l,mv) x264_macroblock_cache_mv(a,x,y,w,h,l,*(uint32_t*)mv)
+encoder/analyse.c:2783:21: note: in expansion of macro ‘x264_macroblock_cache_mv_ptr’
+ 2783 |                     x264_macroblock_cache_mv_ptr( h, 0, 0, 2, 4, 0, a->l0.me8x16[0].mv );
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./common/macroblock.h:385:92: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  385 | #define x264_macroblock_cache_mv_ptr(a,x,y,w,h,l,mv) x264_macroblock_cache_mv(a,x,y,w,h,l,*(uint32_t*)mv)
+encoder/analyse.c:2784:21: note: in expansion of macro ‘x264_macroblock_cache_mv_ptr’
+ 2784 |                     x264_macroblock_cache_mv_ptr( h, 2, 0, 2, 4, 0, a->l0.me8x16[1].mv );
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./common/macroblock.h:385:92: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  385 | #define x264_macroblock_cache_mv_ptr(a,x,y,w,h,l,mv) x264_macroblock_cache_mv(a,x,y,w,h,l,*(uint32_t*)mv)
+encoder/analyse.c:2806:13: note: in expansion of macro ‘x264_macroblock_cache_mv_ptr’
+ 2806 |             x264_macroblock_cache_mv_ptr( h, 0, 0, 4, 4, 0, h->mb.cache.pskip_mv );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./common/macroblock.h:385:92: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  385 | #define x264_macroblock_cache_mv_ptr(a,x,y,w,h,l,mv) x264_macroblock_cache_mv(a,x,y,w,h,l,*(uint32_t*)mv)
+encoder/analyse.c:2832:21: note: in expansion of macro ‘x264_macroblock_cache_mv_ptr’
+ 2832 |                     x264_macroblock_cache_mv_ptr( h, 0, 0, 4, 4, 0, a->l0.me16x16.mv );
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./common/macroblock.h:385:92: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  385 | #define x264_macroblock_cache_mv_ptr(a,x,y,w,h,l,mv) x264_macroblock_cache_mv(a,x,y,w,h,l,*(uint32_t*)mv)
+encoder/analyse.c:2844:21: note: in expansion of macro ‘x264_macroblock_cache_mv_ptr’
+ 2844 |                     x264_macroblock_cache_mv_ptr( h, 0, 0, 4, 4, 1, a->l1.me16x16.mv );
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./common/macroblock.h:385:92: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  385 | #define x264_macroblock_cache_mv_ptr(a,x,y,w,h,l,mv) x264_macroblock_cache_mv(a,x,y,w,h,l,*(uint32_t*)mv)
+encoder/analyse.c:2848:21: note: in expansion of macro ‘x264_macroblock_cache_mv_ptr’
+ 2848 |                     x264_macroblock_cache_mv_ptr( h, 0, 0, 4, 4, 0, a->l0.me16x16.mv );
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./common/macroblock.h:385:92: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  385 | #define x264_macroblock_cache_mv_ptr(a,x,y,w,h,l,mv) x264_macroblock_cache_mv(a,x,y,w,h,l,*(uint32_t*)mv)
+encoder/analyse.c:2851:21: note: in expansion of macro ‘x264_macroblock_cache_mv_ptr’
+ 2851 |                     x264_macroblock_cache_mv_ptr( h, 0, 0, 4, 4, 1, a->l1.me16x16.mv );
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from encoder/analyse.c:2901:
+encoder/slicetype.c: In function ‘x264_slicetype_mb_cost’:
+encoder/slicetype.c:154:20: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  154 | #define MVC(mv) { *(uint32_t*)mvc[i_mvc] = *(uint32_t*)mv; i_mvc++; }
+      |                    ^~~~~~~~~~~~~~~~~~~~~
+encoder/slicetype.c:156:17: note: in expansion of macro ‘MVC’
+  156 |                 MVC(fenc_mv[1]);
+      |                 ^~~
+encoder/slicetype.c:154:20: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  154 | #define MVC(mv) { *(uint32_t*)mvc[i_mvc] = *(uint32_t*)mv; i_mvc++; }
+      |                    ^~~~~~~~~~~~~~~~~~~~~
+encoder/slicetype.c:159:17: note: in expansion of macro ‘MVC’
+  159 |                 MVC(fenc_mv[i_mb_stride]);
+      |                 ^~~
+encoder/slicetype.c:154:20: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  154 | #define MVC(mv) { *(uint32_t*)mvc[i_mvc] = *(uint32_t*)mv; i_mvc++; }
+      |                    ^~~~~~~~~~~~~~~~~~~~~
+encoder/slicetype.c:161:21: note: in expansion of macro ‘MVC’
+  161 |                     MVC(fenc_mv[i_mb_stride-1]);
+      |                     ^~~
+encoder/slicetype.c:154:20: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  154 | #define MVC(mv) { *(uint32_t*)mvc[i_mvc] = *(uint32_t*)mv; i_mvc++; }
+      |                    ^~~~~~~~~~~~~~~~~~~~~
+encoder/slicetype.c:163:21: note: in expansion of macro ‘MVC’
+  163 |                     MVC(fenc_mv[i_mb_stride+1]);
+      |                     ^~~
+encoder/slicetype.c:170:18: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  170 |             if( *(uint32_t*)m[l].mv )
+      |                  ^~~~~~~~~~~~~~~~~~
+encoder/slicetype.c:172:40: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  172 |             *(uint32_t*)fenc_mvs[l] = *(uint32_t*)m[l].mv;
+      |                                        ^~~~~~~~~~~~~~~~~~
+encoder/slicetype.c:177:14: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  177 |             *(uint32_t*)m[l].mv = *(uint32_t*)fenc_mvs[l];
+      |              ^~~~~~~~~~~~~~~~~~
+encoder/slicetype.c:183:23: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  183 |     if( b_bidir && ( *(uint32_t*)m[0].mv || *(uint32_t*)m[1].mv ) )
+      |                       ^~~~~~~~~~~~~~~~~~
+encoder/slicetype.c:183:46: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  183 |     if( b_bidir && ( *(uint32_t*)m[0].mv || *(uint32_t*)m[1].mv ) )
+      |                                              ^~~~~~~~~~~~~~~~~~
+encoder/slicetype.c:65:9: warning: variable ‘i_cost_bak’ set but not used [-Wunused-but-set-variable]
+   65 |     int i_cost_bak;
+      |         ^~~~~~~~~~
+encoder/analyse.c: In function ‘x264_intra_rd_refine’:
+encoder/analyse.c:975:67: warning: ‘i_nnz[2]’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  975 |                 h->mb.cache.non_zero_count[x264_scan8[4*idx+j+1]] = i_nnz[j];
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+encoder/analyse.c:975:67: warning: ‘i_nnz[1]’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+encoder/analyse.c:975:67: warning: ‘i_nnz[0]’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+encoder/analyse.c:973:47: warning: ‘pels_v[6]’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  973 |                     p_dst_by[7+j*FDEC_STRIDE] = pels_v[j];
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+encoder/analyse.c:973:47: warning: ‘pels_v[5]’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+encoder/analyse.c:973:47: warning: ‘pels_v[4]’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+encoder/analyse.c:973:47: warning: ‘pels_v[3]’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+encoder/analyse.c:973:47: warning: ‘pels_v[2]’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+encoder/analyse.c:973:47: warning: ‘pels_v[1]’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+encoder/analyse.c:973:47: warning: ‘pels_v[0]’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+riscv64-linux-gnu-gcc -O4 -ffast-math  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -Wall -I.  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -fno-pie -no-pie -DHAVE_MALLOC_H -DARCH_RISCV64 -DSYS_LINUX -DHAVE_PTHREAD -s -fomit-frame-pointer   -c -o encoder/me.o encoder/me.c
+riscv64-linux-gnu-gcc -O4 -ffast-math  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -Wall -I.  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -fno-pie -no-pie -DHAVE_MALLOC_H -DARCH_RISCV64 -DSYS_LINUX -DHAVE_PTHREAD -s -fomit-frame-pointer   -c -o encoder/ratecontrol.o encoder/ratecontrol.c
+riscv64-linux-gnu-gcc -O4 -ffast-math  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -Wall -I.  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -fno-pie -no-pie -DHAVE_MALLOC_H -DARCH_RISCV64 -DSYS_LINUX -DHAVE_PTHREAD -s -fomit-frame-pointer   -c -o encoder/set.o encoder/set.c
+riscv64-linux-gnu-gcc -O4 -ffast-math  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -Wall -I.  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -fno-pie -no-pie -DHAVE_MALLOC_H -DARCH_RISCV64 -DSYS_LINUX -DHAVE_PTHREAD -s -fomit-frame-pointer   -c -o encoder/macroblock.o encoder/macroblock.c
+encoder/macroblock.c: In function ‘x264_macroblock_encode’:
+encoder/macroblock.c:698:14: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  698 |             *(uint32_t*)h->mb.cache.mv[0][x264_scan8[0]] == *(uint32_t*)h->mb.cache.pskip_mv
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+encoder/macroblock.c:698:62: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  698 |             *(uint32_t*)h->mb.cache.mv[0][x264_scan8[0]] == *(uint32_t*)h->mb.cache.pskip_mv
+      |                                                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+riscv64-linux-gnu-gcc -O4 -ffast-math  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -Wall -I.  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -fno-pie -no-pie -DHAVE_MALLOC_H -DARCH_RISCV64 -DSYS_LINUX -DHAVE_PTHREAD -s -fomit-frame-pointer   -c -o encoder/cabac.o encoder/cabac.c
+riscv64-linux-gnu-gcc -O4 -ffast-math  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -Wall -I.  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -fno-pie -no-pie -DHAVE_MALLOC_H -DARCH_RISCV64 -DSYS_LINUX -DHAVE_PTHREAD -s -fomit-frame-pointer   -c -o encoder/cavlc.o encoder/cavlc.c
+riscv64-linux-gnu-gcc -O4 -ffast-math  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -Wall -I.  -fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -fno-pie -no-pie -DHAVE_MALLOC_H -DARCH_RISCV64 -DSYS_LINUX -DHAVE_PTHREAD -s -fomit-frame-pointer   -c -o encoder/encoder.o encoder/encoder.c
+encoder/encoder.c: In function ‘x264_encoder_frame_end’:
+encoder/encoder.c:1737:53: warning: iteration 3 invokes undefined behavior [-Waggressive-loop-optimizations]
+ 1737 |         pic_out->img.i_stride[i] = h->fdec->i_stride[i];
+      |                                    ~~~~~~~~~~~~~~~~~^~~
+encoder/encoder.c:1736:18: note: within this loop
+ 1736 |     for(i = 0; i < 4; i++){
+      |                ~~^~~
+riscv64-linux-gnu-ar rc libx264.a common/mc.o common/predict.o common/pixel.o common/macroblock.o common/frame.o common/dct.o common/cpu.o common/cabac.o common/common.o common/mdate.o common/set.o common/quant.o common/vlc.o encoder/analyse.o encoder/me.o encoder/ratecontrol.o encoder/set.o encoder/macroblock.o encoder/cabac.o encoder/cavlc.o encoder/encoder.o 
+riscv64-linux-gnu-ranlib libx264.a
+riscv64-linux-gnu-gcc -o x264 x264.o matroska.o muxers.o libx264.a -static-libgcc -static-libstdc++ -L/lib -static -static-libgcc -static-libstdc++ -L/lib -static -fno-pie -no-pie  -lm -lpthread -s
+[PARSEC] Running 'env PATH=/home/lowell/Code/gem5-RISC-V-PARSEC/pkgs/tools/yasm/inst/riscv64-linux.gcc/bin:/home/lowell/Code/gem5-RISC-V-PARSEC/bin:/home/lowell/Code/qemu/build:/opt/platform-tools/:/home/lowell/.vscode-server/bin/f1b07bd25dfad64b0167beb15359ae573aecd2cc/bin/remote-cli:/home/lowell/Code/qemu/build:/opt/platform-tools/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/go/bin:/usr/local/go/bin:/home/lowell/Code/gem5-RISC-V-PARSEC/bin make install':
+install -d /home/lowell/Code/gem5-RISC-V-PARSEC/pkgs/apps/x264/inst/riscv64-linux.gcc/bin /home/lowell/Code/gem5-RISC-V-PARSEC/pkgs/apps/x264/inst/riscv64-linux.gcc/include
+install -d /home/lowell/Code/gem5-RISC-V-PARSEC/pkgs/apps/x264/inst/riscv64-linux.gcc/lib /home/lowell/Code/gem5-RISC-V-PARSEC/pkgs/apps/x264/inst/riscv64-linux.gcc/lib/pkgconfig
+install -m 644 x264.h /home/lowell/Code/gem5-RISC-V-PARSEC/pkgs/apps/x264/inst/riscv64-linux.gcc/include
+install -m 644 libx264.a /home/lowell/Code/gem5-RISC-V-PARSEC/pkgs/apps/x264/inst/riscv64-linux.gcc/lib
+install -m 644 x264.pc /home/lowell/Code/gem5-RISC-V-PARSEC/pkgs/apps/x264/inst/riscv64-linux.gcc/lib/pkgconfig
+install x264 /home/lowell/Code/gem5-RISC-V-PARSEC/pkgs/apps/x264/inst/riscv64-linux.gcc/bin
+riscv64-linux-gnu-ranlib /home/lowell/Code/gem5-RISC-V-PARSEC/pkgs/apps/x264/inst/riscv64-linux.gcc/lib/libx264.a
+[PARSEC]
+[PARSEC] BIBLIOGRAPHY
+[PARSEC]
+[PARSEC] [1] Bienia. Benchmarking Modern Multiprocessors. Ph.D. Thesis, 2011.
+[PARSEC]
+[PARSEC] Done.
+
+=========================================
+Generating parsec benchmark x264 size simsmall ...
+=========================================
+
+copy to /home/lowell/Code/gem5-RISC-V-PARSEC/images/x264/simsmall
+
+=========================================
+Generating parsec benchmark x264 size simmedium ...
+=========================================
+
+copy to /home/lowell/Code/gem5-RISC-V-PARSEC/images/x264/simmedium
+
+=========================================
+Generating parsec benchmark x264 size simlarge ...
+=========================================
+
+copy to /home/lowell/Code/gem5-RISC-V-PARSEC/images/x264/simlarge

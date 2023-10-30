@@ -46,7 +46,7 @@ for bench in os.environ['BENCHMARKS'].split():
         if os.path.isfile(run_sh):
             raise Exception('run.sh already exists!')
         with open(run_sh, 'w') as fp:
-            fp.write('#!/bin/ash\n')
+            fp.write('#!/bin/bash\n')
             fp.write('if [ $# -ne 1 ]; then\n')
             fp.write('  echo "Usage: ./run.sh THREAD_NUM"\n')
             fp.write('  exit\n')
@@ -72,6 +72,6 @@ for bench in os.environ['BENCHMARKS'].split():
         if os.path.isfile(show_sh):
             raise Exception('show.sh already exists!')
         with open(show_sh, 'w') as fp:
-            fp.write('#!/bin/ash\n')
+            fp.write('#!/bin/bash\n')
             fp.write(param['show_res'][size] + '\n')
         os.chmod(show_sh, int('0777', 8))
