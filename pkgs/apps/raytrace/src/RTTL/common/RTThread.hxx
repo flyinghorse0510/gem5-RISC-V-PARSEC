@@ -2,6 +2,7 @@
 #define RTTL_THREAD_HXX
 
 #include "RTInclude.hxx"
+#include "atomic"
 
 #include <pthread.h>
 
@@ -30,7 +31,8 @@ _INLINE int atomic_add(atomic_t *v, const int c) {
   }                                                              
   return e;
 }
-#else
+#elif defined(__x86_64__) || defined(_M_X64) || defined(i386) || defined(__i386__) || defined(__i386) || defined(_M_IX86)
+
 _INLINE int atomic_add(atomic_t *v, const int c) {
   int i = c;
   int __i = i;
@@ -41,6 +43,19 @@ _INLINE int atomic_add(atomic_t *v, const int c) {
 
   return i + __i;
 }
+
+#else
+
+_INLINE int atomic_add(atomic_t *v, const int c) {
+  int result;  
+  __asm__ __volatile__(
+    "amoadd.w %0, %1, %2"
+    : "=0" (result)
+    : "1"(v), "2"(c)
+  );
+  return result;
+}
+
 #endif
 
 _INLINE int atomic_inc(atomic_t *v) {
