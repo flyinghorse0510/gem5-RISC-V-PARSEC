@@ -102,12 +102,12 @@ else
   export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:${PARSECDIR}/pkgs/libs/hooks/inst/${PARSECPLAT}/lib"
 fi
 
-export GNU_HOST_NAME="x86_64-pc-linux-gnu"
-export GNU_TARGET_NAME="riscv64-linux"
+export GNU_HOST_NAME=""
+export GNU_TARGET_NAME=""
 export OSTYPE="linux" # used to select sysconf (i.e. cli syntax)
 # 
-export HOSTTYPE="riscv64"
-export TARGET_CROSS="riscv64-linux-gnu-"
+export HOSTTYPE=""
+export TARGET_CROSS=""
 
 # Benchmarks to compile
 export BENCHMARKS="blackscholes bodytrack canneal dedup facesim ferret fluidanimate freqmine streamcluster swaptions x264"
