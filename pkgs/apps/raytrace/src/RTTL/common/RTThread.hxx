@@ -50,8 +50,8 @@ _INLINE int atomic_add(atomic_t *v, const int c) {
   int result;  
   __asm__ __volatile__(
     "amoadd.w %0, %1, %2"
-    : "=0" (result)
-    : "1"(v), "2"(c)
+    : "=g" (result)
+    : "g"(v), "g"(c)
   );
   return result;
 }
