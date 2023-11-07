@@ -13,9 +13,9 @@ $cc='gcc';
 if ($debug)
 	{ $cflags="-g2 -ggdb -DREF_CHECK -DCRYPTO_MDEBUG"; }
 elsif ($profile)
-	{ $cflags="-pg -O3"; }
+	{ $cflags="-pg -O1"; }
 else
-	{ $cflags="-O3 -fomit-frame-pointer"; }
+	{ $cflags="-O1 -fomit-frame-pointer"; }
 
 if (!$no_asm)
 	{

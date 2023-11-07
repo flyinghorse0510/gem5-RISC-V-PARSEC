@@ -113,7 +113,7 @@ MSYS from www.mingw.org.
 Tor invokes configure using:
 
 CC='gcc -mtune=pentium3 -mthreads' CPPFLAGS='-I/opt/gnu/include' \
-	LDFLAGS='-L/opt/gnu/lib -Wl,--enable-auto-image-base' CFLAGS=-O2 \
+	LDFLAGS='-L/opt/gnu/lib -Wl,--enable-auto-image-base' CFLAGS=-O1 \
 	./configure --disable-gtk-doc --prefix=$TARGET
 
 The /opt/gnu mentioned contains the header files for GNU and (import)

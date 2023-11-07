@@ -423,7 +423,7 @@ Tue Sep  4 01:46:15 2001  Owen Taylor  <otaylor@redhat.com>
 
 	* win32/make.mingw: Redid CFLAGS.
 
-	* win32/make.mingw (CXX): Removed PTHREAD defs. Added -O2 -Wall to
+	* win32/make.mingw (CXX): Removed PTHREAD defs. Added -O1 -Wall to
 	compile flags.
 
 2001-01-06  Hans Breuer  <hans@breuer.org>

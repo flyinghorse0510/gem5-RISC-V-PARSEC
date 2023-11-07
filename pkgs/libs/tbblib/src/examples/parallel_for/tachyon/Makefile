@@ -127,7 +127,7 @@ SVERSION = $(VERSION)
 ifeq ($(ADD_DEBUG),1)
 MYCXXFLAGS += -O0 -g -D_DEBUG
 else
-MYCXXFLAGS += -O2
+MYCXXFLAGS += -O1
 endif
 
 

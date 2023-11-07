@@ -15,7 +15,7 @@ if ($gcc)
 	if ($debug)
 		{ $cflags="-g2 -ggdb"; }
 	else
-		{ $cflags="-O3 -fomit-frame-pointer"; }
+		{ $cflags="-O1 -fomit-frame-pointer"; }
 	}
 else
 	{

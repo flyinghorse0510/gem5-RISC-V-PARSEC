@@ -173,7 +173,7 @@ Hints for Compaq/DEC Alpha
 When comping with GCC use the -mieee and -mfp-rounding-mode options 
 as appropriate, e.g.
 
-    ./configure CFLAGS="-mieee -mfp-rounding-mode=d -g -O2"
+    ./configure CFLAGS="-mieee -mfp-rounding-mode=d -g -O1"
 
 The library should compile successfully with Compaq's C compiler on
 Tru64 Unix 'cc' using the -std, -ieee and -fprm options.  Use
@@ -261,7 +261,7 @@ in addition to the normal compilation options.
 
 The GCC 3.3 compiler shipped by Apple contains a bug which causes the
 wavelet tests to fail on "data untouched" tests at optimisation level
--O2.  You may be able work around this by compiling with CFLAGS="-O1
+-O1.  You may be able work around this by compiling with CFLAGS="-O1
 ..." instead.
 
 F J Frankin <MEP95JFF@sheffield.ac.uk> reported that some early
@@ -396,7 +396,7 @@ the `configure' script does not know about.  You can give `configure'
 initial values for variables by setting them in the environment.  Using
 a Bourne-compatible shell, you can do that on the command line like
 this:
-     CC=c89 CFLAGS=-O2 LIBS=-lposix ./configure
+     CC=c89 CFLAGS=-O1 LIBS=-lposix ./configure
 
 Or on systems that have the `env' program, you can do it like this:
      env CPPFLAGS=-I/usr/local/include LDFLAGS=-s ./configure

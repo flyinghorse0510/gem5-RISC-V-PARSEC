@@ -175,7 +175,7 @@ if ($gnuc)
    }
    else
    {
-      $cflags="-O2";
+      $cflags="-O1";
    }
    $cflags.=" -nostdinc -I$include_path \\
          -fno-builtin -fpcc-struct-return -fno-strict-aliasing \\

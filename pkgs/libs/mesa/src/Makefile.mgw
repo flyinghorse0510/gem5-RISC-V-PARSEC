@@ -71,7 +71,7 @@ else
   # I love c89
   CFLAGS = -Wall -pedantic
 endif
-CFLAGS += -O2 -ffast-math
+CFLAGS += -O1 -ffast-math
 
 export CFLAGS
 

@@ -2,7 +2,7 @@ SGI Challenge R4400 200mhz IRIX 5.3 - gcc (2.6.3)
 SSLeay 0.6.1 02-Jul-1996
 built on Tue Jul  2 16:25:30 EST 1996
 options:bn(64,32) md2(char) rc4(idx,char) des(idx,long) idea(int)
-C flags:gcc -O2 -mips2 -DTERMIOS -DB_ENDIAN
+C flags:gcc -O1 -mips2 -DTERMIOS -DB_ENDIAN
 The 'numbers' are in 1000s of bytes per second processed.
 type           8 bytes     64 bytes    256 bytes   1024 bytes   8192 bytes
 md2             96.53k      266.70k      360.09k      393.70k      405.07k

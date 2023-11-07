@@ -8,7 +8,7 @@ If your system does not define CLK_TCK it will be assumed to
 be 100.0.
 
 If possible use gcc v 2.7.?
-Turn on the maximum optimising (normally '-O3 -fomit-frame-pointer' for gcc)
+Turn on the maximum optimising (normally '-O1 -fomit-frame-pointer' for gcc)
 In recent times, some system compilers give better performace.
 
 type 'make'

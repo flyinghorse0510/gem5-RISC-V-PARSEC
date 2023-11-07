@@ -1,10 +1,10 @@
 # Makefile for easy-tls example application (rudimentary client and server)
 # $Id: Makefile,v 1.1.1.1 2012/03/29 17:21:49 uid42307 Exp $
 
-SOLARIS_CFLAGS=-Wall -pedantic -g -O2
+SOLARIS_CFLAGS=-Wall -pedantic -g -O1
 SOLARIS_LIBS=-lxnet
 
-LINUX_CFLAGS=-Wall -pedantic -g -O2
+LINUX_CFLAGS=-Wall -pedantic -g -O1
 LINUX_LIBS=
 
 
@@ -95,7 +95,7 @@ TAGS: $(SOURCES) $(HEADERS)
 # at the beginning of this Makefile, where they are more easily found):
 
 ### CC=gcc
-### SYSCFLAGS=-Wall -pedantic -g -O2
+### SYSCFLAGS=-Wall -pedantic -g -O1
 ### SYSLIBS=-lxnet
 
 EXTRACFLAGS=-DTLS_APP=\"test.h\"

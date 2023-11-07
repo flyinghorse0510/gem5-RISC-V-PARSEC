@@ -110,9 +110,9 @@ For example, on HP-UX you probably want to say
 	./configure CC='cc -Aa'
 to get HP's compiler to run in ANSI mode.
 
-* The default CFLAGS setting is "-g" for non-gcc compilers, "-g -O2" for gcc.
+* The default CFLAGS setting is "-g" for non-gcc compilers, "-g -O1" for gcc.
 You can override this by saying, for example,
-	./configure CFLAGS='-O2'
+	./configure CFLAGS='-O1'
 if you want to compile without debugging support.
 
 * Configure will set up the makefile so that "make install" will install files

@@ -4,7 +4,7 @@ RISC1 and RISC2 are 2 alternatives for the inner loop and
 PTR means to use pointers arithmatic instead of arrays.
 
 FreeBSD - Pentium Pro 200mhz - gcc 2.7.2.2 - assembler		577,000 4620k/s
-IRIX 6.2 - R10000 195mhz - cc (-O3 -n32) - UNROLL RISC2 PTR	496,000 3968k/s
+IRIX 6.2 - R10000 195mhz - cc (-O1 -n32) - UNROLL RISC2 PTR	496,000 3968k/s
 solaris 2.5.1 usparc 167mhz?? - SC4.0 - UNROLL RISC1 PTR [1]	459,400 3672k/s
 FreeBSD - Pentium Pro 200mhz - gcc 2.7.2.2 - UNROLL RISC1	433,000 3468k/s
 solaris 2.5.1 usparc 167mhz?? - gcc 2.7.2 - UNROLL 		380,000 3041k/s

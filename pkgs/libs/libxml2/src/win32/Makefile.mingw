@@ -97,7 +97,7 @@ ifeq ($(DEBUG),1)
 CFLAGS += -D_DEBUG -g
 LDFLAGS += 
 else
-CFLAGS += -DNDEBUG -O2 
+CFLAGS += -DNDEBUG -O1 
 LDFLAGS += 
 endif
 

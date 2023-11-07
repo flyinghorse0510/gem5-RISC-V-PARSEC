@@ -7,8 +7,8 @@ CONFIG_NAME = ultrix-gcc
 # Compiler and flags
 CC = gcc
 CXX = g++
-CFLAGS = -pedantic -O2
-CXXFLAGS = -pedantic -O2
+CFLAGS = -pedantic -O1
+CXXFLAGS = -pedantic -O1
 GLUT_CFLAGS = -fexceptions
 MKLIB_OPTIONS = -static
 

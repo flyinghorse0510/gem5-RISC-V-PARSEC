@@ -4,7 +4,7 @@ TARGET = freqmine
 
 CXXFLAGS += -Wno-deprecated
 
-CXXFLAGS += -O2
+CXXFLAGS += -O1
 
 all: $(TARGET)
 

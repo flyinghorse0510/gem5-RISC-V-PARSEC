@@ -8,10 +8,10 @@ CONFIG_NAME = linux-directfb
 CC  = gcc
 CXX = g++
 
-CFLAGS   = -Wall -O3 -ffast-math -fPIC -std=c99 -D_GNU_SOURCE -D_POSIX_SOURCE -D_SVID_SOURCE \
+CFLAGS   = -Wall -O1 -ffast-math -fPIC -std=c99 -D_GNU_SOURCE -D_POSIX_SOURCE -D_SVID_SOURCE \
          -D_POSIX_C_SOURCE=199309L -D_BSD_SOURCE -DPTHREADS
 
-CXXFLAGS = -Wall -O3 -fPIC -D_POSIX_SOURCE -D_POSIX_C_SOURCE=199309L -D_SVID_SOURCE -D_BSD_SOURCE   
+CXXFLAGS = -Wall -O1 -fPIC -D_POSIX_SOURCE -D_POSIX_C_SOURCE=199309L -D_SVID_SOURCE -D_BSD_SOURCE   
 
 # Work around aliasing bugs - developers should comment this out
 CFLAGS += -fno-strict-aliasing

@@ -1,6 +1,6 @@
 Pentium 100
 Linux 2 kernel
-gcc 2.7.0 -O3 -fomit-frame-pointer
+gcc 2.7.0 -O1 -fomit-frame-pointer
 No X server running, just a console, it makes the top speed jump from 151,000
 to 158,000 :-).
 options    des ecb/s

@@ -1,10 +1,10 @@
 IRIX 5.3
 R4400 200mhz
-cc -O2
+cc -O1
 SSLeay 0.6.5a 06-Dec-1996
 built on Mon Dec 23 11:51:11 EST 1996
 options:bn(32,32) md2(int) rc4(ptr,int) des(ptr,risc2,16,long) idea(int)
-C flags:cc -O2 -DTERMIOS -DB_ENDIAN
+C flags:cc -O1 -DTERMIOS -DB_ENDIAN
 The 'numbers' are in 1000s of bytes per second processed.
 type           8 bytes     64 bytes    256 bytes   1024 bytes   8192 bytes
 md2            100.62k      280.25k      380.15k      416.02k      428.82k

@@ -36,8 +36,8 @@ endif # icc
 all:	release test
 
 release: *.cpp
-	$(CXX) -O2 -DNDEBUG $(CXXFLAGS) -o convex_hull_sample convex_hull_sample.cpp -ltbb $(LIBS)
-	$(CXX) -O2 -DNDEBUG $(CXXFLAGS) -o convex_hull_bench convex_hull_bench.cpp -ltbb $(LIBS)
+	$(CXX) -O1 -DNDEBUG $(CXXFLAGS) -o convex_hull_sample convex_hull_sample.cpp -ltbb $(LIBS)
+	$(CXX) -O1 -DNDEBUG $(CXXFLAGS) -o convex_hull_bench convex_hull_bench.cpp -ltbb $(LIBS)
 
 debug: *.cpp
 	$(CXX) -O0 -g -DTBB_USE_DEBUG $(CXXFLAGS) -o convex_hull_sample convex_hull_sample.cpp -ltbb_debug $(LIBS)

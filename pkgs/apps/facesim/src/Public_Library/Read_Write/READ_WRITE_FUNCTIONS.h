@@ -63,7 +63,7 @@ inline void Read_Primitive (std::istream& input_stream, T& d)
 
 #ifdef __sparc__
 	/* For unknown reasons I am getting a segfault on my sparc box compiling
-	   with -O3, unless I place a dummy use of the value just read here.
+	   with -O1, unless I place a dummy use of the value just read here.
 	   Might just be an issue with a particular gcc version. Unfortunately,
 	   this function call does affect the region of interest. */
 	sparc_seg_fault_prevent_dummy ( (void *) &d);

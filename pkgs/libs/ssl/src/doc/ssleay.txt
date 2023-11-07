@@ -5925,7 +5925,7 @@ RSA performance.
 
 SSLeay 0.6.0
 Pentium 100, 32meg, Windows NT Workstation 3.51
-linux - gcc v 2.7.0 -O3 -fomit-frame-pointer -m486
+linux - gcc v 2.7.0 -O1 -fomit-frame-pointer -m486
 and
 Windows NT  - Windows NT 3.51 - Visual C++ 4.1   - 586 code + 32bit assember
 Windows 3.1 - Windows NT 3.51 - Visual C++ 1.52c - 286 code + 32bit assember

@@ -166,7 +166,7 @@ elsif ($platform eq "BC-NT")
 elsif ($platform eq "FreeBSD")
 	{
 	require 'unix.pl';
-	$cflags='-DTERMIO -D_ANSI_SOURCE -O2 -fomit-frame-pointer';
+	$cflags='-DTERMIO -D_ANSI_SOURCE -O1 -fomit-frame-pointer';
 	}
 elsif ($platform eq "linux-elf")
 	{

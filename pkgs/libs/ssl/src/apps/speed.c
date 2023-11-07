@@ -2030,7 +2030,7 @@ int MAIN(int argc, char **argv)
 				int outl;
 
 				names[D_EVP]=OBJ_nid2ln(evp_cipher->nid);
-				/* -O3 -fschedule-insns messes up an
+				/* -O1 -fschedule-insns messes up an
 				 * optimization here!  names[D_EVP]
 				 * somehow becomes NULL */
 				print_message(names[D_EVP],save_count,

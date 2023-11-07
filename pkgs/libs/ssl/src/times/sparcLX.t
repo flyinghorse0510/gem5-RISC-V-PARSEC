@@ -2,7 +2,7 @@ Sparc Station LX
 SSLeay 0.7.3 30-Apr-1997
 built on Thu May  1 10:44:02 EST 1997
 options:bn(64,32) md2(int) rc4(ptr,char) des(idx,cisc,16,long) idea(int) blowfish(ptr)
-C flags:gcc -O3 -fomit-frame-pointer -mv8 -Wall
+C flags:gcc -O1 -fomit-frame-pointer -mv8 -Wall
 The 'numbers' are in 1000s of bytes per second processed.
 type              8 bytes     64 bytes    256 bytes   1024 bytes   8192 bytes
 md2                17.60k       48.72k       66.47k       72.70k       74.72k

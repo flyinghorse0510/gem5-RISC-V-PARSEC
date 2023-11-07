@@ -206,10 +206,10 @@ IF(KDE3_FOUND)
       SET ( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wnon-virtual-dtor -Wno-long-long -Wundef -Wcast-align -Wconversion -Wchar-subscripts -Wall -W -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fno-exceptions -fno-check-new -fno-common")
    ENDIF (CMAKE_SYSTEM_NAME MATCHES BSD AND _KDE3_USE_FLAGS)
 
-   # if no special buildtype is selected, add -O2 as default optimization
+   # if no special buildtype is selected, add -O1 as default optimization
    IF (NOT CMAKE_BUILD_TYPE AND _KDE3_USE_FLAGS)
-      SET ( CMAKE_C_FLAGS     "${CMAKE_C_FLAGS} -O2")
-      SET ( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O2")
+      SET ( CMAKE_C_FLAGS     "${CMAKE_C_FLAGS} -O1")
+      SET ( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O1")
    ENDIF (NOT CMAKE_BUILD_TYPE AND _KDE3_USE_FLAGS)
 
 #SET(CMAKE_SHARED_LINKER_FLAGS "-avoid-version -module -Wl,--no-undefined -Wl,--allow-shlib-undefined")

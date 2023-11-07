@@ -9,7 +9,7 @@ CC = gcc
 CXX = g++
 
 WARN_FLAGS = -Wall -Wundef
-OPT_FLAGS  = -O3 -g
+OPT_FLAGS  = -O1 -g
 PIC_FLAGS  = -fPIC
 
 # Add '-DGLX_USE_TLS' to ARCH_FLAGS to enable TLS support.

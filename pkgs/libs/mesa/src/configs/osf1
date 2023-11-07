@@ -8,7 +8,7 @@ CONFIG_NAME = osf1
 CC = cc
 CXX = cxx
 CFLAGS = -O0 -std1 -ieee_with_no_inexact -DUSE_XSHM -DPTHREADS -D_REENTRANT
-CXXFLAGS = -O2 -std ansi -ieee -DPTHREADS -D_REENTRANT
+CXXFLAGS = -O1 -std ansi -ieee -DPTHREADS -D_REENTRANT
 
 GL_LIB_DEPS = -lX11 -lXext -lm -lpthread
 GLU_LIB_DEPS = -L$(TOP)/$(LIB_DIR) -l$(GL_LIB) -lm

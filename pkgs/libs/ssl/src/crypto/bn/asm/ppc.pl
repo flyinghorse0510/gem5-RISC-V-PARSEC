@@ -25,7 +25,7 @@
 #	OpenSSL 0.9.6c 21 dec 2001
 #	built on: Tue Jun 11 11:06:51 EDT 2002
 #	options:bn(64,32) ...
-#compiler: cc -DTHREADS  -DAIX -DB_ENDIAN -DBN_LLONG -O3
+#compiler: cc -DTHREADS  -DAIX -DB_ENDIAN -DBN_LLONG -O1
 #                  sign    verify    sign/s verify/s
 #rsa  512 bits   0.0098s   0.0009s    102.0   1170.6
 #rsa 1024 bits   0.0507s   0.0026s     19.7    387.5
@@ -51,7 +51,7 @@
 #	OpenSSL 0.9.6g [engine] 9 Aug 2002
 #	built on: Fri Apr 18 16:59:20 EDT 2003
 #	options:bn(64,64) ...
-#	compiler: cc -DTHREADS -D_REENTRANT -q64 -DB_ENDIAN -O3
+#	compiler: cc -DTHREADS -D_REENTRANT -q64 -DB_ENDIAN -O1
 #                  sign    verify    sign/s verify/s
 #rsa  512 bits   0.0028s   0.0003s    357.1   3844.4
 #rsa 1024 bits   0.0148s   0.0008s     67.5   1239.7
@@ -1700,7 +1700,7 @@ Lppcasm_add_adios:
 #	the AIX compiler. The only optimization is to use
 #	the PPC instruction to count leading zeros instead
 #	of call to num_bits_word. Since this was compiled
-#	only at level -O2 we can possibly squeeze it more?
+#	only at level -O1 we can possibly squeeze it more?
 #	
 #	r3 = h
 #	r4 = l

@@ -3336,13 +3336,13 @@ if test "$ac_test_CFLAGS" = set; then
   CFLAGS=$ac_save_CFLAGS
 elif test $ac_cv_prog_cc_g = yes; then
   if test "$GCC" = yes; then
-    CFLAGS="-g -O2"
+    CFLAGS="-g -O1"
   else
     CFLAGS="-g"
   fi
 else
   if test "$GCC" = yes; then
-    CFLAGS="-O2"
+    CFLAGS="-O1"
   else
     CFLAGS=
   fi
@@ -3895,13 +3895,13 @@ if test "$ac_test_FFLAGS" = set; then
   FCFLAGS=$ac_save_FFLAGS
 elif test $ac_cv_prog_fc_g = yes; then
   if test "x$ac_cv_fc_compiler_gnu" = xyes; then
-    FCFLAGS="-g -O2"
+    FCFLAGS="-g -O1"
   else
     FCFLAGS="-g"
   fi
 else
   if test "x$ac_cv_fc_compiler_gnu" = xyes; then
-    FCFLAGS="-O2"
+    FCFLAGS="-O1"
   else
     FCFLAGS=
   fi
@@ -8496,13 +8496,13 @@ if test "$ac_test_FFLAGS" = set; then
   FCFLAGS=$ac_save_FFLAGS
 elif test $ac_cv_prog_fc_g = yes; then
   if test "x$ac_cv_fc_compiler_gnu" = xyes; then
-    FCFLAGS="-g -O2"
+    FCFLAGS="-g -O1"
   else
     FCFLAGS="-g"
   fi
 else
   if test "x$ac_cv_fc_compiler_gnu" = xyes; then
-    FCFLAGS="-O2"
+    FCFLAGS="-O1"
   else
     FCFLAGS=
   fi
@@ -16464,7 +16464,8 @@ $debug ||
 if test -n "$CONFIG_FILES"; then
 
 
-ac_cr=''
+ac_cr='
+'
 ac_cs_awk_cr=`$AWK 'BEGIN { print "a\rb" }' </dev/null 2>/dev/null`
 if test "$ac_cs_awk_cr" = "a${ac_cr}b"; then
   ac_cs_awk_cr='\\r'

@@ -5,7 +5,7 @@ gcc 2.7.2.2
 SSLeay 0.7.0 30-Jan-1997
 built on Tue Apr 22 12:14:36 EST 1997
 options:bn(64,32) md2(int) rc4(idx,int) des(ptr,risc1,16,long) idea(int) blowfish(ptr2)
-C flags:gcc -DTERMIOS -D_ANSI_SOURCE -fomit-frame-pointer -O3 -m486 -Wall
+C flags:gcc -DTERMIOS -D_ANSI_SOURCE -fomit-frame-pointer -O1 -m486 -Wall
 The 'numbers' are in 1000s of bytes per second processed.
 type              8 bytes     64 bytes    256 bytes   1024 bytes   8192 bytes
 md2               130.99k      367.68k      499.09k      547.04k      566.50k

@@ -12,7 +12,7 @@ $preamble = "SHELL=sh\n";
 # C compiler stuff
 
 $cc='gcc';
-$cflags="-DL_ENDIAN -O3 -fomit-frame-pointer -m486 -Zmtd -Wall ";
+$cflags="-DL_ENDIAN -O1 -fomit-frame-pointer -m486 -Zmtd -Wall ";
 $cflags.="-Zomf " if $shlib;
 $shl_cflag="-Zdll";
 

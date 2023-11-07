@@ -259,7 +259,7 @@ gcc -ansi -pedantic -Werror -Wall -W
   -Wtraditional -Wconversion -Wshadow
   -Wpointer-arith -Wcast-qual -Wcast-align 
   -Wwrite-strings -Wnested-externs 
-  -fshort-enums -fno-common -Dinline= -g -O2
+  -fshort-enums -fno-common -Dinline= -g -O1
 @end example
 
 @noindent
@@ -279,7 +279,7 @@ warning-free.
 @item -Wall 
 This turns on a set of warnings for common programming problems.  You
 need @code{-Wall}, but it is not enough on its own.
-@item -O2
+@item -O1
 Turn on optimization.  The warnings for uninitialized variables in
 @code{-Wall} rely on the optimizer to analyze the code.  If there is no
 optimization then these warnings aren't generated.

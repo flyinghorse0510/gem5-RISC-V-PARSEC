@@ -5,7 +5,7 @@
 CC      = bcc
 TLIB    = tlib /0 /C
 # note: the -3 flag produces code for 386, 486, Pentium etc; omit it for 286s
-OPTIMIZE= -3 -O2
+OPTIMIZE= -3 -O1
 #WINDOWS= -W
 CFLAGS  = -c -ml -d $(OPTIMIZE) $(WINDOWS) -DMSDOS
 LFLAGS  = -ml $(WINDOWS)

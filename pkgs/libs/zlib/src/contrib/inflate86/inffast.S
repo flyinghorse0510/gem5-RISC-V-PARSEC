@@ -11,7 +11,7 @@
  * This version (Jan-23-2003) of inflate_fast was coded and tested under
  * GNU/Linux on a pentium 3, using the gcc-3.2 compiler distribution.  On that
  * machine, I found that gzip style archives decompressed about 20% faster than
- * the gcc-3.2 -O3 -fomit-frame-pointer compiled version.  Your results will
+ * the gcc-3.2 -O1 -fomit-frame-pointer compiled version.  Your results will
  * depend on how large of a buffer is used for z_stream.next_in & next_out
  * (8K-32K worked best for my 256K cpu cache) and how much overhead there is in
  * stream processing I/O and crc32/addler32.  In my case, this routine used

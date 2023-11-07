@@ -3489,13 +3489,13 @@ if test "$ac_test_CFLAGS" = set; then
   CFLAGS=$ac_save_CFLAGS
 elif test $ac_cv_prog_cc_g = yes; then
   if test "$GCC" = yes; then
-    CFLAGS="-g -O2"
+    CFLAGS="-g -O1"
   else
     CFLAGS="-g"
   fi
 else
   if test "$GCC" = yes; then
-    CFLAGS="-O2"
+    CFLAGS="-O1"
   else
     CFLAGS=
   fi
@@ -6694,13 +6694,13 @@ if test "$ac_test_CXXFLAGS" = set; then
   CXXFLAGS=$ac_save_CXXFLAGS
 elif test $ac_cv_prog_cxx_g = yes; then
   if test "$GXX" = yes; then
-    CXXFLAGS="-g -O2"
+    CXXFLAGS="-g -O1"
   else
     CXXFLAGS="-g"
   fi
 else
   if test "$GXX" = yes; then
-    CXXFLAGS="-O2"
+    CXXFLAGS="-O1"
   else
     CXXFLAGS=
   fi
@@ -7357,13 +7357,13 @@ if test "$ac_test_FFLAGS" = set; then
   FFLAGS=$ac_save_FFLAGS
 elif test $ac_cv_prog_f77_g = yes; then
   if test "x$ac_cv_f77_compiler_gnu" = xyes; then
-    FFLAGS="-g -O2"
+    FFLAGS="-g -O1"
   else
     FFLAGS="-g"
   fi
 else
   if test "x$ac_cv_f77_compiler_gnu" = xyes; then
-    FFLAGS="-O2"
+    FFLAGS="-O1"
   else
     FFLAGS=
   fi

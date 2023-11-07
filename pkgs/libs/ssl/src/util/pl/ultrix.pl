@@ -13,7 +13,7 @@ $cc='cc';
 if ($debug)
 	{ $cflags="-g -DREF_CHECK -DCRYPTO_MDEBUG"; }
 else
-	{ $cflags="-O2"; }
+	{ $cflags="-O1"; }
 
 $cflags.=" -std1 -DL_ENDIAN";
 

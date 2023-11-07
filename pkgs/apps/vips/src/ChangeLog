@@ -1233,7 +1233,7 @@
 
 	hardware: 2 x 2.5GHz P4, 1GB RAM, 15k SCSI, ReiserFS
 	os: suse 8 (kernel 2.4.18)
-	compiler: gcc 2.95.3, -O2, threads turned on
+	compiler: gcc 2.95.3, -O1, threads turned on
 	images: fred.v, fred2.v; both 4k by 4k LABPACK (64MB)
 	images: jim.v, jim2.v; both 15k by 15k LABPACK (900MB)
 	time: smallest real of 5 runs, system idle

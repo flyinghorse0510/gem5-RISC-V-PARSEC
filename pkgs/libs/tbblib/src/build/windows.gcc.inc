@@ -78,7 +78,7 @@ LINK_FLAGS = -Wl,--enable-auto-import
 LIB_LINK_FLAGS = $(DYLIB_KEY)
 
 ifeq ($(cfg), release)
-        CPLUS_FLAGS = -O2
+        CPLUS_FLAGS = -O1
 endif
 ifeq ($(cfg), debug)
         CPLUS_FLAGS = -g -O0 -DTBB_USE_DEBUG

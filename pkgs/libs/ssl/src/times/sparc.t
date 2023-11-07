@@ -3,7 +3,7 @@ Sparc 10 - Solaris 2.3 - 50mhz
 SSLeay 0.7.3r 20-May-1997
 built on Mon Jun  2 00:55:51 EST 1997
 options:bn(64,32) md2(int) rc4(ptr,char) des(idx,cisc,16,long) idea(int) blowfish(ptr)
-C flags:gcc -O3 -fomit-frame-pointer -mv8 -Wall
+C flags:gcc -O1 -fomit-frame-pointer -mv8 -Wall
 The 'numbers' are in 1000s of bytes per second processed.
 type              8 bytes     64 bytes    256 bytes   1024 bytes   8192 bytes
 md2                54.88k      154.52k      210.35k      231.08k      237.21k

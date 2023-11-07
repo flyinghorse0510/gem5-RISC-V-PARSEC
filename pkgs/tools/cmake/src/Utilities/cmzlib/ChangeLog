@@ -561,7 +561,7 @@ Changes in 1.0.6 (19 Jan 1998)
         386 asm code replacing longest_match().
    contrib/iostream/ by Kevin Ruland <kevin@rodin.wustl.edu>
         A C++ I/O streams interface to the zlib gz* functions
-   contrib/iostream2/  by Tyge Løvset <Tyge.Lovset@cmr.no>
+   contrib/iostream2/  by Tyge Lï¿½vset <Tyge.Lovset@cmr.no>
         Another C++ I/O streams interface
    contrib/untgz/  by "Pedro A. Aranda Guti\irrez" <paag@tid.es>
         A very simple tar.gz file extractor using zlib
@@ -685,7 +685,7 @@ Changes in 0.99 (27 Jan 96)
 - fixed very unlikely race condition in ct_static_init
 - free in reverse order of allocation to help memory manager
 - use zlib-1.0/* instead of zlib/* inside the tar.gz
-- make zlib warning-free with "gcc -O3 -Wall -Wwrite-strings -Wpointer-arith
+- make zlib warning-free with "gcc -O1 -Wall -Wwrite-strings -Wpointer-arith
   -Wconversion -Wstrict-prototypes -Wmissing-prototypes"
 - allow gzread on concatenated .gz files
 - deflateEnd now returns Z_DATA_ERROR if it was premature

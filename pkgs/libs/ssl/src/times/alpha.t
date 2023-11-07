@@ -1,4 +1,4 @@
-SSLeay-051 Alpha gcc -O3 64Bit (assember bn_mul)
+SSLeay-051 Alpha gcc -O1 64Bit (assember bn_mul)
 type           8 bytes     64 bytes    256 bytes   1024 bytes   8192 bytes
 md2             44.40k      121.56k      162.73k      179.20k      185.01k
 md5            780.85k     3278.53k     5281.52k     6327.98k     6684.67k
@@ -15,7 +15,7 @@ rsa 1024 bits   0.141s
 rsa 2048 bits   0.844s
 rsa 4096 bits   6.033s
 
-SSLeay-051 Alpha cc -O2 64bit (assember bn_mul)
+SSLeay-051 Alpha cc -O1 64bit (assember bn_mul)
 type           8 bytes     64 bytes    256 bytes   1024 bytes   8192 bytes
 md2             45.37k      122.86k      165.97k      182.95k      188.42k
 md5            842.42k     3629.93k     5916.76k     7039.17k     7364.61k
@@ -43,7 +43,7 @@ des ede3       349.34k      418.05k      427.26k      429.74k      431.45k
 
 
 
-SSLeay-045c Alpha gcc -O3 64Bit
+SSLeay-045c Alpha gcc -O1 64Bit
 type           8 bytes     64 bytes    256 bytes   1024 bytes   8192 bytes
 md2             44.95k      122.22k      164.27k      180.62k      184.66k
 md5            808.71k     3371.95k     5415.68k     6385.66k     6684.67k

@@ -9,7 +9,7 @@ sh_slib=$slib.so.$major.$minor
 clib=libcrypto
 sh_clib=$clib.so.$major.$minor
 
-FLAGS="-O3 -fomit-frame-pointer"
+FLAGS="-O1 -fomit-frame-pointer"
 SHFLAGS="-DPIC -fPIC"
 
 touch $sh_clib

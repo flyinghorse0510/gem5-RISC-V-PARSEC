@@ -26,7 +26,7 @@ if ($debug)
 }
 else
 {
-    $cflags.="-O2 -ff -fp";
+    $cflags.="-O1 -ff -fp";
 }
 
 $obj='.obj';

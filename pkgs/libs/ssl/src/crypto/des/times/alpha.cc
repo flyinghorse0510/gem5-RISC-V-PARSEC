@@ -1,4 +1,4 @@
-cc -O2
+cc -O1
 DES_LONG is 'unsigned int'
 
 options    des ecb/s

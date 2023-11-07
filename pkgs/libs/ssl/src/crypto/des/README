@@ -41,7 +41,7 @@ after the build to make sure everything works.
 I believe these routines are close to the fastest and most portable DES
 routines that use small lookup tables (4.5k) that are publicly available.
 The fcrypt routine is faster than ufc's fcrypt (when compiling with
-gcc2 -O2) on the sparc 2 (1410 vs 1270) but is not so good on other machines
+gcc2 -O1) on the sparc 2 (1410 vs 1270) but is not so good on other machines
 (on a sun3/260 168 vs 336).  It is a function of CPU on chip cache size.
 [ 10-Jan-97 and a function of an incorrect speed testing program in
   ufc which gave much better test figures that reality ].

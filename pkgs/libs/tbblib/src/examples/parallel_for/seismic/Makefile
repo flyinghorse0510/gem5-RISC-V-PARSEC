@@ -45,7 +45,7 @@ ifeq ($(UI),mac)
 endif
 
 release: ../../common/gui/$(UI)video.cpp SeismicSimulation.cpp resources
-	$(CXX) -O2 -DNDEBUG $(CXXFLAGS) -o $(EXE) $< SeismicSimulation.cpp -ltbb $(LIBS)
+	$(CXX) -O1 -DNDEBUG $(CXXFLAGS) -o $(EXE) $< SeismicSimulation.cpp -ltbb $(LIBS)
 
 debug: ../../common/gui/$(UI)video.cpp SeismicSimulation.cpp resources
 	$(CXX) -g -O0 -DTBB_USE_DEBUG $(CXXFLAGS) -o $(EXE) $< SeismicSimulation.cpp -ltbb_debug $(LIBS)

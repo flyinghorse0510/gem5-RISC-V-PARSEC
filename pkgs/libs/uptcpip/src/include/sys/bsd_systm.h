@@ -374,7 +374,7 @@ void free_unr(struct unrhdr *uh, u_int item);
  *	bits++;
  * }
  * Both of these latter forms do some very strange things on gcc-3.1 with
- * -mcpu=pentiumpro and/or -march=pentiumpro and/or -O or -O2.
+ * -mcpu=pentiumpro and/or -march=pentiumpro and/or -O or -O1.
  * There is probably an SSE or MMX popcnt instruction.
  *
  * I wonder if this should be in libkern?

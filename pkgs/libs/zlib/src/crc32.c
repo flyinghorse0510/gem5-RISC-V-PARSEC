@@ -6,7 +6,7 @@
  * CRC methods: exclusive-oring 32 bits of data at a time, and pre-computing
  * tables for updating the shift register in one step with three exclusive-ors
  * instead of four steps with four exclusive-ors.  This results in about a
- * factor of two increase in speed on a Power PC G4 (PPC7455) using gcc -O3.
+ * factor of two increase in speed on a Power PC G4 (PPC7455) using gcc -O1.
  */
 
 /* @(#) $Id: crc32.c,v 1.1.1.1 2012/03/29 17:21:39 uid42307 Exp $ */

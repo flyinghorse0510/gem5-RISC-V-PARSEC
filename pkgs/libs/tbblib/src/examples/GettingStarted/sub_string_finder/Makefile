@@ -36,9 +36,9 @@ endif # icc
 all:	release test
 
 release: *.cpp
-	$(CXX) -O2 -DNDEBUG $(CXXFLAGS) -o sub_string_finder sub_string_finder.cpp -ltbb $(LIBS)
-	$(CXX) -O2 -DNDEBUG $(CXXFLAGS) -o sub_string_finder_extended sub_string_finder_extended.cpp -ltbb $(LIBS)
-	$(CXX) -O2 -DNDEBUG $(CXXFLAGS) -o sub_string_finder_pretty sub_string_finder_pretty.cpp -ltbb $(LIBS)
+	$(CXX) -O1 -DNDEBUG $(CXXFLAGS) -o sub_string_finder sub_string_finder.cpp -ltbb $(LIBS)
+	$(CXX) -O1 -DNDEBUG $(CXXFLAGS) -o sub_string_finder_extended sub_string_finder_extended.cpp -ltbb $(LIBS)
+	$(CXX) -O1 -DNDEBUG $(CXXFLAGS) -o sub_string_finder_pretty sub_string_finder_pretty.cpp -ltbb $(LIBS)
 
 debug: *.cpp
 	$(CXX) -O0 -g -DTBB_USE_DEBUG $(CXXFLAGS) -o sub_string_finder sub_string_finder.cpp -ltbb_debug $(LIBS)

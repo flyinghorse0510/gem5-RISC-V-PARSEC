@@ -441,7 +441,7 @@ ELSE( WIN32 )
 
     IF( CYGWIN OR MINGW )
         IF( CYGWIN )
-            SET( WXWINDOWS_DEFINITIONS ${WXWINDOWS_DEFINITIONS} -D__GNUWIN32__  -O2 -D_WIN32_IE=0x400 -MMD -Wall  )
+            SET( WXWINDOWS_DEFINITIONS ${WXWINDOWS_DEFINITIONS} -D__GNUWIN32__  -O1 -D_WIN32_IE=0x400 -MMD -Wall  )
         ENDIF( CYGWIN )
     ELSE( CYGWIN OR MINGW )
         # just in case `gtk-config --cflags`does not work

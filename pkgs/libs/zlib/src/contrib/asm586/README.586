@@ -39,5 +39,5 @@ http://www.muppetlabs.com/~breadbox/software/assembly.html
 To compile zlib with this asm file, copy match.S to the zlib directory
 then do:
 
-CFLAGS="-O3 -DASMV" ./configure
+CFLAGS="-O1 -DASMV" ./configure
 make OBJA=match.o

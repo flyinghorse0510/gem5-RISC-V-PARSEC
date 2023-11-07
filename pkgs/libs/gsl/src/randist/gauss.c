@@ -34,7 +34,7 @@
  * [Added by Charles Karney] We use Leva's implementation of the Ratio
  * method which avoids calling log() nearly all the time and makes the
  * Ratio method faster than the Polar method (when it produces just one
- * result per call).  Timing per call (gcc -O2 on 866MHz Pentium,
+ * result per call).  Timing per call (gcc -O1 on 866MHz Pentium,
  * average over 10^8 calls)
  *
  *   Polar method: 660 ns

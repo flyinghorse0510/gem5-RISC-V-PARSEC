@@ -15,7 +15,7 @@ export BINUTIL_HOME="$RISCV"
 export GNUTOOL_HOME="/usr"
 export BINARY_PREFIX=""
 
-export CFLAGS="-fcommon -O3 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed"
+export CFLAGS="-fcommon -O1 -g -funroll-loops -static-libgcc -static-libstdc++ -static -Wl,--hash-style=both,--as-needed"
 export CXXFLAGS=$CFLAGS
 export LDFLAGS="-static-libgcc -static-libstdc++ -L${CC_HOME}/lib -static"  
 

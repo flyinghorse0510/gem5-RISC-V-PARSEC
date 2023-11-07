@@ -26,7 +26,7 @@ SSLeay 0.6.6 14-Jan-1997
 built on Tue Jan 14 15:37:30 WET 1997
 options:bn(64,32) md2(int) rc4(ptr,int) des(ptr,risc1,16,long) idea(int) 
 blowfish(idx)
-C flags:gcc -DB_ENDIAN -O3
+C flags:gcc -DB_ENDIAN -O1
 The 'numbers' are in 1000s of bytes per second processed.
 type              8 bytes     64 bytes    256 bytes   1024 bytes   8192 bytes
 md2                44.91k      122.57k      167.71k      183.89k      190.24k
@@ -50,7 +50,7 @@ SSLeay 0.5.2 - -Aa +ESlit +Oall +O4 -Wl,-a,archive
 
 HPUX A.09.04 B 9000/887
 
-ssleay 0.5.1 gcc v 2.7.0 -O3 -mpa-risc-1-1
+ssleay 0.5.1 gcc v 2.7.0 -O1 -mpa-risc-1-1
 type           8 bytes     64 bytes    256 bytes   1024 bytes   8192 bytes
 md2             53.00k      166.81k      205.66k      241.95k      242.20k
 md5            743.22k     3128.44k     6031.85k     6142.07k     7025.26k

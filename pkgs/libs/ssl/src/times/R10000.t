@@ -2,7 +2,7 @@ IRIX 6.2 - R10000 195mhz
 SLeay 0.6.5a 06-Dec-1996
 built on Tue Dec 24 03:51:45 EST 1996
 options:bn(32,32) md2(int) rc4(ptr,int) des(ptr,risc2,16,long) idea(int)
-C flags:cc -O2 -DTERMIOS -DB_ENDIAN
+C flags:cc -O1 -DTERMIOS -DB_ENDIAN
 The 'numbers' are in 1000s of bytes per second processed.
 type           8 bytes     64 bytes    256 bytes   1024 bytes   8192 bytes
 md2            156.34k      424.03k      571.88k      628.88k      646.01k

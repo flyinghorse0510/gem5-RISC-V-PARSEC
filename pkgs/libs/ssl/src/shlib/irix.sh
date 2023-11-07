@@ -1,4 +1,4 @@
-FLAGS="-DTERMIOS -O2 -mips2 -DB_ENDIAN -fomit-frame-pointer -Wall -Iinclude"
+FLAGS="-DTERMIOS -O1 -mips2 -DB_ENDIAN -fomit-frame-pointer -Wall -Iinclude"
 SHFLAGS="-DPIC -fpic"
 
 gcc -c -Icrypto $SHFLAGS $FLAGS -o crypto.o crypto/crypto.c

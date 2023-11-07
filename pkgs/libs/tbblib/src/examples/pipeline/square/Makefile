@@ -39,7 +39,7 @@ SQUARE = square.cpp
 all:	release test
 
 release: $(SQUARE) input.txt
-	$(CXX) -O2 -DNDEBUG $(CXXFLAGS) -o $(PROG) $(SQUARE) -ltbb $(LIBS)
+	$(CXX) -O1 -DNDEBUG $(CXXFLAGS) -o $(PROG) $(SQUARE) -ltbb $(LIBS)
 
 debug: $(SQUARE) input.txt
 	$(CXX) -O0 -g -DTBB_USE_DEBUG $(CXXFLAGS) -o $(PROG) $(SQUARE) -ltbb_debug $(LIBS)
@@ -48,7 +48,7 @@ clean:
 	$(RM) $(PROG) $(GEN) *.o *.d input.txt output.txt
 
 $(GEN): gen_input.cpp 
-	$(CXX) -O2 $(CXXFLAGS) -o $(GEN) $^ $(LIBS)
+	$(CXX) -O1 $(CXXFLAGS) -o $(GEN) $^ $(LIBS)
 
 input.txt: $(GEN)
 	./$(GEN)  >input.txt

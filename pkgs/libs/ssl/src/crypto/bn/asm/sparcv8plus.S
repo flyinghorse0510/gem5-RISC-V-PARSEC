@@ -96,13 +96,13 @@
  *
  *	cc-5.0 -xarch=v8plus -xO5 -xdepend	+7-12%
  *	cc-4.2 -xarch=v8plus -xO5 -xdepend	+25-35%
- *	egcs-1.1.2 -mcpu=ultrasparc -O3		+35-45%
+ *	egcs-1.1.2 -mcpu=ultrasparc -O1		+35-45%
  *
  *	v8 module on SS10/60MHz against bn_asm.c compiled with:
  *
  *	cc-5.0 -xarch=v8 -xO5 -xdepend		+7-10%
  *	cc-4.2 -xarch=v8 -xO5 -xdepend		+10%
- *	egcs-1.1.2 -mv8 -O3			+35-45%
+ *	egcs-1.1.2 -mv8 -O1			+35-45%
  *
  *    As you can see it's damn hard to beat the new Sun C compiler
  *    and it's in first place GNU C users who will appreciate this

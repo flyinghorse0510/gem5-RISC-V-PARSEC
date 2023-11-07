@@ -8,8 +8,8 @@ CONFIG_NAME = aix-gcc
 CC = gcc
 CXX = g++
 
-CFLAGS = -O2 -DAIXV3
-CXXFLAGS = -O2 -DAIXV3
+CFLAGS = -O1 -DAIXV3
+CXXFLAGS = -O1 -DAIXV3
 
 # Work around aliasing bugs - developers should comment this out
 CFLAGS += -fno-strict-aliasing

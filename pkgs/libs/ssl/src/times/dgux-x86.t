@@ -1,7 +1,7 @@
 version:SSLeay 0.5.2c 15-May-1996
 built Fri Jun 14 19:47:04 EST 1996
 options:bn(LLONG,thirty_two) md2(CHAR) rc4(IDX,int) des(ary,long) idea(int)
-C flags:gcc -O3 -fomit-frame-pointer -DL_ENDIAN
+C flags:gcc -O1 -fomit-frame-pointer -DL_ENDIAN
 
 type           8 bytes     64 bytes    256 bytes   1024 bytes   8192 bytes
 md2            113.86k      316.48k      428.36k      467.63k      481.56k
