@@ -31,7 +31,7 @@ for bench in os.environ['BENCHMARKS'].split():
 
         # copy binary
         binary = os.path.join(root_dir, param['dir'], bench,
-                              'inst', 'riscv64-linux.gcc', 'bin', bench)
+                              'inst', '-linux.gcc', 'bin', bench)
         print("copy to {}".format(test_dir))
         shutil.copy(binary, test_dir)
 
