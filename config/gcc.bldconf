@@ -26,7 +26,7 @@ if [ -z "$M4" ]; then
   export M4=m4
 fi
 if [ -z "$MAKE" ]; then
-  export MAKE="make -j"
+  export MAKE="make"
 fi
 if [ -z "$TARGET_CROSS" ]; then
   export TARGET_CROSS=""
